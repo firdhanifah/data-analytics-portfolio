@@ -1,0 +1,8 @@
+check,expected,actual,difference,status
+Final Row Count,320,320.0,0.0,PASS
+Unique Order ID,320,320.0,0.0,PASS
+SUM(order_total),42061000,42061000.0,0.0,PASS
+Duplicate Order ID,0,0.0,0.0,PASS
+SUM(amount_paid_total),42061000,42061000.0,0.0,PASS
+Unmatched Channel/Campaign,20,20.0,0.0,PASS
+Final Columns,19,19.0,0.0,PASS

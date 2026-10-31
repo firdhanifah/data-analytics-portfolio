@@ -1,0 +1,151 @@
+{
+  "run_id": "20261015T024925Z_6c4cc3ea",
+  "run_mode": "MAIN",
+  "pipeline_owner_name": "firdha",
+  "run_operator_name": "firdha",
+  "recorded_at_utc": "2026-10-15T06:13:01.143453+00:00",
+  "python_version": "3.13.14",
+  "pandas_version": "3.0.6",
+  "project_root": "C:\\Bootcamp\\Bootcamp_Data_Analyst",
+  "source_dir": "C:\\Bootcamp\\Bootcamp_Data_Analyst\\practice\\sesi_05\\source",
+  "channel_source_mode": "local_fallback",
+  "channel_source_used": "LOCAL FALLBACK (CSV seed)",
+  "source_counts": {
+    "orders": 320,
+    "order_items": 760,
+    "customers_safe": 215,
+    "payments": 337,
+    "products": 45,
+    "channel_campaign": 300
+  },
+  "source_hashes": {
+    "orders": "d152ceed78138987f127e6d80f5e6e048ec5a8db369101a2a9c16d5416f8efda",
+    "order_items": "89ab04bc9bd2a8165cb8ccb3beda8669e80c8bbddfade30627e3f36261c783a0",
+    "customers_safe": "55ee9250721d15ee321700949880941e88679e3ea75242e2db2ee0438c9574ac",
+    "payments": "6b1a86c0b79044eb6c9303e1eb1c103d1365703128b21d954e025dc2e5771fd8",
+    "products": "52eaf2fcb5bfd1b1459738f2421b46564b8a8075c076ee3764e1677124c4c8c3",
+    "channel_fallback": "6cbec859688fb5812c2429f30fbfd3cf1972f6a479288504476522013198d05b"
+  },
+  "output_content_sha256": "aa7064f3f85ce6d50d2e8023c4289cbde09dd1caaa9699e1e01e9da4cf2d8e85",
+  "output_file_sha256": "9424d46b6b3387cf630c2f789d1a5f4b895faf97b9032ee030ce880238eb658a",
+  "comparison_gate": "PASS",
+  "reference_compared": [],
+  "comparison_failures": [],
+  "final_shape": [
+    320,
+    19
+  ],
+  "baseline_checks": [
+    {
+      "check": "Final Row Count",
+      "expected": 320,
+      "actual": 320.0,
+      "difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check": "Unique Order ID",
+      "expected": 320,
+      "actual": 320.0,
+      "difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check": "SUM(order_total)",
+      "expected": 42061000,
+      "actual": 42061000.0,
+      "difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check": "Duplicate Order ID",
+      "expected": 0,
+      "actual": 0.0,
+      "difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check": "SUM(amount_paid_total)",
+      "expected": 42061000,
+      "actual": 42061000.0,
+      "difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check": "Unmatched Channel/Campaign",
+      "expected": 20,
+      "actual": 20.0,
+      "difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check": "Final Columns",
+      "expected": 19,
+      "actual": 19.0,
+      "difference": 0.0,
+      "status": "PASS"
+    }
+  ],
+  "integrity_checks": [
+    {
+      "check": "Source row counts S5",
+      "status": "PASS",
+      "evidence": "actual={'orders': 320, 'order_items': 760, 'customers_safe': 215, 'payments': 337, 'products': 45, 'channel_campaign': 300}"
+    },
+    {
+      "check": "Raw file hashes unchanged",
+      "status": "PASS",
+      "evidence": "SHA256 before vs after"
+    },
+    {
+      "check": "SUM(items) reconciles",
+      "status": "PASS",
+      "evidence": "Source items vs final"
+    },
+    {
+      "check": "SUM(payment) vs SQLite independently",
+      "status": "PASS",
+      "evidence": "sqlite=42061000.0"
+    },
+    {
+      "check": "Missing Customers = 0",
+      "status": "PASS",
+      "evidence": "0"
+    },
+    {
+      "check": "Missing Item Aggregate = 0",
+      "status": "PASS",
+      "evidence": "0"
+    },
+    {
+      "check": "Missing Payment Aggregate = 0",
+      "status": "PASS",
+      "evidence": "0"
+    },
+    {
+      "check": "Mapped channel source coverage",
+      "status": "PASS",
+      "evidence": "mapped=300, input_mapping=300"
+    },
+    {
+      "check": "Campaign ID missing consistent",
+      "status": "PASS",
+      "evidence": "20"
+    },
+    {
+      "check": "Campaign name missing consistent",
+      "status": "PASS",
+      "evidence": "20"
+    },
+    {
+      "check": "Schema EXACTLY same as S5",
+      "status": "PASS",
+      "evidence": "actual_columns=19"
+    }
+  ],
+  "minimum_gate": "PASS",
+  "reference_gate": "PASS",
+  "full_release_gate": "PASS",
+  "export_status": "PASS",
+  "output_file": "C:\\Bootcamp\\Bootcamp_Data_Analyst\\outputs\\sesi_06\\nusamart_analysis_ready.csv"
+}

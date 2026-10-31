@@ -1,0 +1,27 @@
+{
+  "run_id": "20261015T024925Z_6c4cc3ea",
+  "run_mode": "MAIN",
+  "technical_status": "PASS",
+  "reason": "Full pre-export gate dan CSV read-back PASS",
+  "source_dir": "C:\\Bootcamp\\Bootcamp_Data_Analyst\\practice\\sesi_05\\source",
+  "pipeline_owner_name": "firdha",
+  "run_operator_name": "firdha",
+  "output_file": "C:\\Bootcamp\\Bootcamp_Data_Analyst\\outputs\\sesi_06\\nusamart_analysis_ready.csv",
+  "updated_at_utc": "2026-10-15T06:12:51.889492+00:00",
+  "output_sha256": "9424d46b6b3387cf630c2f789d1a5f4b895faf97b9032ee030ce880238eb658a",
+  "output_content_sha256": "aa7064f3f85ce6d50d2e8023c4289cbde09dd1caaa9699e1e01e9da4cf2d8e85",
+  "source_hashes": {
+    "orders": "d152ceed78138987f127e6d80f5e6e048ec5a8db369101a2a9c16d5416f8efda",
+    "order_items": "89ab04bc9bd2a8165cb8ccb3beda8669e80c8bbddfade30627e3f36261c783a0",
+    "customers_safe": "55ee9250721d15ee321700949880941e88679e3ea75242e2db2ee0438c9574ac",
+    "payments": "6b1a86c0b79044eb6c9303e1eb1c103d1365703128b21d954e025dc2e5771fd8",
+    "products": "52eaf2fcb5bfd1b1459738f2421b46564b8a8075c076ee3764e1677124c4c8c3",
+    "channel_fallback": "6cbec859688fb5812c2429f30fbfd3cf1972f6a479288504476522013198d05b"
+  },
+  "comparison_gate": "PASS",
+  "final_shape": [
+    320,
+    19
+  ],
+  "channel_source_mode": "local_fallback"
+}

@@ -1,0 +1,3012 @@
+[
+  {
+    "customer_id": "CUS001",
+    "profile": {
+      "customer_name": "Wahyu Utami",
+      "city": "Semarang",
+      "customer_segment": "Regular",
+      "join_date": "2025-05-28"
+    },
+    "contact": {
+      "email": "wahyu.utami.001@example.com",
+      "phone": "081210007919"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS002",
+    "profile": {
+      "customer_name": "Nina Nugraha",
+      "city": "Semarang",
+      "customer_segment": "Regular",
+      "join_date": "2025-04-18"
+    },
+    "contact": {
+      "email": "nina.nugraha.002@example.com",
+      "phone": "081210015838"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS003",
+    "profile": {
+      "customer_name": "Omar Lestari",
+      "city": "Depok",
+      "customer_segment": "New",
+      "join_date": "2025-09-01"
+    },
+    "contact": {
+      "email": "omar.lestari.003@example.com",
+      "phone": "081210023757"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS004",
+    "profile": {
+      "customer_name": "Putri Puspita",
+      "city": "Semarang",
+      "customer_segment": "Regular",
+      "join_date": "2024-03-06"
+    },
+    "contact": {
+      "email": "putri.puspita.004@example.com",
+      "phone": "081210031676"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS005",
+    "profile": {
+      "customer_name": "Bima Ramadhan",
+      "city": "Bandung",
+      "customer_segment": "Regular",
+      "join_date": "2024-04-08"
+    },
+    "contact": {
+      "email": "bima.ramadhan.005@example.com",
+      "phone": "081210039595"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS006",
+    "profile": {
+      "customer_name": "Farah Hidayat",
+      "city": "Bandung",
+      "customer_segment": "Regular",
+      "join_date": "2025-08-29"
+    },
+    "contact": {
+      "email": "farah.hidayat.006@example.com",
+      "phone": "081210047514"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS007",
+    "profile": {
+      "customer_name": "Dewi Sari",
+      "city": "Surabaya",
+      "customer_segment": "New",
+      "join_date": "2025-10-07"
+    },
+    "contact": {
+      "email": "dewi.sari.007@example.com",
+      "phone": "081210055433"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS008",
+    "profile": {
+      "customer_name": "Salsa Santoso",
+      "city": "Bekasi",
+      "customer_segment": "Regular",
+      "join_date": "2024-01-08"
+    },
+    "contact": {
+      "email": "salsa.santoso.008@example.com",
+      "phone": "081210063352"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS009",
+    "profile": {
+      "customer_name": "Indra Puspita",
+      "city": "Semarang",
+      "customer_segment": "New",
+      "join_date": "2025-10-17"
+    },
+    "contact": {
+      "email": "indra.puspita.009@example.com",
+      "phone": "081210071271"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS010",
+    "profile": {
+      "customer_name": "Rafi Wijaya",
+      "city": "Bekasi",
+      "customer_segment": "VIP",
+      "join_date": "2025-03-16"
+    },
+    "contact": {
+      "email": "rafi.wijaya.010@example.com",
+      "phone": "081210079190"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS011",
+    "profile": {
+      "customer_name": "Rina Kusuma",
+      "city": "Surabaya",
+      "customer_segment": "VIP",
+      "join_date": "2024-11-26"
+    },
+    "contact": {
+      "email": "rina.kusuma.011@example.com",
+      "phone": "081210087109"
+    },
+    "customer_status": "Inactive"
+  },
+  {
+    "customer_id": "CUS012",
+    "profile": {
+      "customer_name": "Gilang Hidayat",
+      "city": "Malang",
+      "customer_segment": "Regular",
+      "join_date": "2025-05-18"
+    },
+    "contact": {
+      "email": "gilang.hidayat.012@example.com",
+      "phone": "081210095028"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS013",
+    "profile": {
+      "customer_name": "Wahyu Sari",
+      "city": "Malang",
+      "customer_segment": "Regular",
+      "join_date": "2024-08-30"
+    },
+    "contact": {
+      "email": "wahyu.sari.013@example.com",
+      "phone": "081210102947"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS014",
+    "profile": {
+      "customer_name": "Tio Kusuma",
+      "city": "Yogyakarta",
+      "customer_segment": "new customer",
+      "join_date": "2025-08-10"
+    },
+    "contact": {
+      "email": "tio.kusuma.014@example.com",
+      "phone": "081210110866"
+    },
+    "customer_status": "Inactive"
+  },
+  {
+    "customer_id": "CUS015",
+    "profile": {
+      "customer_name": "Hana Santoso",
+      "city": "Bogor",
+      "customer_segment": "regular",
+      "join_date": "2025-01-06"
+    },
+    "contact": {
+      "email": "hana.santoso.015@example.com",
+      "phone": "081210118785"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS016",
+    "profile": {
+      "customer_name": "Laras Nugraha",
+      "city": "Yogyakarta",
+      "customer_segment": "VIP",
+      "join_date": "2024-08-15"
+    },
+    "contact": {
+      "email": "laras.nugraha.016@example.com",
+      "phone": "081210126704"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS017",
+    "profile": {
+      "customer_name": "Damar Wijaya",
+      "city": "Bandung",
+      "customer_segment": "New",
+      "join_date": "2025-09-07"
+    },
+    "contact": {
+      "email": "damar.wijaya.017@example.com",
+      "phone": "081210134623"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS018",
+    "profile": {
+      "customer_name": "Zaki Pratama",
+      "city": "Yogyakarta",
+      "customer_segment": "Regular",
+      "join_date": "2024-11-26"
+    },
+    "contact": {
+      "email": "zaki.pratama.018@example.com",
+      "phone": "081210142542"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS019",
+    "profile": {
+      "customer_name": "Omar Hidayat",
+      "city": "Semarang",
+      "customer_segment": "Regular",
+      "join_date": "2024-02-06"
+    },
+    "contact": {
+      "email": "omar.hidayat.019@example.com",
+      "phone": "081210150461"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS020",
+    "profile": {
+      "customer_name": "Farah Puspita",
+      "city": "Semarang",
+      "customer_segment": "New",
+      "join_date": "2025-11-23"
+    },
+    "contact": {
+      "email": "farah.puspita.020@example.com",
+      "phone": "081210158380"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS021",
+    "profile": {
+      "customer_name": "Zaki Puspita",
+      "city": "Bekasi",
+      "customer_segment": "Regular",
+      "join_date": "2025-01-27"
+    },
+    "contact": {
+      "email": "zaki.puspita.021@example.com",
+      "phone": "081210166299"
+    },
+    "customer_status": "Inactive"
+  },
+  {
+    "customer_id": "CUS022",
+    "profile": {
+      "customer_name": "Rafi Puspita",
+      "city": "Yogyakarta",
+      "customer_segment": "Regular",
+      "join_date": "2025-07-02"
+    },
+    "contact": {
+      "email": "rafi.puspita.022@example.com",
+      "phone": "081210174218"
+    },
+    "customer_status": "Inactive"
+  },
+  {
+    "customer_id": "CUS023",
+    "profile": {
+      "customer_name": "Eka Sari",
+      "city": "Yogyakarta",
+      "customer_segment": "Regular",
+      "join_date": "2024-06-03"
+    },
+    "contact": {
+      "email": "eka.sari.023@example.com",
+      "phone": "081210182137"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS024",
+    "profile": {
+      "customer_name": "Fajar Hidayat",
+      "city": "Semarang",
+      "customer_segment": "Regular",
+      "join_date": "2024-08-14"
+    },
+    "contact": {
+      "email": "fajar.hidayat.024@example.com",
+      "phone": "081210190056"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS025",
+    "profile": {
+      "customer_name": "Nina Ananda",
+      "city": "Semarang",
+      "customer_segment": "Regular",
+      "join_date": "2024-04-30"
+    },
+    "contact": {
+      "email": "nina.ananda.025@example.com",
+      "phone": "081210197975"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS026",
+    "profile": {
+      "customer_name": "Jihan Maulana",
+      "city": "Semarang",
+      "customer_segment": "Regular",
+      "join_date": "2024-11-01"
+    },
+    "contact": {
+      "email": "jihan.maulana.026@example.com",
+      "phone": "081210205894"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS027",
+    "profile": {
+      "customer_name": "Putri Permana",
+      "city": "Jakarta",
+      "customer_segment": "Regular",
+      "join_date": "2025-01-18"
+    },
+    "contact": {
+      "email": "putri.permana.027@example.com",
+      "phone": "081210213813"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS028",
+    "profile": {
+      "customer_name": "Vina Wijaya",
+      "city": "Bekasi",
+      "customer_segment": "New",
+      "join_date": "2025-11-25"
+    },
+    "contact": {
+      "email": "vina.wijaya.028@example.com",
+      "phone": "081210221732"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS029",
+    "profile": {
+      "customer_name": "Vina Kusuma",
+      "city": "Yogyakarta",
+      "customer_segment": "Regular",
+      "join_date": "2025-03-07"
+    },
+    "contact": {
+      "email": "vina.kusuma.029@example.com",
+      "phone": "081210229651"
+    },
+    "customer_status": "Inactive"
+  },
+  {
+    "customer_id": "CUS030",
+    "profile": {
+      "customer_name": "Yasmin Pratama",
+      "city": "Depok",
+      "customer_segment": "New",
+      "join_date": "2025-09-17"
+    },
+    "contact": {
+      "email": "yasmin.pratama.030@example.com",
+      "phone": "081210237570"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS031",
+    "profile": {
+      "customer_name": "Ardi Puspita",
+      "city": "Semarang",
+      "customer_segment": "Regular",
+      "join_date": "2025-04-29"
+    },
+    "contact": {
+      "email": "ardi.puspita.031@example.com",
+      "phone": "081210245489"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS032",
+    "profile": {
+      "customer_name": "Damar Nugraha",
+      "city": "Depok",
+      "customer_segment": "VIP",
+      "join_date": "2024-07-07"
+    },
+    "contact": {
+      "email": "damar.nugraha.032@example.com",
+      "phone": "081210253408"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS033",
+    "profile": {
+      "customer_name": "Dewi Hidayat",
+      "city": "Semarang",
+      "customer_segment": "Regular",
+      "join_date": "2024-07-12"
+    },
+    "contact": {
+      "email": "dewi.hidayat.033@example.com",
+      "phone": "081210261327"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS034",
+    "profile": {
+      "customer_name": "Nadia Permana",
+      "city": "Depok",
+      "customer_segment": "New",
+      "join_date": "2025-10-02"
+    },
+    "contact": {
+      "email": "nadia.permana.034@example.com",
+      "phone": "081210269246"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS035",
+    "profile": {
+      "customer_name": "Gilang Hidayat",
+      "city": "Semarang",
+      "customer_segment": "VIP",
+      "join_date": "2023-10-27"
+    },
+    "contact": {
+      "email": "gilang.hidayat.035@example.com",
+      "phone": "081210277165"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS036",
+    "profile": {
+      "customer_name": "Hana Lestari",
+      "city": "Bekasi",
+      "customer_segment": "Regular",
+      "join_date": "2024-03-26"
+    },
+    "contact": {
+      "email": "hana.lestari.036@example.com",
+      "phone": "081210285084"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS037",
+    "profile": {
+      "customer_name": "Nina Lestari",
+      "city": "Depok",
+      "customer_segment": "VIP",
+      "join_date": "2023-08-30"
+    },
+    "contact": {
+      "email": "nina.lestari.037@example.com",
+      "phone": "081210293003"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS038",
+    "profile": {
+      "customer_name": "Nadia Lestari",
+      "city": "Bekasi",
+      "customer_segment": "Regular",
+      "join_date": "2025-09-06"
+    },
+    "contact": {
+      "email": "nadia.lestari.038@example.com",
+      "phone": "081210300922"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS039",
+    "profile": {
+      "customer_name": "Rina Saputra",
+      "city": "Bogor",
+      "customer_segment": "VIP",
+      "join_date": "2024-11-26"
+    },
+    "contact": {
+      "email": "rina.saputra.039@example.com",
+      "phone": "081210308841"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS040",
+    "profile": {
+      "customer_name": "Tio Saputra",
+      "city": "Jakarta",
+      "customer_segment": "VIP",
+      "join_date": "2025-02-03"
+    },
+    "contact": {
+      "email": "tio.saputra.040@example.com",
+      "phone": "081210316760"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS041",
+    "profile": {
+      "customer_name": "Rafi Nugraha",
+      "city": "Yogyakarta",
+      "customer_segment": "New",
+      "join_date": "2025-07-21"
+    },
+    "contact": {
+      "email": "rafi.nugraha.041@example.com",
+      "phone": "081210324679"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS042",
+    "profile": {
+      "customer_name": "Gilang Lestari",
+      "city": "Bekasi",
+      "customer_segment": "Regular",
+      "join_date": "2024-11-24"
+    },
+    "contact": {
+      "email": "gilang.lestari.042@example.com",
+      "phone": "081210332598"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS043",
+    "profile": {
+      "customer_name": "Omar Santoso",
+      "city": "Yogyakarta",
+      "customer_segment": "Regular",
+      "join_date": "2024-05-27"
+    },
+    "contact": {
+      "email": "omar.santoso.043@example.com",
+      "phone": "081210340517"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS044",
+    "profile": {
+      "customer_name": "Tio Mahendra",
+      "city": "Semarang",
+      "customer_segment": "New",
+      "join_date": "2025-09-30"
+    },
+    "contact": {
+      "email": "tio.mahendra.044@example.com",
+      "phone": "081210348436"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS045",
+    "profile": {
+      "customer_name": "Wahyu Wijaya",
+      "city": "Malang",
+      "customer_segment": "Regular",
+      "join_date": "2024-11-29"
+    },
+    "contact": {
+      "email": "wahyu.wijaya.045@example.com",
+      "phone": "081210356355"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS046",
+    "profile": {
+      "customer_name": "Damar Permana",
+      "city": "Malang",
+      "customer_segment": "Regular",
+      "join_date": "2024-12-07"
+    },
+    "contact": {
+      "email": "damar.permana.046@example.com",
+      "phone": "081210364274"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS047",
+    "profile": {
+      "customer_name": "Nina Utami",
+      "city": "Tangerang",
+      "customer_segment": "Regular",
+      "join_date": "2025-02-17"
+    },
+    "contact": {
+      "email": "nina.utami.047@example.com",
+      "phone": "081210372193"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS048",
+    "profile": {
+      "customer_name": "Rina Utami",
+      "city": "Bandung",
+      "customer_segment": "Regular",
+      "join_date": "2024-07-10"
+    },
+    "contact": {
+      "email": "rina.utami.048@example.com",
+      "phone": "081210380112"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS049",
+    "profile": {
+      "customer_name": "Dewi Pratama",
+      "city": "Semarang",
+      "customer_segment": "VIP",
+      "join_date": "2023-09-03"
+    },
+    "contact": {
+      "email": "dewi.pratama.049@example.com",
+      "phone": "081210388031"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS050",
+    "profile": {
+      "customer_name": "Hana Santoso",
+      "city": "Surabaya",
+      "customer_segment": "VIP",
+      "join_date": "2023-04-03"
+    },
+    "contact": {
+      "email": "hana.santoso.050@example.com",
+      "phone": "081210395950"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS051",
+    "profile": {
+      "customer_name": "Gilang Santoso",
+      "city": "Yogyakarta",
+      "customer_segment": "New",
+      "join_date": "2025-11-30"
+    },
+    "contact": {
+      "email": "gilang.santoso.051@example.com",
+      "phone": "081210403869"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS052",
+    "profile": {
+      "customer_name": "Vina Hidayat",
+      "city": "Semarang",
+      "customer_segment": "Regular",
+      "join_date": "2025-03-08"
+    },
+    "contact": {
+      "email": "vina.hidayat.052@example.com",
+      "phone": "081210411788"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS053",
+    "profile": {
+      "customer_name": "Salsa Ramadhan",
+      "city": "Surabaya",
+      "customer_segment": "Regular",
+      "join_date": "2024-12-16"
+    },
+    "contact": {
+      "email": "salsa.ramadhan.053@example.com",
+      "phone": "081210419707"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS054",
+    "profile": {
+      "customer_name": "Maya Puspita",
+      "city": "Bekasi",
+      "customer_segment": "VIP",
+      "join_date": "2024-06-10"
+    },
+    "contact": {
+      "email": "maya.puspita.054@example.com",
+      "phone": "081210427626"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS055",
+    "profile": {
+      "customer_name": "Hana Kusuma",
+      "city": "Malang",
+      "customer_segment": "Regular",
+      "join_date": "2024-10-28"
+    },
+    "contact": {
+      "email": "hana.kusuma.055@example.com",
+      "phone": "081210435545"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS056",
+    "profile": {
+      "customer_name": "Vina Santoso",
+      "city": "Depok",
+      "customer_segment": "Regular",
+      "join_date": "2025-05-19"
+    },
+    "contact": {
+      "email": "vina.santoso.056@example.com",
+      "phone": "081210443464"
+    },
+    "customer_status": "Inactive"
+  },
+  {
+    "customer_id": "CUS057",
+    "profile": {
+      "customer_name": "Rafi Wijaya",
+      "city": "Depok",
+      "customer_segment": "New",
+      "join_date": "2025-11-29"
+    },
+    "contact": {
+      "email": "rafi.wijaya.057@example.com",
+      "phone": "081210451383"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS058",
+    "profile": {
+      "customer_name": "Yasmin Puspita",
+      "city": "Tangerang",
+      "customer_segment": "New",
+      "join_date": "2025-09-10"
+    },
+    "contact": {
+      "email": "yasmin.puspita.058@example.com",
+      "phone": "081210459302"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS059",
+    "profile": {
+      "customer_name": "Bima Wijaya",
+      "city": "Bogor",
+      "customer_segment": "New",
+      "join_date": "2025-07-12"
+    },
+    "contact": {
+      "email": "bima.wijaya.059@example.com",
+      "phone": "081210467221"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS060",
+    "profile": {
+      "customer_name": "Bima Wijaya",
+      "city": "Semarang",
+      "customer_segment": "New",
+      "join_date": "2025-07-29"
+    },
+    "contact": {
+      "email": "bima.wijaya.060@example.com",
+      "phone": "081210475140"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS061",
+    "profile": {
+      "customer_name": "Indra Permana",
+      "city": "Surabaya",
+      "customer_segment": "Regular",
+      "join_date": "2025-07-29"
+    },
+    "contact": {
+      "email": "indra.permana.061@example.com",
+      "phone": "081210483059"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS062",
+    "profile": {
+      "customer_name": "Hana Lestari",
+      "city": "Surabaya",
+      "customer_segment": "regular",
+      "join_date": "2024-02-18"
+    },
+    "contact": {
+      "email": "hana.lestari.062@example.com",
+      "phone": "081210490978"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS063",
+    "profile": {
+      "customer_name": "Gilang Kusuma",
+      "city": "Surabaya",
+      "customer_segment": "Regular",
+      "join_date": "2024-04-11"
+    },
+    "contact": {
+      "email": "gilang.kusuma.063@example.com",
+      "phone": "081210498897"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS064",
+    "profile": {
+      "customer_name": "Fajar Hidayat",
+      "city": "Depok",
+      "customer_segment": "Regular",
+      "join_date": "2025-09-18"
+    },
+    "contact": {
+      "email": "fajar.hidayat.064@example.com",
+      "phone": "081210506816"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS065",
+    "profile": {
+      "customer_name": "Laras Santoso",
+      "city": "Semarang",
+      "customer_segment": "VIP",
+      "join_date": "2024-02-20"
+    },
+    "contact": {
+      "email": "laras.santoso.065@example.com",
+      "phone": "081210514735"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS066",
+    "profile": {
+      "customer_name": "Rafi Permana",
+      "city": "Jakarta",
+      "customer_segment": "Regular",
+      "join_date": "2024-05-11"
+    },
+    "contact": {
+      "email": "rafi.permana.066@example.com",
+      "phone": "081210522654"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS067",
+    "profile": {
+      "customer_name": "Yasmin Utami",
+      "city": "Bekasi",
+      "customer_segment": "Regular",
+      "join_date": "2025-02-25"
+    },
+    "contact": {
+      "email": "yasmin.utami.067@example.com",
+      "phone": "081210530573"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS068",
+    "profile": {
+      "customer_name": "Damar Maulana",
+      "city": "Jakarta",
+      "customer_segment": "Regular",
+      "join_date": "2024-07-05"
+    },
+    "contact": {
+      "email": "damar.maulana.068@example.com",
+      "phone": "081210538492"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS069",
+    "profile": {
+      "customer_name": "Rafi Lestari",
+      "city": "Yogyakarta",
+      "customer_segment": "Regular",
+      "join_date": "2024-09-25"
+    },
+    "contact": {
+      "email": "rafi.lestari.069@example.com",
+      "phone": "081210546411"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS070",
+    "profile": {
+      "customer_name": "Putri Lestari",
+      "city": "Surabaya",
+      "customer_segment": "VIP",
+      "join_date": "2024-06-21"
+    },
+    "contact": {
+      "email": "putri.lestari.070@example.com",
+      "phone": "081210554330"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS071",
+    "profile": {
+      "customer_name": "Dewi Nugraha",
+      "city": "Bandung",
+      "customer_segment": null,
+      "join_date": "2024-08-15"
+    },
+    "contact": {
+      "email": "dewi.nugraha.071@example.com",
+      "phone": "081210562249"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS072",
+    "profile": {
+      "customer_name": "Maya Maulana",
+      "city": "Bandung",
+      "customer_segment": "Regular",
+      "join_date": "2025-06-01"
+    },
+    "contact": {
+      "email": "maya.maulana.072@example.com",
+      "phone": "081210570168"
+    },
+    "customer_status": "Inactive"
+  },
+  {
+    "customer_id": "CUS073",
+    "profile": {
+      "customer_name": "Rafi Hidayat",
+      "city": "Yogyakarta",
+      "customer_segment": "Regular",
+      "join_date": "2025-04-05"
+    },
+    "contact": {
+      "email": "rafi.hidayat.073@example.com",
+      "phone": "081210578087"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS074",
+    "profile": {
+      "customer_name": "Wahyu Maulana",
+      "city": "Bogor",
+      "customer_segment": "VIP",
+      "join_date": "2023-07-10"
+    },
+    "contact": {
+      "email": "wahyu.maulana.074@example.com",
+      "phone": "081210586006"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS075",
+    "profile": {
+      "customer_name": "Yasmin Lestari",
+      "city": "Bandung",
+      "customer_segment": "Regular",
+      "join_date": "2024-01-24"
+    },
+    "contact": {
+      "email": "yasmin.lestari.075@example.com",
+      "phone": "081210593925"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS076",
+    "profile": {
+      "customer_name": "Rafi Pratama",
+      "city": "Bogor",
+      "customer_segment": "VIP",
+      "join_date": "2023-11-15"
+    },
+    "contact": {
+      "email": "rafi.pratama.076@example.com",
+      "phone": "081210601844"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS077",
+    "profile": {
+      "customer_name": "Rina Mahendra",
+      "city": "Bandung",
+      "customer_segment": "VIP",
+      "join_date": "2024-02-24"
+    },
+    "contact": {
+      "email": "rina.mahendra.077@example.com",
+      "phone": "081210609763"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS078",
+    "profile": {
+      "customer_name": "Omar Nugraha",
+      "city": "Depok",
+      "customer_segment": "VIP",
+      "join_date": "2023-12-07"
+    },
+    "contact": {
+      "email": "omar.nugraha.078@example.com",
+      "phone": "081210617682"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS079",
+    "profile": {
+      "customer_name": "Kevin Ramadhan",
+      "city": "Bogor",
+      "customer_segment": "New",
+      "join_date": "2025-11-16"
+    },
+    "contact": {
+      "email": "kevin.ramadhan.079@example.com",
+      "phone": "081210625601"
+    },
+    "customer_status": "Inactive"
+  },
+  {
+    "customer_id": "CUS080",
+    "profile": {
+      "customer_name": "Nadia Wijaya",
+      "city": "Surabaya",
+      "customer_segment": "Regular",
+      "join_date": "2024-02-08"
+    },
+    "contact": {
+      "email": "nadia.wijaya.080@example.com",
+      "phone": "081210633520"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS081",
+    "profile": {
+      "customer_name": "Yasmin Ananda",
+      "city": "Semarang",
+      "customer_segment": "New",
+      "join_date": "2025-09-07"
+    },
+    "contact": {
+      "email": "yasmin.ananda.081@example.com",
+      "phone": "081210641439"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS082",
+    "profile": {
+      "customer_name": "Eka Mahendra",
+      "city": "Yogyakarta",
+      "customer_segment": "Regular",
+      "join_date": "2025-06-11"
+    },
+    "contact": {
+      "email": "eka.mahendra.082@example.com",
+      "phone": "081210649358"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS083",
+    "profile": {
+      "customer_name": "Damar Sari",
+      "city": "Jakarta",
+      "customer_segment": "Regular",
+      "join_date": "2024-11-28"
+    },
+    "contact": {
+      "email": "damar.sari.083@example.com",
+      "phone": "081210657277"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS084",
+    "profile": {
+      "customer_name": "Eka Puspita",
+      "city": "Bogor",
+      "customer_segment": "VIP",
+      "join_date": "2024-05-14"
+    },
+    "contact": {
+      "email": "eka.puspita.084@example.com",
+      "phone": "081210665196"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS085",
+    "profile": {
+      "customer_name": "Zaki Ananda",
+      "city": "Bogor",
+      "customer_segment": "VIP",
+      "join_date": "2023-07-05"
+    },
+    "contact": {
+      "email": "zaki.ananda.085@example.com",
+      "phone": "081210673115"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS086",
+    "profile": {
+      "customer_name": "Jihan Ramadhan",
+      "city": "Semarang",
+      "customer_segment": "Regular",
+      "join_date": "2025-07-23"
+    },
+    "contact": {
+      "email": "jihan.ramadhan.086@example.com",
+      "phone": "081210681034"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS087",
+    "profile": {
+      "customer_name": "Zaki Kusuma",
+      "city": "Semarang",
+      "customer_segment": "Regular",
+      "join_date": "2024-03-08"
+    },
+    "contact": {
+      "email": "zaki.kusuma.087@example.com",
+      "phone": "081210688953"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS088",
+    "profile": {
+      "customer_name": "Bima Mahendra",
+      "city": "Tangerang",
+      "customer_segment": "VIP",
+      "join_date": "2023-02-18"
+    },
+    "contact": {
+      "email": "bima.mahendra.088@example.com",
+      "phone": "081210696872"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS089",
+    "profile": {
+      "customer_name": "Iqbal Saputra",
+      "city": "Surabaya",
+      "customer_segment": "Regular",
+      "join_date": "2025-06-29"
+    },
+    "contact": {
+      "email": "iqbal.saputra.089@example.com",
+      "phone": "081210704791"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS090",
+    "profile": {
+      "customer_name": "Eka Wijaya",
+      "city": "Bekasi",
+      "customer_segment": "Regular",
+      "join_date": "2025-06-10"
+    },
+    "contact": {
+      "email": "eka.wijaya.090@example.com",
+      "phone": "081210712710"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS091",
+    "profile": {
+      "customer_name": "Rafi Pratama",
+      "city": "Jakarta",
+      "customer_segment": "New",
+      "join_date": "2025-10-19"
+    },
+    "contact": {
+      "email": "rafi.pratama.091@example.com",
+      "phone": "081210720629"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS092",
+    "profile": {
+      "customer_name": "Rafi Mahendra",
+      "city": "Yogyakarta",
+      "customer_segment": "Regular",
+      "join_date": "2024-04-26"
+    },
+    "contact": {
+      "email": "rafi.mahendra.092@example.com",
+      "phone": "081210728548"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS093",
+    "profile": {
+      "customer_name": "Laras Puspita",
+      "city": "Depok",
+      "customer_segment": "VIP",
+      "join_date": "2023-01-15"
+    },
+    "contact": {
+      "email": "laras.puspita.093@example.com",
+      "phone": "081210736467"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS094",
+    "profile": {
+      "customer_name": "Rina Permana",
+      "city": "Bogor",
+      "customer_segment": "Regular",
+      "join_date": "2024-12-22"
+    },
+    "contact": {
+      "email": "rina.permana.094@example.com",
+      "phone": "081210744386"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS095",
+    "profile": {
+      "customer_name": "Dewi Pratama",
+      "city": "Surabaya",
+      "customer_segment": "Regular",
+      "join_date": "2025-04-10"
+    },
+    "contact": {
+      "email": "dewi.pratama.095@example.com",
+      "phone": "081210752305"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS096",
+    "profile": {
+      "customer_name": "Bima Utami",
+      "city": "Surabaya",
+      "customer_segment": "Regular",
+      "join_date": "2025-02-16"
+    },
+    "contact": {
+      "email": "bima.utami.096@example.com",
+      "phone": "081210760224"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS097",
+    "profile": {
+      "customer_name": "Eka Nugraha",
+      "city": "Semarang",
+      "customer_segment": "Regular",
+      "join_date": "2024-12-14"
+    },
+    "contact": {
+      "email": "eka.nugraha.097@example.com",
+      "phone": "081210768143"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS098",
+    "profile": {
+      "customer_name": "Indra Puspita",
+      "city": "Bogor",
+      "customer_segment": "Regular",
+      "join_date": "2024-09-28"
+    },
+    "contact": {
+      "email": "indra.puspita.098@example.com",
+      "phone": "081210776062"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS099",
+    "profile": {
+      "customer_name": "Alya Puspita",
+      "city": "Malang",
+      "customer_segment": "Regular",
+      "join_date": "2024-06-08"
+    },
+    "contact": {
+      "email": "alya.puspita.099@example.com",
+      "phone": "081210783981"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS100",
+    "profile": {
+      "customer_name": "Kevin Saputra",
+      "city": "Tangerang",
+      "customer_segment": "Regular",
+      "join_date": "2024-09-28"
+    },
+    "contact": {
+      "email": "kevin.saputra.100@example.com",
+      "phone": "081210791900"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS101",
+    "profile": {
+      "customer_name": "Alya Utami",
+      "city": "Bogor",
+      "customer_segment": "Regular",
+      "join_date": "2024-02-07"
+    },
+    "contact": {
+      "email": "alya.utami.101@example.com",
+      "phone": "081210799819"
+    },
+    "customer_status": "Inactive"
+  },
+  {
+    "customer_id": "CUS102",
+    "profile": {
+      "customer_name": "Nina Nugraha",
+      "city": "Malang",
+      "customer_segment": "Regular",
+      "join_date": "2024-12-29"
+    },
+    "contact": {
+      "email": "nina.nugraha.102@example.com",
+      "phone": "081210807738"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS103",
+    "profile": {
+      "customer_name": "Eka Ramadhan",
+      "city": "Malang",
+      "customer_segment": "Regular",
+      "join_date": "2025-09-28"
+    },
+    "contact": {
+      "email": "eka.ramadhan.103@example.com",
+      "phone": "081210815657"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS104",
+    "profile": {
+      "customer_name": "Tio Mahendra",
+      "city": "Bekasi",
+      "customer_segment": "New",
+      "join_date": "2025-09-05"
+    },
+    "contact": {
+      "email": "tio.mahendra.104@example.com",
+      "phone": "081210823576"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS105",
+    "profile": {
+      "customer_name": "Laras Ramadhan",
+      "city": "Yogyakarta",
+      "customer_segment": "New",
+      "join_date": "2025-10-04"
+    },
+    "contact": {
+      "email": "laras.ramadhan.105@example.com",
+      "phone": "081210831495"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS106",
+    "profile": {
+      "customer_name": "Fajar Puspita",
+      "city": "Bekasi",
+      "customer_segment": "Regular",
+      "join_date": "2024-12-12"
+    },
+    "contact": {
+      "email": "fajar.puspita.106@example.com",
+      "phone": "081210839414"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS107",
+    "profile": {
+      "customer_name": "Iqbal Ananda",
+      "city": "Yogyakarta",
+      "customer_segment": "New",
+      "join_date": "2025-08-10"
+    },
+    "contact": {
+      "email": "iqbal.ananda.107@example.com",
+      "phone": "081210847333"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS108",
+    "profile": {
+      "customer_name": "Omar Santoso",
+      "city": "Semarang",
+      "customer_segment": null,
+      "join_date": "2024-09-06"
+    },
+    "contact": {
+      "email": "omar.santoso.108@example.com",
+      "phone": "081210855252"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS109",
+    "profile": {
+      "customer_name": "Yasmin Sari",
+      "city": "Bogor",
+      "customer_segment": "Regular",
+      "join_date": "2024-11-14"
+    },
+    "contact": {
+      "email": "yasmin.sari.109@example.com",
+      "phone": "081210863171"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS110",
+    "profile": {
+      "customer_name": "Tio Kusuma",
+      "city": "Bogor",
+      "customer_segment": "New",
+      "join_date": "2025-12-08"
+    },
+    "contact": {
+      "email": "tio.kusuma.110@example.com",
+      "phone": "081210871090"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS111",
+    "profile": {
+      "customer_name": "Zaki Kusuma",
+      "city": "Bekasi",
+      "customer_segment": "New",
+      "join_date": "2025-08-28"
+    },
+    "contact": {
+      "email": "zaki.kusuma.111@example.com",
+      "phone": "081210879009"
+    },
+    "customer_status": "Inactive"
+  },
+  {
+    "customer_id": "CUS112",
+    "profile": {
+      "customer_name": "Fajar Hidayat",
+      "city": "Bandung",
+      "customer_segment": "VIP",
+      "join_date": "2023-09-01"
+    },
+    "contact": {
+      "email": "fajar.hidayat.112@example.com",
+      "phone": "081210886928"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS113",
+    "profile": {
+      "customer_name": "Iqbal Hidayat",
+      "city": "Semarang",
+      "customer_segment": "Regular",
+      "join_date": "2025-02-16"
+    },
+    "contact": {
+      "email": "iqbal.hidayat.113@example.com",
+      "phone": "081210894847"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS114",
+    "profile": {
+      "customer_name": "Wahyu Santoso",
+      "city": "Bogor",
+      "customer_segment": "New",
+      "join_date": "2025-07-16"
+    },
+    "contact": {
+      "email": "wahyu.santoso.114@example.com",
+      "phone": "081210902766"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS115",
+    "profile": {
+      "customer_name": "Nadia Saputra",
+      "city": "Jakarta",
+      "customer_segment": "Regular",
+      "join_date": "2025-05-14"
+    },
+    "contact": {
+      "email": "nadia.saputra.115@example.com",
+      "phone": "081210910685"
+    },
+    "customer_status": "Inactive"
+  },
+  {
+    "customer_id": "CUS116",
+    "profile": {
+      "customer_name": "Iqbal Ramadhan",
+      "city": "Jakarta",
+      "customer_segment": "VIP",
+      "join_date": "2025-01-19"
+    },
+    "contact": {
+      "email": "iqbal.ramadhan.116@example.com",
+      "phone": "081210918604"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS117",
+    "profile": {
+      "customer_name": "Laras Kusuma",
+      "city": "Malang",
+      "customer_segment": "Regular",
+      "join_date": "2024-04-20"
+    },
+    "contact": {
+      "email": "laras.kusuma.117@example.com",
+      "phone": "081210926523"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS118",
+    "profile": {
+      "customer_name": "Jihan Ramadhan",
+      "city": "Malang",
+      "customer_segment": null,
+      "join_date": "2025-12-16"
+    },
+    "contact": {
+      "email": "jihan.ramadhan.118@example.com",
+      "phone": "081210934442"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS119",
+    "profile": {
+      "customer_name": "Damar Wijaya",
+      "city": "Yogyakarta",
+      "customer_segment": "Regular",
+      "join_date": "2025-09-07"
+    },
+    "contact": {
+      "email": "damar.wijaya.119@example.com",
+      "phone": "081210942361"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS120",
+    "profile": {
+      "customer_name": "Tio Wijaya",
+      "city": "Malang",
+      "customer_segment": "VIP",
+      "join_date": "2024-01-10"
+    },
+    "contact": {
+      "email": "tio.wijaya.120@example.com",
+      "phone": "081210950280"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS121",
+    "profile": {
+      "customer_name": "Gilang Ananda",
+      "city": "Semarang",
+      "customer_segment": "New",
+      "join_date": "2025-07-06"
+    },
+    "contact": {
+      "email": "gilang.ananda.121@example.com",
+      "phone": "081210958199"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS122",
+    "profile": {
+      "customer_name": "Zaki Kusuma",
+      "city": "Yogyakarta",
+      "customer_segment": "Regular",
+      "join_date": "2024-06-06"
+    },
+    "contact": {
+      "email": "zaki.kusuma.122@example.com",
+      "phone": "081210966118"
+    },
+    "customer_status": "Inactive"
+  },
+  {
+    "customer_id": "CUS123",
+    "profile": {
+      "customer_name": "Hana Kusuma",
+      "city": "Bandung",
+      "customer_segment": "Regular",
+      "join_date": "2024-05-28"
+    },
+    "contact": {
+      "email": "hana.kusuma.123@example.com",
+      "phone": "081210974037"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS124",
+    "profile": {
+      "customer_name": "Wahyu Puspita",
+      "city": "Yogyakarta",
+      "customer_segment": "Regular",
+      "join_date": "2025-03-13"
+    },
+    "contact": {
+      "email": "wahyu.puspita.124@example.com",
+      "phone": "081210981956"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS125",
+    "profile": {
+      "customer_name": "Nadia Mahendra",
+      "city": "Yogyakarta",
+      "customer_segment": "VIP",
+      "join_date": "2024-09-27"
+    },
+    "contact": {
+      "email": "nadia.mahendra.125@example.com",
+      "phone": "081210989875"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS126",
+    "profile": {
+      "customer_name": "Ardi Ananda",
+      "city": "Surabaya",
+      "customer_segment": "Regular",
+      "join_date": "2025-08-15"
+    },
+    "contact": {
+      "email": "ardi.ananda.126@example.com",
+      "phone": "081210997794"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS127",
+    "profile": {
+      "customer_name": "Nina Kusuma",
+      "city": "Bogor",
+      "customer_segment": "Regular",
+      "join_date": "2024-04-10"
+    },
+    "contact": {
+      "email": "nina.kusuma.127@example.com",
+      "phone": "081211005713"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS128",
+    "profile": {
+      "customer_name": "Eka Permana",
+      "city": "Tangerang",
+      "customer_segment": "VIP",
+      "join_date": "2023-03-25"
+    },
+    "contact": {
+      "email": "eka.permana.128@example.com",
+      "phone": "081211013632"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS129",
+    "profile": {
+      "customer_name": "Eka Santoso",
+      "city": "Malang",
+      "customer_segment": "Regular",
+      "join_date": "2025-04-17"
+    },
+    "contact": {
+      "email": "eka.santoso.129@example.com",
+      "phone": "081211021551"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS130",
+    "profile": {
+      "customer_name": "Laras Mahendra",
+      "city": "Yogyakarta",
+      "customer_segment": "VIP",
+      "join_date": "2023-06-23"
+    },
+    "contact": {
+      "email": "laras.mahendra.130@example.com",
+      "phone": "081211029470"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS131",
+    "profile": {
+      "customer_name": "Indra Puspita",
+      "city": "Malang",
+      "customer_segment": "Regular",
+      "join_date": "2024-04-01"
+    },
+    "contact": {
+      "email": "indra.puspita.131@example.com",
+      "phone": "081211037389"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS132",
+    "profile": {
+      "customer_name": "Nadia Mahendra",
+      "city": "Malang",
+      "customer_segment": "regular",
+      "join_date": "2024-05-26"
+    },
+    "contact": {
+      "email": "nadia.mahendra.132@example.com",
+      "phone": "081211045308"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS133",
+    "profile": {
+      "customer_name": "Wahyu Lestari",
+      "city": "Bandung",
+      "customer_segment": "Regular",
+      "join_date": "2024-12-01"
+    },
+    "contact": {
+      "email": "wahyu.lestari.133@example.com",
+      "phone": "081211053227"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS134",
+    "profile": {
+      "customer_name": "Gilang Mahendra",
+      "city": "Depok",
+      "customer_segment": "VIP",
+      "join_date": "2024-07-31"
+    },
+    "contact": {
+      "email": "gilang.mahendra.134@example.com",
+      "phone": "081211061146"
+    },
+    "customer_status": "Inactive"
+  },
+  {
+    "customer_id": "CUS135",
+    "profile": {
+      "customer_name": "Gilang Santoso",
+      "city": "Surabaya",
+      "customer_segment": "New",
+      "join_date": "2025-08-21"
+    },
+    "contact": {
+      "email": "gilang.santoso.135@example.com",
+      "phone": "081211069065"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS136",
+    "profile": {
+      "customer_name": "Yasmin Santoso",
+      "city": "Tangerang",
+      "customer_segment": "VIP",
+      "join_date": "2024-05-26"
+    },
+    "contact": {
+      "email": "yasmin.santoso.136@example.com",
+      "phone": "081211076984"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS137",
+    "profile": {
+      "customer_name": "Kevin Utami",
+      "city": "Surabaya",
+      "customer_segment": "Regular",
+      "join_date": "2024-11-16"
+    },
+    "contact": {
+      "email": "kevin.utami.137@example.com",
+      "phone": "081211084903"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS138",
+    "profile": {
+      "customer_name": "Indra Permana",
+      "city": "Semarang",
+      "customer_segment": "Regular",
+      "join_date": "2024-01-15"
+    },
+    "contact": {
+      "email": "indra.permana.138@example.com",
+      "phone": "081211092822"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS139",
+    "profile": {
+      "customer_name": "Rina Ramadhan",
+      "city": "Bandung",
+      "customer_segment": "Regular",
+      "join_date": "2024-01-02"
+    },
+    "contact": {
+      "email": "rina.ramadhan.139@example.com",
+      "phone": "081211100741"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS140",
+    "profile": {
+      "customer_name": "Farah Ramadhan",
+      "city": "Tangerang",
+      "customer_segment": "New",
+      "join_date": "2025-12-10"
+    },
+    "contact": {
+      "email": "farah.ramadhan.140@example.com",
+      "phone": "081211108660"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS141",
+    "profile": {
+      "customer_name": "Gilang Puspita",
+      "city": "Malang",
+      "customer_segment": "Regular",
+      "join_date": "2025-04-02"
+    },
+    "contact": {
+      "email": "gilang.puspita.141@example.com",
+      "phone": "081211116579"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS142",
+    "profile": {
+      "customer_name": "Ardi Ananda",
+      "city": "Tangerang",
+      "customer_segment": "Regular",
+      "join_date": "2024-01-29"
+    },
+    "contact": {
+      "email": "ardi.ananda.142@example.com",
+      "phone": "081211124498"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS143",
+    "profile": {
+      "customer_name": "Laras Santoso",
+      "city": "Yogyakarta",
+      "customer_segment": "Regular",
+      "join_date": "2024-12-29"
+    },
+    "contact": {
+      "email": "laras.santoso.143@example.com",
+      "phone": "081211132417"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS144",
+    "profile": {
+      "customer_name": "Farah Pratama",
+      "city": "Bogor",
+      "customer_segment": "New",
+      "join_date": "2025-11-19"
+    },
+    "contact": {
+      "email": "farah.pratama.144@example.com",
+      "phone": "081211140336"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS145",
+    "profile": {
+      "customer_name": "Fajar Wijaya",
+      "city": "Bogor",
+      "customer_segment": "VIP",
+      "join_date": "2023-10-04"
+    },
+    "contact": {
+      "email": "fajar.wijaya.145@example.com",
+      "phone": "081211148255"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS146",
+    "profile": {
+      "customer_name": "Ardi Sari",
+      "city": "Bandung",
+      "customer_segment": "Regular",
+      "join_date": "2024-04-14"
+    },
+    "contact": {
+      "email": "ardi.sari.146@example.com",
+      "phone": "081211156174"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS147",
+    "profile": {
+      "customer_name": "Vina Santoso",
+      "city": "Jakarta",
+      "customer_segment": "New",
+      "join_date": "2025-10-08"
+    },
+    "contact": {
+      "email": "vina.santoso.147@example.com",
+      "phone": "081211164093"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS148",
+    "profile": {
+      "customer_name": "Tio Nugraha",
+      "city": "Surabaya",
+      "customer_segment": "New",
+      "join_date": "2025-12-30"
+    },
+    "contact": {
+      "email": "tio.nugraha.148@example.com",
+      "phone": "081211172012"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS149",
+    "profile": {
+      "customer_name": "Farah Santoso",
+      "city": "Bogor",
+      "customer_segment": "New",
+      "join_date": "2025-08-10"
+    },
+    "contact": {
+      "email": "farah.santoso.149@example.com",
+      "phone": "081211179931"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS150",
+    "profile": {
+      "customer_name": "Indra Kusuma",
+      "city": "Semarang",
+      "customer_segment": "VIP",
+      "join_date": "2024-10-13"
+    },
+    "contact": {
+      "email": "indra.kusuma.150@example.com",
+      "phone": "081211187850"
+    },
+    "customer_status": "Inactive"
+  },
+  {
+    "customer_id": "CUS151",
+    "profile": {
+      "customer_name": "Yasmin Wijaya",
+      "city": "Semarang",
+      "customer_segment": "VIP",
+      "join_date": "2025-03-06"
+    },
+    "contact": {
+      "email": "yasmin.wijaya.151@example.com",
+      "phone": "081211195769"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS152",
+    "profile": {
+      "customer_name": "Bima Sari",
+      "city": "Tangerang",
+      "customer_segment": "New",
+      "join_date": "2025-09-04"
+    },
+    "contact": {
+      "email": "bima.sari.152@example.com",
+      "phone": "081211203688"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS153",
+    "profile": {
+      "customer_name": "Tio Pratama",
+      "city": "Bandung",
+      "customer_segment": "VIP",
+      "join_date": "2024-07-02"
+    },
+    "contact": {
+      "email": "tio.pratama.153@example.com",
+      "phone": "081211211607"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS154",
+    "profile": {
+      "customer_name": "Gilang Sari",
+      "city": "Depok",
+      "customer_segment": "Regular",
+      "join_date": "2025-02-10"
+    },
+    "contact": {
+      "email": "gilang.sari.154@example.com",
+      "phone": "081211219526"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS155",
+    "profile": {
+      "customer_name": "Damar Maulana",
+      "city": "Bekasi",
+      "customer_segment": "Regular",
+      "join_date": "2025-05-07"
+    },
+    "contact": {
+      "email": "damar.maulana.155@example.com",
+      "phone": "081211227445"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS156",
+    "profile": {
+      "customer_name": "Iqbal Sari",
+      "city": "Depok",
+      "customer_segment": "New",
+      "join_date": "2025-11-30"
+    },
+    "contact": {
+      "email": "iqbal.sari.156@example.com",
+      "phone": "081211235364"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS157",
+    "profile": {
+      "customer_name": "Tio Mahendra",
+      "city": "Malang",
+      "customer_segment": "Regular",
+      "join_date": "2024-06-14"
+    },
+    "contact": {
+      "email": "tio.mahendra.157@example.com",
+      "phone": "081211243283"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS158",
+    "profile": {
+      "customer_name": "Salsa Puspita",
+      "city": "Yogyakarta",
+      "customer_segment": "New",
+      "join_date": "2025-09-13"
+    },
+    "contact": {
+      "email": "salsa.puspita.158@example.com",
+      "phone": "081211251202"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS159",
+    "profile": {
+      "customer_name": "Dewi Saputra",
+      "city": "Semarang",
+      "customer_segment": "New",
+      "join_date": "2025-07-10"
+    },
+    "contact": {
+      "email": "dewi.saputra.159@example.com",
+      "phone": "081211259121"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS160",
+    "profile": {
+      "customer_name": "Rafi Saputra",
+      "city": "Bekasi",
+      "customer_segment": "New",
+      "join_date": "2025-11-04"
+    },
+    "contact": {
+      "email": "rafi.saputra.160@example.com",
+      "phone": "081211267040"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS161",
+    "profile": {
+      "customer_name": "Citra Puspita",
+      "city": "Tangerang",
+      "customer_segment": "Regular",
+      "join_date": "2024-11-25"
+    },
+    "contact": {
+      "email": "citra.puspita.161@example.com",
+      "phone": "081211274959"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS162",
+    "profile": {
+      "customer_name": "Nadia Pratama",
+      "city": "Surabaya",
+      "customer_segment": "New",
+      "join_date": "2025-10-20"
+    },
+    "contact": {
+      "email": "nadia.pratama.162@example.com",
+      "phone": "081211282878"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS163",
+    "profile": {
+      "customer_name": "Gilang Saputra",
+      "city": "Tangerang",
+      "customer_segment": "New",
+      "join_date": "2025-07-24"
+    },
+    "contact": {
+      "email": "gilang.saputra.163@example.com",
+      "phone": "081211290797"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS164",
+    "profile": {
+      "customer_name": "Zaki Utami",
+      "city": "Bogor",
+      "customer_segment": "New",
+      "join_date": "2025-07-06"
+    },
+    "contact": {
+      "email": "zaki.utami.164@example.com",
+      "phone": "081211298716"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS165",
+    "profile": {
+      "customer_name": "Damar Kusuma",
+      "city": "Surabaya",
+      "customer_segment": "REG",
+      "join_date": "2024-10-06"
+    },
+    "contact": {
+      "email": "damar.kusuma.165@example.com",
+      "phone": "081211306635"
+    },
+    "customer_status": "Inactive"
+  },
+  {
+    "customer_id": "CUS166",
+    "profile": {
+      "customer_name": "Zaki Maulana",
+      "city": "Semarang",
+      "customer_segment": "Regular",
+      "join_date": "2025-05-10"
+    },
+    "contact": {
+      "email": "zaki.maulana.166@example.com",
+      "phone": "081211314554"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS167",
+    "profile": {
+      "customer_name": "Putri Santoso",
+      "city": "Surabaya",
+      "customer_segment": "VIP",
+      "join_date": "2025-02-17"
+    },
+    "contact": {
+      "email": "putri.santoso.167@example.com",
+      "phone": "081211322473"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS168",
+    "profile": {
+      "customer_name": "Nadia Lestari",
+      "city": "Bogor",
+      "customer_segment": "vip",
+      "join_date": "2023-05-29"
+    },
+    "contact": {
+      "email": "nadia.lestari.168@example.com",
+      "phone": "081211330392"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS169",
+    "profile": {
+      "customer_name": "Yasmin Sari",
+      "city": "Bekasi",
+      "customer_segment": "Regular",
+      "join_date": "2024-03-29"
+    },
+    "contact": {
+      "email": "yasmin.sari.169@example.com",
+      "phone": "081211338311"
+    },
+    "customer_status": "Inactive"
+  },
+  {
+    "customer_id": "CUS170",
+    "profile": {
+      "customer_name": "Vina Utami",
+      "city": "Bogor",
+      "customer_segment": "New",
+      "join_date": "2025-08-05"
+    },
+    "contact": {
+      "email": "vina.utami.170@example.com",
+      "phone": "081211346230"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS171",
+    "profile": {
+      "customer_name": "Laras Lestari",
+      "city": "Yogyakarta",
+      "customer_segment": "VIP",
+      "join_date": "2024-12-02"
+    },
+    "contact": {
+      "email": "laras.lestari.171@example.com",
+      "phone": "081211354149"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS172",
+    "profile": {
+      "customer_name": "Bima Santoso",
+      "city": "Semarang",
+      "customer_segment": "Regular",
+      "join_date": "2025-05-19"
+    },
+    "contact": {
+      "email": "bima.santoso.172@example.com",
+      "phone": "081211362068"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS173",
+    "profile": {
+      "customer_name": "Iqbal Saputra",
+      "city": "Depok",
+      "customer_segment": "VIP",
+      "join_date": "2024-10-22"
+    },
+    "contact": {
+      "email": "iqbal.saputra.173@example.com",
+      "phone": "081211369987"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS174",
+    "profile": {
+      "customer_name": "Nina Lestari",
+      "city": "Bandung",
+      "customer_segment": null,
+      "join_date": "2025-05-13"
+    },
+    "contact": {
+      "email": "nina.lestari.174@example.com",
+      "phone": "081211377906"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS175",
+    "profile": {
+      "customer_name": "Kevin Mahendra",
+      "city": "Semarang",
+      "customer_segment": "Regular",
+      "join_date": "2025-06-14"
+    },
+    "contact": {
+      "email": "kevin.mahendra.175@example.com",
+      "phone": "081211385825"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS176",
+    "profile": {
+      "customer_name": "Nadia Mahendra",
+      "city": "Yogyakarta",
+      "customer_segment": "Regular",
+      "join_date": "2025-04-13"
+    },
+    "contact": {
+      "email": "nadia.mahendra.176@example.com",
+      "phone": "081211393744"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS177",
+    "profile": {
+      "customer_name": "Eka Utami",
+      "city": "Surabaya",
+      "customer_segment": "Regular",
+      "join_date": "2024-12-05"
+    },
+    "contact": {
+      "email": "eka.utami.177@example.com",
+      "phone": "081211401663"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS178",
+    "profile": {
+      "customer_name": "Wahyu Puspita",
+      "city": "Yogyakarta",
+      "customer_segment": "New",
+      "join_date": "2025-08-24"
+    },
+    "contact": {
+      "email": "wahyu.puspita.178@example.com",
+      "phone": "081211409582"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS179",
+    "profile": {
+      "customer_name": "Citra Utami",
+      "city": "Jakarta",
+      "customer_segment": "Regular",
+      "join_date": "2025-08-24"
+    },
+    "contact": {
+      "email": "citra.utami.179@example.com",
+      "phone": "081211417501"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS180",
+    "profile": {
+      "customer_name": "Ardi Ramadhan",
+      "city": "Tangerang",
+      "customer_segment": "VIP",
+      "join_date": "2023-03-25"
+    },
+    "contact": {
+      "email": "ardi.ramadhan.180@example.com",
+      "phone": "081211425420"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS181",
+    "profile": {
+      "customer_name": "Vina Mahendra",
+      "city": "Tangerang",
+      "customer_segment": "Regular",
+      "join_date": "2025-09-09"
+    },
+    "contact": {
+      "email": "vina.mahendra.181@example.com",
+      "phone": "081211433339"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS182",
+    "profile": {
+      "customer_name": "Zaki Santoso",
+      "city": "Tangerang",
+      "customer_segment": "New",
+      "join_date": "2025-12-16"
+    },
+    "contact": {
+      "email": "zaki.santoso.182@example.com",
+      "phone": "081211441258"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS183",
+    "profile": {
+      "customer_name": "Kevin Nugraha",
+      "city": "Depok",
+      "customer_segment": "New",
+      "join_date": "2025-12-17"
+    },
+    "contact": {
+      "email": "kevin.nugraha.183@example.com",
+      "phone": "081211449177"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS184",
+    "profile": {
+      "customer_name": "Fajar Lestari",
+      "city": "Semarang",
+      "customer_segment": "VIP",
+      "join_date": "2023-07-23"
+    },
+    "contact": {
+      "email": "fajar.lestari.184@example.com",
+      "phone": "081211457096"
+    },
+    "customer_status": "Inactive"
+  },
+  {
+    "customer_id": "CUS185",
+    "profile": {
+      "customer_name": "Farah Saputra",
+      "city": "Bekasi",
+      "customer_segment": "Regular",
+      "join_date": "2024-02-21"
+    },
+    "contact": {
+      "email": "farah.saputra.185@example.com",
+      "phone": "081211465015"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS186",
+    "profile": {
+      "customer_name": "Yasmin Lestari",
+      "city": "Jakarta",
+      "customer_segment": "New",
+      "join_date": "2025-11-07"
+    },
+    "contact": {
+      "email": "yasmin.lestari.186@example.com",
+      "phone": "081211472934"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS187",
+    "profile": {
+      "customer_name": "Putri Puspita",
+      "city": "Bogor",
+      "customer_segment": "New",
+      "join_date": "2025-11-21"
+    },
+    "contact": {
+      "email": "putri.puspita.187@example.com",
+      "phone": "081211480853"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS188",
+    "profile": {
+      "customer_name": "Hana Maulana",
+      "city": "Yogyakarta",
+      "customer_segment": "New",
+      "join_date": "2025-09-07"
+    },
+    "contact": {
+      "email": "hana.maulana.188@example.com",
+      "phone": "081211488772"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS189",
+    "profile": {
+      "customer_name": "Omar Ananda",
+      "city": "Depok",
+      "customer_segment": "New",
+      "join_date": "2025-09-04"
+    },
+    "contact": {
+      "email": "omar.ananda.189@example.com",
+      "phone": "081211496691"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS190",
+    "profile": {
+      "customer_name": "Citra Ananda",
+      "city": "Bogor",
+      "customer_segment": "Regular",
+      "join_date": "2024-02-03"
+    },
+    "contact": {
+      "email": "citra.ananda.190@example.com",
+      "phone": "081211504610"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS191",
+    "profile": {
+      "customer_name": "Iqbal Ananda",
+      "city": "Malang",
+      "customer_segment": "VIP",
+      "join_date": "2024-01-22"
+    },
+    "contact": {
+      "email": "iqbal.ananda.191@example.com",
+      "phone": "081211512529"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS192",
+    "profile": {
+      "customer_name": "Bima Pratama",
+      "city": "Malang",
+      "customer_segment": "New",
+      "join_date": "2025-09-02"
+    },
+    "contact": {
+      "email": "bima.pratama.192@example.com",
+      "phone": "081211520448"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS193",
+    "profile": {
+      "customer_name": "Dewi Nugraha",
+      "city": "Depok",
+      "customer_segment": "VIP",
+      "join_date": "2025-03-13"
+    },
+    "contact": {
+      "email": "dewi.nugraha.193@example.com",
+      "phone": "081211528367"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS194",
+    "profile": {
+      "customer_name": "Kevin Puspita",
+      "city": "Bandung",
+      "customer_segment": "Regular",
+      "join_date": "2025-03-02"
+    },
+    "contact": {
+      "email": "kevin.puspita.194@example.com",
+      "phone": "081211536286"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS195",
+    "profile": {
+      "customer_name": "Eka Saputra",
+      "city": "Bekasi",
+      "customer_segment": "Regular",
+      "join_date": "2025-05-01"
+    },
+    "contact": {
+      "email": "eka.saputra.195@example.com",
+      "phone": "081211544205"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS196",
+    "profile": {
+      "customer_name": "Rina Ananda",
+      "city": "Jakarta",
+      "customer_segment": "Regular",
+      "join_date": "2024-08-10"
+    },
+    "contact": {
+      "email": "rina.ananda.196@example.com",
+      "phone": "081211552124"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS197",
+    "profile": {
+      "customer_name": "Laras Utami",
+      "city": "Bogor",
+      "customer_segment": "Regular",
+      "join_date": "2025-01-19"
+    },
+    "contact": {
+      "email": "laras.utami.197@example.com",
+      "phone": "081211560043"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS198",
+    "profile": {
+      "customer_name": "Bima Puspita",
+      "city": "Tangerang",
+      "customer_segment": "Regular",
+      "join_date": "2025-01-29"
+    },
+    "contact": {
+      "email": "bima.puspita.198@example.com",
+      "phone": "081211567962"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS199",
+    "profile": {
+      "customer_name": "Jihan Maulana",
+      "city": "Bekasi",
+      "customer_segment": "Regular",
+      "join_date": "2024-10-11"
+    },
+    "contact": {
+      "email": "jihan.maulana.199@example.com",
+      "phone": "081211575881"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS200",
+    "profile": {
+      "customer_name": "Nadia Wijaya",
+      "city": "Tangerang",
+      "customer_segment": "Regular",
+      "join_date": "2024-05-04"
+    },
+    "contact": {
+      "email": "nadia.wijaya.200@example.com",
+      "phone": "081211583800"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS201",
+    "profile": {
+      "customer_name": "Rina Pratama",
+      "city": "Jakarta",
+      "customer_segment": "VIP",
+      "join_date": "2023-05-18"
+    },
+    "contact": {
+      "email": "rina.pratama.201@example.com",
+      "phone": "081211591719"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS202",
+    "profile": {
+      "customer_name": "Alya Nugraha",
+      "city": "Jakarta",
+      "customer_segment": "Regular",
+      "join_date": "2025-05-13"
+    },
+    "contact": {
+      "email": "alya.nugraha.202@example.com",
+      "phone": "081211599638"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS203",
+    "profile": {
+      "customer_name": "Eka Kusuma",
+      "city": "Depok",
+      "customer_segment": "Regular",
+      "join_date": "2025-03-27"
+    },
+    "contact": {
+      "email": "eka.kusuma.203@example.com",
+      "phone": "081211607557"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS204",
+    "profile": {
+      "customer_name": "Fajar Sari",
+      "city": "Bekasi",
+      "customer_segment": "Regular",
+      "join_date": "2024-03-22"
+    },
+    "contact": {
+      "email": "fajar.sari.204@example.com",
+      "phone": "081211615476"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS205",
+    "profile": {
+      "customer_name": "Jihan Wijaya",
+      "city": "Yogyakarta",
+      "customer_segment": "New",
+      "join_date": "2025-07-05"
+    },
+    "contact": {
+      "email": "jihan.wijaya.205@example.com",
+      "phone": "081211623395"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS206",
+    "profile": {
+      "customer_name": "Rina Lestari",
+      "city": "Depok",
+      "customer_segment": "Regular",
+      "join_date": "2025-05-19"
+    },
+    "contact": {
+      "email": "rina.lestari.206@example.com",
+      "phone": "081211631314"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS207",
+    "profile": {
+      "customer_name": "Eka Sari",
+      "city": "Tangerang",
+      "customer_segment": "New",
+      "join_date": "2025-10-04"
+    },
+    "contact": {
+      "email": "eka.sari.207@example.com",
+      "phone": "081211639233"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS208",
+    "profile": {
+      "customer_name": "Sinta Saputra",
+      "city": "Yogyakarta",
+      "customer_segment": "Regular",
+      "join_date": "2024-03-15"
+    },
+    "contact": {
+      "email": "sinta.saputra.208@example.com",
+      "phone": "081211647152"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS209",
+    "profile": {
+      "customer_name": "Salsa Wijaya",
+      "city": "Surabaya",
+      "customer_segment": "Regular",
+      "join_date": "2024-11-30"
+    },
+    "contact": {
+      "email": "salsa.wijaya.209@example.com",
+      "phone": "081211655071"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS210",
+    "profile": {
+      "customer_name": "Tio Wijaya",
+      "city": "Bandung",
+      "customer_segment": "New",
+      "join_date": "2025-10-30"
+    },
+    "contact": {
+      "email": "tio.wijaya.210@example.com",
+      "phone": "081211662990"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS211",
+    "profile": {
+      "customer_name": "Damar Wijaya",
+      "city": "Yogyakarta",
+      "customer_segment": "Regular",
+      "join_date": "2025-02-02"
+    },
+    "contact": {
+      "email": "damar.wijaya.211@example.com",
+      "phone": "081211670909"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS212",
+    "profile": {
+      "customer_name": "Damar Ramadhan",
+      "city": "Surabaya",
+      "customer_segment": "New",
+      "join_date": "2025-08-20"
+    },
+    "contact": {
+      "email": "damar.ramadhan.212@example.com",
+      "phone": "081211678828"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS213",
+    "profile": {
+      "customer_name": "Nadia Hidayat",
+      "city": "Depok",
+      "customer_segment": "Regular",
+      "join_date": "2024-12-05"
+    },
+    "contact": {
+      "email": "nadia.hidayat.213@example.com",
+      "phone": "081211686747"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS214",
+    "profile": {
+      "customer_name": "Sinta Lestari",
+      "city": "Malang",
+      "customer_segment": "Regular",
+      "join_date": "2024-01-21"
+    },
+    "contact": {
+      "email": "sinta.lestari.214@example.com",
+      "phone": "081211694666"
+    },
+    "customer_status": "Active"
+  },
+  {
+    "customer_id": "CUS215",
+    "profile": {
+      "customer_name": "Putri Santoso",
+      "city": "Depok",
+      "customer_segment": "VIP",
+      "join_date": "2023-03-30"
+    },
+    "contact": {
+      "email": "putri.santoso.215@example.com",
+      "phone": "081211702585"
+    },
+    "customer_status": "Active"
+  }
+]

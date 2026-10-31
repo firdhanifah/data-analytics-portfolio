@@ -1,2 +1,2 @@
 # data-analytics-portfolio
-Kumpulan proyek dan latihan analisis data selama bootcamp, mencakup pengolahan data, pembersihan data, validasi, analisis eksploratif, membuat dashboard interaktif dan penyusunan insight menggunakan berbagai tools analisis data.
+Kumpulan proyek dan tugas bootcamp analisis data, meliputi data profiling, data cleaning, validasi data, analisis eksploratif, dashboard interaktif dan penyusunan insight bisnis. Proyek mencakup latihan bersama dan tugas mandiri dengan bantuan Antigravity dan AI agent dalam proses pengerjaan.

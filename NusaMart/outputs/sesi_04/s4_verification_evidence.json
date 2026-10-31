@@ -1,0 +1,69 @@
+{
+  "session": "S4",
+  "case": "NusaMart Safe Data",
+  "source": {
+    "path": "data\\processed\\nusamart\\customers_clean.csv",
+    "rows": 215,
+    "columns": 8,
+    "file_sha256": "9a45c83ae7d3e720544ee5abd754f328c344ec200027f0baa4bfee8c9afdc720",
+    "file_size_bytes": 20682
+  },
+  "handling_plan": {
+    "customer_id": {
+      "handling": "RESTRICT",
+      "technique": "KEEP",
+      "remove_raw": "NO"
+    },
+    "customer_name": {
+      "handling": "DO_NOT_SHARE",
+      "technique": "DROP",
+      "remove_raw": "YES"
+    },
+    "city": {
+      "handling": "PROTECT",
+      "technique": "GENERALIZE_RARE",
+      "remove_raw": "NO"
+    },
+    "customer_segment": {
+      "handling": "PROTECT",
+      "technique": "GENERALIZE_RARE",
+      "remove_raw": "NO"
+    },
+    "join_date": {
+      "handling": "PROTECT",
+      "technique": "DATE_TO_QUARTER",
+      "remove_raw": "YES"
+    },
+    "email": {
+      "handling": "PROTECT",
+      "technique": "MASK_EMAIL",
+      "remove_raw": "YES"
+    },
+    "phone": {
+      "handling": "PROTECT",
+      "technique": "MASK_PHONE",
+      "remove_raw": "YES"
+    },
+    "customer_status": {
+      "handling": "ALLOW",
+      "technique": "KEEP",
+      "remove_raw": "NO"
+    }
+  },
+  "agent_permissions_simulated": {
+    "read_scope": "S4_FILES_ONLY",
+    "write_scope": "OUTPUT_S4_ONLY",
+    "terminal": "LOCAL_ONLY",
+    "network": "DENY"
+  },
+  "protected_output": "outputs\\sesi_04\\customers_protected_preview.csv",
+  "validation": {
+    "review_gate": true,
+    "source_integrity": true,
+    "leak_check": true,
+    "key_record_integrity": true,
+    "analytical_utility": true
+  },
+  "caution": "Masking and hashing are not equivalent to anonymization. Access permissions are documented, not enforced by this Notebook.",
+  "note": "Supporting evidence only. Official outputs: Audit PII, Ethics Checklist, Tested Masking Script."
+}

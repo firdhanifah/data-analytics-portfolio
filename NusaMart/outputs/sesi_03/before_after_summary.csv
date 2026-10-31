@@ -1,0 +1,5 @@
+﻿dataset,stage_before,record_count_before,column_count_before,missing_cells_before,exact_duplicate_extras_before,stage_after,record_count_after,column_count_after,missing_cells_after,exact_duplicate_extras_after,record_delta
+orders,BEFORE,320,8,0,0,AFTER,320,8,0,0,0
+order_items,BEFORE,763,8,0,3,AFTER,760,8,0,0,-3
+customers,BEFORE,215,8,4,0,AFTER,215,8,4,0,0
+payments,BEFORE,337,6,0,2,AFTER,337,6,0,2,0

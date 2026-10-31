@@ -1,0 +1,5 @@
+﻿rule_id,stage_before,dataset,field_or_area,records_before,metric_name,metric_value_before,stage_after,records_after,metric_value_after,decision,action
+CR-01,BEFORE,customers,customer_segment,215,missing_or_blank_customer_segment,4.0,AFTER,215,4.0,NEED_MORE_EVIDENCE,KEEP_MISSING
+CR-02,BEFORE,order_items,full row,763,exact_duplicate_extras,3.0,AFTER,760,0.0,CLEAN,DROP_EXACT_DUPLICATES
+CR-03,BEFORE,orders,order_date,320,non_standard_date_representations,4.0,AFTER,320,0.0,CLEAN,STANDARDIZE_PARSEABLE_KEEP_UNRESOLVED
+CR-04,BEFORE,order_items,quantity,763,max_quantity,30.0,AFTER,760,30.0,KEEP,KEEP_VALUES

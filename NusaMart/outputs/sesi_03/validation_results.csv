@@ -1,0 +1,5 @@
+﻿test_id,rule_id,validation_check,expected_result,actual_result,status
+VT-01,CR-01,Customer count dan missing customer_segment sesuai approved action.,records=215; missing_customer_segment=4,records=215; missing_customer_segment=4,PASS
+VT-02,CR-02,Full-row exact duplicates dan row count harus reconcile.,records=760; exact_duplicate_extras=0,records=760; exact_duplicate_extras=0,PASS
+VT-03,CR-04,Quantity harus mengikuti approved treatment.,min_quantity=1.0; max_quantity=30.0,min_quantity=1.0; max_quantity=30.0,PASS
+VT-04,CR-03,Representasi order_date mengikuti approved action; nilai unresolved tidak ditebak.,records=320; non_standard_date_representations=0; unresolved_dates=0; parseable_dates_standardized=True,records=320; non_standard_date_representations=0; unresolved_dates=0,PASS

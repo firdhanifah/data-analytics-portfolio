@@ -1,0 +1,8 @@
+Check,Expected,Actual,Difference,Status
+VE-07 | Final rows = baseline Orders,320.0,320.0,0.0,PASS
+Unique final order_id,320.0,320.0,0.0,PASS
+VE-08 | Duplicate final order_id,0.0,0.0,0.0,PASS
+VE-09 | SUM(order_total),42061000.0,42061000.0,0.0,PASS
+VE-10 | SUM(amount_paid_total),42061000.0,42061000.0,0.0,PASS
+VE-11 | SUM(item_amount_total),42061000.0,42061000.0,0.0,PASS
+Number of final columns,19.0,19.0,0.0,PASS

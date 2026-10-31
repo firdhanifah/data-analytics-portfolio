@@ -1,0 +1,4 @@
+S5 NusaMart | STATUS RUN TERAKHIR
+Waktu UTC: 2026-10-13T13:14:22.709143+00:00
+Status: PASS — core metrics, relationship, dan SQL independen cocok; export terbaru tersedia
+File PASS lama dipindahkan ke outputs/sesi_05/archive/ setiap Section 9 dijalankan ulang.

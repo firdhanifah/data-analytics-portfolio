@@ -1,0 +1,6 @@
+Area,Expected dari source,Actual di final,Nilai tidak cocok,Status,Penjelasan,Baris WP 03
+Customers Safe,0,0,0,PASS,Cek customer_status dari master,26
+Order Items Aggregate,0,0,0,PASS,Cek item_count & kategori Products per order,27
+Payments Aggregate,0,0,0,PASS,Cek amount_paid_total per order,28
+Channel/Campaign,20,20,0,EXPLAINED,20 tanpa mapping sah; 300 mapping tidak boleh hilang,29
+Source Integrity,6 source terjaga,6 source terjaga,0,PASS,6/6 source sesuai & key terhubung,30

@@ -1,0 +1,7 @@
+﻿check_id,check,status,detail
+ENV-01,Workspace structure,PASS,8/8 required paths found
+ENV-02,Python runtime,PASS,3.9.13
+ENV-03,pandas smoke test,PASS,pandas 2.2.3
+ENV-04,DuckDB smoke test,NOT READY,ModuleNotFoundError: No module named 'duckdb'
+ENV-05,Workspace file I/O,PASS,temporary write/read/delete in outputs/sesi_01
+ENV-06,Workspace rules manifest,NEEDS REVIEW,C:\Bootcamp\P1\Bootcamp_Data_Analyst_Workspace_Starter\Bootcamp_Data_Analyst\docs\sesi_01\workspace_manifest.json

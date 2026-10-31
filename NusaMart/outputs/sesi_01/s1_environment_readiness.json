@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-10-01T15:01:04",
+  "workspace_root": "C:\\Bootcamp\\P1\\Bootcamp_Data_Analyst_Workspace_Starter\\Bootcamp_Data_Analyst",
+  "python_version": "3.9.13",
+  "pandas_version": "2.2.3",
+  "duckdb_available": false,
+  "duckdb_version": null,
+  "checks": [
+    {
+      "check_id": "ENV-01",
+      "check": "Workspace structure",
+      "status": "PASS",
+      "detail": "8/8 required paths found"
+    },
+    {
+      "check_id": "ENV-02",
+      "check": "Python runtime",
+      "status": "PASS",
+      "detail": "3.9.13"
+    },
+    {
+      "check_id": "ENV-03",
+      "check": "pandas smoke test",
+      "status": "PASS",
+      "detail": "pandas 2.2.3"
+    },
+    {
+      "check_id": "ENV-04",
+      "check": "DuckDB smoke test",
+      "status": "NOT READY",
+      "detail": "ModuleNotFoundError: No module named 'duckdb'"
+    },
+    {
+      "check_id": "ENV-05",
+      "check": "Workspace file I/O",
+      "status": "PASS",
+      "detail": "temporary write/read/delete in outputs/sesi_01"
+    },
+    {
+      "check_id": "ENV-06",
+      "check": "Workspace rules manifest",
+      "status": "NEEDS REVIEW",
+      "detail": "C:\\Bootcamp\\P1\\Bootcamp_Data_Analyst_Workspace_Starter\\Bootcamp_Data_Analyst\\docs\\sesi_01\\workspace_manifest.json"
+    }
+  ]
+}

@@ -1,7 +1,3 @@
-
-# Capstone Project - Bootcamp
-
-
 # SwiftBite Food Delivery Analysis
 
 Analisis performa bisnis platform food delivery untuk mengevaluasi

@@ -1,7 +1,6 @@
 # SwiftBite Food Delivery Analysis
 
-Analisis performa bisnis platform food delivery untuk mengevaluasi
-pesanan, pendapatan, pembayaran, pengantaran, dan kepuasan pelanggan.
+Analisis data pada platform pemesanan dan pengantaran makanan SwiftBite untuk mengevaluasi performa transaksi, restoran, pelanggan, pembayaran, pengiriman, dan kepuasan pelanggan melalui proses data preparation, exploratory data analysis (EDA), serta dashboard interaktif.
 
 ---
 
@@ -113,8 +112,38 @@ Secara keseluruhan, proyek ini diharapkan dapat mengubah data operasional SwiftB
 ---
 
 ## Data Sources
+Proyek ini menggunakan beberapa dataset yang merepresentasikan aspek berbeda dari proses bisnis SwiftBite. Dataset tersedia dalam format file yang beragam sehingga setiap file perlu dibaca menggunakan metode yang sesuai.
+| No. | Dataset | Format | Deskripsi |
+|---|---|---|---|
+| 1 | Orders | CSV | Data transaksi pesanan |
+| 2 | Order items | CSV | Detail item dalam pesanan |
+| 3 | Customers | JSON | Data pelanggan |
+| 4 | Payments | TXT | Data pembayaran |
+| 5 | Restaurants | XLSX | Data restoran |
+| 6 | Delivery | CSV | Data Pengiriman |
+| 7 | Reviews | CSV | Data Ulasan Pelangan |
 
 ## Data Cleaning & Preparation
+Proses pembersihan dan persiapan data dilakukan untuk memastikan kualitas, konsistensi, dan kesiapan data sebelum dianalisis.
+
+Tahapan yang dilakukan meliputi:
+- Mengidentifikasi nilai yang hilang berdasarkan konteks masing-masing kolom.
+- Memeriksa dan menangani data duplikat.
+- Menyeragamkan format dan tipe data.
+- Memvalidasi hubungan antar tabel menggunakan primary key dan foreign key.
+- Memeriksa kesesuaian data berdasarkan aturan bisnis.
+- Melakukan agregasi data item pesanan ke tingkat transaksi.
+
+Dataset akhir disusun pada tingkat pesanan (*order-level*), dengan satu baris merepresentasikan satu pesanan. Data item pesanan diagregasi untuk menghasilkan metrik seperti jumlah jenis item, total kuantitas, dan subtotal item.
+
+
+| order_id | customer_id | restaurant_id | order_timestamp | order_status | promo_code | subtotal_amount | total_amount | rating | item_count | total_quantity | items_subtotal | has_review | rating_label | review_text_status |
+|---|---|---|---|---|---|---:|---:|---:|---:|---:|---:|---|---|---|
+| O00001 | C0080 | R0018 | 2026-01-19 03:32:00 | completed | NaN | 54.000 | 62.000 | 2.0 | 2 | 3 | 54.000 | True | 2 - Dissatisfied | Text Available |
+| O00002 | C0087 | R0023 | 2026-01-10 18:34:00 | completed | NEWUSER | 130.000 | 133.000 | 2.0 | 2 | 5 | 130.000 | True | 2 - Dissatisfied | Text Available |
+| O00003 | C0094 | R0003 | 2026-01-12 07:39:00 | completed | HEMAT15 | 238.000 | 233.000 | 1.0 | 4 | 11 | 238.000 | True | 1 - Very Dissatisfied | No Text |
+| O00004 | C0101 | R0008 | 2026-02-03 17:42:00 | completed | NaN | 78.000 | 76.000 | NaN | 2 | 5 | 78.000 | False | No Rating | No Review |
+| O00005 | C0108 | R0013 | 2026-01-17 09:22:00 | completed | NaN | 123.000 | 120.000 | NaN | 3 | 4 | 123.000 | False | No Rating | No Review |
 
 ## Methodology
 

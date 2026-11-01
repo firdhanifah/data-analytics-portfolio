@@ -147,18 +147,50 @@ Dataset akhir disusun pada tingkat pesanan (*order-level*), dengan satu baris me
 
 ## Methodology
 
+
 ## Exploratory Data Analysis & Insights
 
 ### A. Business Performance Overview
+Menganalisis performa bisnis secara keseluruhan melalui:
+- Total pesanan.
+- Total pendapatan.
+- Rata-rata nilai pesanan (*Average Order Value/AOV*).
+- Median nilai pesanan.
+- Tren jumlah pesanan dan pendapatan harian.
 
 ### B. Sales & Restaurant Analysis
-
+Mengevaluasi performa penjualan berdasarkan restoran dan jenis kuliner melalui:
+- Jumlah pesanan pada setiap restoran.
+- Total pendapatan setiap restoran.
+- Rata-rata nilai pesanan.
+- Kontribusi pendapatan berdasarkan jenis kuliner.
+  
 ### C. Customer Analysis
+Menganalisis karakteristik dan perilaku transaksi pelanggan melalui:
+- Distribusi pesanan berdasarkan segmen pelanggan.
+- Kontribusi pendapatan setiap segmen pelanggan.
+- Distribusi pelanggan berdasarkan zona.
+- Perbandingan rata-rata nilai pesanan antarsegmen pelanggan.
 
 ### D. Delivery Performance
+Mengevaluasi proses pengiriman pesanan melalui:
+- Distribusi status pengiriman.
+- Jarak pengiriman.
+- Estimasi waktu pengiriman.
+- Durasi aktual pengiriman.
+- Keterlambatan pengiriman dan ketepatan waktu.
+  
+Durasi aktual pengiriman dihitung berdasarkan selisih waktu pesanan diambil oleh kurir (*picked up*) hingga pesanan diterima (*delivered*). Keterlambatan ditentukan dengan membandingkan durasi aktual dan estimasi waktu pengiriman. Pesanan yang tidak memiliki informasi waktu yang cukup tidak diklasifikasikan sebagai tepat waktu maupun terlambat.
 
 ### E. Payment & Customer Satisfaction
-
+Menganalisis pola pembayaran dan umpan balik pelanggan melalui:
+- Distribusi metode pembayaran.
+- Distribusi status pembayaran.
+- Kesesuaian nominal pembayaran dengan total pesanan.
+- Analisis jumlah percobaan pembayaran.
+- Distribusi penilaian pelanggan.
+- Rata-rata penilaian berdasarkan zona restoran.
+- Ketersediaan ulasan dan kelengkapan teks ulasan.
 ---
 
 ## Dashboard Development

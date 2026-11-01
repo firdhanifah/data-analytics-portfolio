@@ -1,7 +1,6 @@
 # SwiftBite Business Analytics Project
-## **Improving Operational Performance and Customer Experience**
-
-<small><span style="color: #8c959f;">Tools: Python (Pandas, Matplotlib/Seaborn) + Power BI</span></small>
+### Improving Operational Performance and Customer Experience
+<font size="2" color="#656d76">Tools: Python (Pandas, Matplotlib/Seaborn) + Power BI</font>
 
 Analisis data pada platform pemesanan dan pengantaran makanan SwiftBite untuk mengevaluasi kinerja bisnis secara menyeluruh, dengan fokus pada pertumbuhan transaksi, kualitas operasional, dan kepuasan pelanggan. Proyek ini mencakup proses data cleaning, data preparation, exploratory data analysis (EDA), analisis kinerja bisnis, serta pengembangan dashboard interaktif untuk mendukung pengambilan keputusan berbasis data.
 

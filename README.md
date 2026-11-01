@@ -100,58 +100,23 @@ Proyek ini menggunakan beberapa dataset yang merepresentasikan berbagai aspek pr
 Proses data cleaning dan data preparation dilakukan untuk memastikan kualitas, konsistensi, serta kesiapan data sebelum digunakan dalam analisis.
 
 Tahapan yang dilakukan meliputi:
+- Mengidentifikasi nilai yang hilang berdasarkan konteks masing-masing kolom.
+- Memeriksa dan menangani data duplikat.
+- Menyeragamkan format dan tipe data.
+- Memvalidasi hubungan antar tabel menggunakan primary key dan foreign key.
+- Memeriksa kesesuaian data berdasarkan aturan bisnis.
+- Melakukan agregasi data item pesanan ke tingkat transaksi.
 
-Mengidentifikasi nilai yang hilang (missing values) berdasarkan konteks masing-masing kolom.
+Dataset akhir disusun pada tingkat pesanan (*order-level*), dengan satu baris merepresentasikan satu pesanan. Data item pesanan diagregasi untuk menghasilkan metrik seperti jumlah jenis item, total kuantitas, dan subtotal item.
 
-Memeriksa dan menangani data duplikat berdasarkan karakteristik serta aturan bisnis.
 
-Menyeragamkan format dan tipe data, termasuk tanggal, waktu, kategori, dan nilai numerik.
-
-Memeriksa konsistensi nilai dan mengidentifikasi data yang tidak sesuai dengan aturan bisnis.
-
-Memvalidasi hubungan antar tabel menggunakan primary key dan foreign key.
-
-Memeriksa kesesuaian nominal transaksi, detail item pesanan, dan pembayaran.
-
-Mempertahankan nilai yang valid meskipun terindikasi sebagai nilai ekstrem (outlier), selama tidak terdapat bukti bahwa nilai tersebut merupakan kesalahan data.
-
-Melakukan agregasi data item pesanan ke tingkat transaksi.
-
-Menggabungkan informasi transaksi dengan data pelanggan, restoran, pembayaran, pengantaran, dan ulasan.
-
-Dataset akhir disusun pada tingkat pesanan (order-level), dengan satu baris merepresentasikan satu pesanan. Data item pesanan diagregasi untuk menghasilkan metrik seperti jumlah jenis item, total kuantitas, dan subtotal item.
-
-Beberapa kolom turunan juga disiapkan untuk mendukung analisis, seperti:
-
-`item_count`: jumlah jenis item dalam satu pesanan.
-`total_quantity`: total kuantitas seluruh item dalam satu pesanan.
-`items_subtotal`: total nilai seluruh item dalam satu pesanan.
-`has_review`: indikator ketersediaan rating pelanggan.
-`rating_label`: kategori rating pelanggan.
-`review_text_status`: status ketersediaan teks ulasan.
-`actual_delivery_minutes`: durasi aktual pengantaran berdasarkan waktu pengambilan hingga waktu pesanan diterima.
-`delay_minutes`: selisih antara durasi aktual pengantaran dan estimasi waktu yang dijanjikan.
-`Delivery Performance`: klasifikasi performa pengantaran berdasarkan perbandingan durasi aktual dengan estimasi waktu.
-
-Contoh struktur dataset akhir:
-| Kolom | Tipe / Contoh Data | Deskripsi |
-| :--- | :--- | :--- |
-| **order_id** | `O00001` | ID unik untuk setiap transaksi/pesanan |
-| **customer_id** | `C0080` | ID unik pelanggan yang melakukan pemesanan |
-| **restaurant_id** | `R0018` | ID unik restoran tempat pesanan dibuat |
-| **order_timestamp** | `2026-01-19 03:32:00` | Waktu/tanggal persis saat pesanan dilakukan |
-| **order_status** | `completed` | Status akhir pesanan (misal: selesai, dibatalkan, dll) |
-| **promo_code** | `NaN` / `NEWUSER` | Kode promo atau diskon yang digunakan |
-| **subtotal_amount** | `54.000` | Total harga makanan sebelum diskon/ongkir |
-| **total_amount** | `62.000` | Total akhir yang dibayar pelanggan |
-| **rating** | `2.0` / `NaN` | Skor penilaian dari pelanggan (skala 1-5) |
-| **item_count** | `2` | Jumlah jenis menu/item berbeda dalam satu pesanan |
-| **total_quantity** | `3` | Total keseluruhan kuantitas item yang dibeli |
-| **items_subtotal** | `54.000` | Subtotal khusus untuk item-item yang dipesan |
-| **has_review** | `True` / `False` | Status apakah pesanan ini memiliki ulasan |
-| **rating_label** | `2 - Dissatisfied` | Kategori keterangan teks dari nilai rating |
-| **review_text_status**| `Text Available` | Status ketersediaan teks ulasan dari pelanggan |
-
+| order_id | customer_id | restaurant_id | order_timestamp | order_status | promo_code | subtotal_amount | total_amount | rating | item_count | total_quantity | items_subtotal | has_review | rating_label | review_text_status |
+|---|---|---|---|---|---|---:|---:|---:|---:|---:|---:|---|---|---|
+| O00001 | C0080 | R0018 | 2026-01-19 03:32:00 | completed | NaN | 54.000 | 62.000 | 2.0 | 2 | 3 | 54.000 | True | 2 - Dissatisfied | Text Available |
+| O00002 | C0087 | R0023 | 2026-01-10 18:34:00 | completed | NEWUSER | 130.000 | 133.000 | 2.0 | 2 | 5 | 130.000 | True | 2 - Dissatisfied | Text Available |
+| O00003 | C0094 | R0003 | 2026-01-12 07:39:00 | completed | HEMAT15 | 238.000 | 233.000 | 1.0 | 4 | 11 | 238.000 | True | 1 - Very Dissatisfied | No Text |
+| O00004 | C0101 | R0008 | 2026-02-03 17:42:00 | completed | NaN | 78.000 | 76.000 | NaN | 2 | 5 | 78.000 | False | No Rating | No Review |
+| O00005 | C0108 | R0013 | 2026-01-17 09:22:00 | completed | NaN | 123.000 | 120.000 | NaN | 3 | 4 | 123.000 | False | No Rating | No Review |
 ---
 
 # Metodologi Analisis

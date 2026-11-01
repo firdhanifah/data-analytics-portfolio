@@ -28,11 +28,17 @@
 
 ## Latar Belakang Bisnis
 
-[Jelaskan SwiftBite sebagai platform layanan pesan antar makanan, bagaimana proses bisnisnya berjalan, dan pentingnya kinerja transaksi, pengiriman, pembayaran, serta pengalaman pelanggan.]
+SwiftBite merupakan platform layanan pesan antar makanan yang menghubungkan pelanggan dengan restoran melalui layanan pemesanan dan pengiriman secara daring.
+
+Kinerja bisnis SwiftBite dipengaruhi oleh beberapa aktivitas yang saling berkaitan, mulai dari transaksi pemesanan, operasional pengiriman, proses pembayaran, hingga pengalaman pelanggan.
+
+Proyek ini dilakukan untuk menganalisis data bisnis SwiftBite secara terpadu guna memperoleh gambaran kinerja operasional serta mengidentifikasi aspek layanan yang berpotensi untuk ditingkatkan.
 
 ## Permasalahan Bisnis
 
-[Jelaskan permasalahan utama yang ingin dianalisis berdasarkan konteks bisnis SwiftBite.]
+SwiftBite belum memiliki gambaran terpadu mengenai kinerja transaksi, operasional pengiriman, dan pengalaman pelanggan. Kondisi ini dapat menyulitkan perusahaan dalam mengidentifikasi permasalahan layanan serta menentukan aspek yang perlu diprioritaskan untuk perbaikan.
+
+Bagaimana kinerja transaksi, operasional pengiriman, pembayaran, dan pengalaman pelanggan SwiftBite selama periode Januari–Maret 2026, serta aspek layanan apa yang perlu diprioritaskan untuk meningkatkan keandalan layanan dan pengalaman pelanggan?
 
 ## Tujuan Proyek
 
@@ -75,14 +81,17 @@ Secara khusus, proyek ini bertujuan untuk:
 
 # Sumber Data
 
-Proyek ini menggunakan dataset SwiftBite yang mencakup informasi transaksi pesanan, pelanggan, restoran, pengiriman, pembayaran, dan ulasan pelanggan.
+Proyek ini menggunakan beberapa dataset yang merepresentasikan berbagai aspek proses bisnis SwiftBite. Setiap dataset memiliki struktur dan format yang berbeda sehingga memerlukan metode pembacaan dan pengolahan yang sesuai.
 
-## 1. Dataset SwiftBite
-
-- Jumlah data: 350 pesanan
-- Jumlah variabel: 51 kolom
-- Periode: Januari–Maret 2026
-- Format: CSV
+| No. | Dataset | Format | Deskripsi |
+| :--- | :--- | :---: | :--- |
+| 1 | Orders | CSV | Data transaksi dan informasi pesanan pelanggan |
+| 2 | Order Items | CSV | Detail item, kuantitas, dan nilai setiap item dalam pesanan |
+| 3 | Customers | JSON | Informasi pelanggan dan segmentasi pelanggan |
+| 4 | Payments | TXT | Informasi transaksi dan status pembayaran |
+| 5 | Restaurants | XLSX | Informasi restoran, kategori kuliner, dan karakteristik restoran |
+| 6 | Delivery | CSV | Informasi proses pengantaran dan performa pengiriman |
+| 7 | Reviews | CSV | Rating dan ulasan pelanggan terhadap layanan |
 
 ## 2. Kelompok Data
 

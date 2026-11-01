@@ -110,13 +110,12 @@ Tahapan yang dilakukan meliputi:
 Dataset akhir disusun pada tingkat pesanan (*order-level*), dengan satu baris merepresentasikan satu pesanan. Data item pesanan diagregasi untuk menghasilkan metrik seperti jumlah jenis item, total kuantitas, dan subtotal item.
 
 
-| order_id | customer_id | restaurant_id | order_timestamp | order_status | promo_code | subtotal_amount | total_amount | rating | item_count | total_quantity | items_subtotal | has_review | rating_label | review_text_status |
-|---|---|---|---|---|---|---:|---:|---:|---:|---:|---:|---|---|---|
-| O00001 | C0080 | R0018 | 2026-01-19 03:32:00 | completed | NaN | 54.000 | 62.000 | 2.0 | 2 | 3 | 54.000 | True | 2 - Dissatisfied | Text Available |
-| O00002 | C0087 | R0023 | 2026-01-10 18:34:00 | completed | NEWUSER | 130.000 | 133.000 | 2.0 | 2 | 5 | 130.000 | True | 2 - Dissatisfied | Text Available |
-| O00003 | C0094 | R0003 | 2026-01-12 07:39:00 | completed | HEMAT15 | 238.000 | 233.000 | 1.0 | 4 | 11 | 238.000 | True | 1 - Very Dissatisfied | No Text |
-| O00004 | C0101 | R0008 | 2026-02-03 17:42:00 | completed | NaN | 78.000 | 76.000 | NaN | 2 | 5 | 78.000 | False | No Rating | No Review |
-| O00005 | C0108 | R0013 | 2026-01-17 09:22:00 | completed | NaN | 123.000 | 120.000 | NaN | 3 | 4 | 123.000 | False | No Rating | No Review |
+| order_id | customer_id | restaurant_id | order_timestamp | ... | total_amount | rating | ... | has_review | rating_label |
+|---|---|---|---|---|---:|---:|---|---|---|
+| O00001 | C0080 | R0018 | 2026-01-19 03:32:00 | ... | 62.000 | 2.0 | ... | True | 2 - Dissatisfied |
+| O00002 | C0087 | R0023 | 2026-01-10 18:34:00 | ... | 133.000 | 2.0 | ... | True | 2 - Dissatisfied |
+| O00003 | C0094 | R0003 | 2026-01-12 07:39:00 | ... | 233.000 | 1.0 | ... | True | 1 - Very Dissatisfied |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 ---
 

@@ -34,9 +34,9 @@ Oleh karena itu, proyek ini dilakukan untuk menganalisis kinerja bisnis SwiftBit
 
 ### Business Problem
 
-Pertumbuhan bisnis pada platform food delivery tidak hanya ditentukan oleh peningkatan jumlah transaksi dan pendapatan, tetapi juga oleh kemampuan perusahaan dalam mempertahankan kualitas layanan.
+Pertumbuhan bisnis pada platform food delivery tidak hanya ditentukan oleh peningkatan jumlah transaksi dan pendapatan, tetapi juga oleh **kemampuan perusahaan dalam mempertahankan kualitas layanan**.
 
-SwiftBite perlu memahami apakah perkembangan aktivitas bisnis telah diimbangi dengan performa operasional dan pengalaman pelanggan yang baik.
+SwiftBite perlu memahami **apakah perkembangan aktivitas bisnis telah diimbangi dengan performa operasional dan pengalaman pelanggan yang baik**.
 
 Beberapa aspek yang perlu dievaluasi meliputi:
 
@@ -50,7 +50,7 @@ Berdasarkan permasalahan tersebut, diperlukan analisis data yang mengintegrasika
 
 ### Project Objectives
 
-Proyek ini bertujuan untuk mengevaluasi kinerja bisnis SwiftBite dengan menganalisis pertumbuhan transaksi, kualitas operasional, dan kepuasan pelanggan.
+Proyek ini bertujuan untuk **mengevaluasi kinerja bisnis SwiftBite** dengan menganalisis pertumbuhan transaksi, kualitas operasional, dan kepuasan pelanggan.
 
 Tujuan khusus proyek meliputi:
 
@@ -67,7 +67,7 @@ Tujuan khusus proyek meliputi:
 
 **A. Business Growth & Transaction Performance**
 
-- Bagaimana perkembangan jumlah transaksi dan pendapatan selama periode pengamatan?
+- Bagaimana **perkembangan jumlah transaksi dan pendapatan** selama periode pengamatan?
 - Bagaimana tren nilai rata-rata transaksi (*Average Order Value/AOV*)?
 - Segmen pelanggan mana yang memberikan kontribusi terbesar terhadap transaksi dan pendapatan?
 - Restoran dan kategori kuliner mana yang memiliki kontribusi terbesar terhadap kinerja bisnis?
@@ -85,7 +85,7 @@ Tujuan khusus proyek meliputi:
 
 - Bagaimana distribusi rating yang diberikan pelanggan?
 - Bagaimana tingkat kepuasan pelanggan berdasarkan rating?
-- Apakah terdapat perbedaan rating antara pesanan yang dikirim tepat waktu dan terlambat?
+- **Apakah terdapat perbedaan rating antara pesanan yang dikirim tepat waktu dan terlambat?**
 - Restoran atau kategori kuliner mana yang memperoleh rating relatif tinggi dan rendah?
 - Apa saja pola umpan balik yang dapat diidentifikasi dari ulasan pelanggan?
 
@@ -174,134 +174,11 @@ Contoh struktur dataset akhir:
 
 ## Methodology
 
-Analisis dilakukan melalui beberapa tahapan untuk menghasilkan insight yang relevan dengan permasalahan bisnis SwiftBite.
-
-**1. Data Understanding**
-
-Memahami struktur dataset, definisi setiap variabel, hubungan antar tabel, serta karakteristik data yang tersedia.
-
-**2. Data Cleaning & Validation**
-
-Melakukan pemeriksaan kualitas data, penanganan nilai yang tidak konsisten, validasi relasi antar tabel, dan pemeriksaan kesesuaian data berdasarkan aturan bisnis.
-
-**3. Data Preparation**
-
-Menggabungkan dataset yang relevan, melakukan transformasi data, membuat variabel turunan, serta menyiapkan dataset pada tingkat transaksi untuk kebutuhan analisis.
-
-**4. Exploratory Data Analysis (EDA)**
-
-Mengeksplorasi distribusi, tren, pola, dan hubungan antarvariabel untuk memahami karakteristik kinerja bisnis, operasional, dan kepuasan pelanggan.
-
-**5. Business Performance Analysis**
-
-Mengevaluasi pertumbuhan transaksi, kontribusi pelanggan dan restoran, kualitas operasional, serta tingkat kepuasan pelanggan menggunakan indikator yang relevan.
-
-**6. Comparative & Relationship Analysis**
-
-Melakukan perbandingan kinerja berdasarkan periode, segmen, restoran, zona, dan karakteristik pesanan. Analisis hubungan antarvariabel dilakukan untuk mengidentifikasi pola yang relevan dengan permasalahan bisnis.
-
-**7. Data Visualization & Dashboard Development**
-
-Menyajikan hasil analisis melalui visualisasi dan dashboard interaktif menggunakan Power BI agar informasi dapat dipahami dan digunakan oleh pemangku kepentingan.
-
-**8. Insight & Recommendation**
-
-Merangkum temuan utama dan menyusun rekomendasi berbasis data untuk mendukung evaluasi serta peningkatan kinerja bisnis SwiftBite.
 
 ---
 
 ## Exploratory Data Analysis & Insights
 
-### A. Business Growth & Transaction Performance
-
-Menganalisis perkembangan aktivitas bisnis SwiftBite melalui indikator transaksi dan pendapatan.
-
-Analisis yang dilakukan meliputi:
-
-- Total jumlah pesanan.
-- Jumlah pesanan yang berhasil diselesaikan.
-- Total pendapatan dari transaksi.
-- Rata-rata nilai pesanan (*Average Order Value/AOV*).
-- Median nilai pesanan.
-- Tren jumlah pesanan berdasarkan periode.
-- Tren pendapatan berdasarkan periode.
-- Kontribusi transaksi dan pendapatan berdasarkan segmen pelanggan.
-- Kontribusi restoran dan kategori kuliner terhadap pendapatan.
-
-Analisis ini bertujuan untuk memahami perkembangan aktivitas bisnis serta mengidentifikasi sumber kontribusi utama terhadap transaksi dan pendapatan SwiftBite.
-
-### B. Customer & Restaurant Contribution
-
-Mengevaluasi kontribusi pelanggan dan restoran terhadap kinerja bisnis.
-
-Analisis yang dilakukan meliputi:
-
-- Distribusi pelanggan berdasarkan segmen.
-- Jumlah transaksi berdasarkan segmen pelanggan.
-- Kontribusi pendapatan setiap segmen pelanggan.
-- Rata-rata jumlah pesanan per pelanggan.
-- Distribusi transaksi berdasarkan zona pelanggan.
-- Jumlah pesanan dan pendapatan setiap restoran.
-- Kontribusi pendapatan berdasarkan jenis kuliner.
-- Perbandingan performa restoran berdasarkan kategori harga (*price tier*).
-
-Analisis ini bertujuan untuk memahami karakteristik pelanggan serta mengetahui restoran dan kategori kuliner yang memberikan kontribusi terhadap aktivitas bisnis.
-
-### C. Operational Performance
-
-Mengevaluasi kualitas proses operasional SwiftBite, khususnya penyelesaian pesanan, pengantaran, dan pembayaran.
-
-Analisis yang dilakukan meliputi:
-
-- Distribusi status pesanan.
-- Tingkat penyelesaian pesanan (*Order Completion Rate*).
-- Distribusi status pengiriman.
-- Jarak pengiriman.
-- Estimasi waktu pengiriman.
-- Durasi aktual pengiriman.
-- Distribusi pesanan tepat waktu dan terlambat.
-- Rata-rata keterlambatan pengiriman.
-- Perbandingan performa pengiriman berdasarkan jarak, zona, dan restoran.
-- Distribusi metode pembayaran.
-- Distribusi status pembayaran.
-- Tingkat keberhasilan pembayaran (*Payment Success Rate*).
-
-Durasi aktual pengiriman dihitung berdasarkan selisih waktu pesanan diambil oleh kurir (*picked up*) hingga pesanan diterima pelanggan (*delivered*). Keterlambatan ditentukan dengan membandingkan durasi aktual dan estimasi waktu pengiriman yang digunakan dalam dataset.
-
-Pesanan yang tidak memiliki informasi waktu pengiriman yang cukup tidak diklasifikasikan sebagai tepat waktu maupun terlambat dan tidak dimasukkan ke dalam denominator perhitungan tingkat ketepatan waktu.
-
-Analisis ini bertujuan untuk mengetahui kualitas proses operasional serta mengidentifikasi aspek yang berpotensi menghambat penyelesaian pesanan dan pengalaman pelanggan.
-
-### D. Customer Satisfaction
-
-Menganalisis tingkat kepuasan dan pengalaman pelanggan berdasarkan rating serta ulasan yang tersedia.
-
-Analisis yang dilakukan meliputi:
-
-- Total pelanggan yang memberikan rating.
-- Distribusi rating pelanggan.
-- Rata-rata rating.
-- Distribusi kategori kepuasan pelanggan.
-- Perbandingan rating berdasarkan status ketepatan waktu pengiriman.
-- Perbandingan rating berdasarkan restoran dan kategori kuliner.
-- Distribusi ketersediaan teks ulasan.
-- Identifikasi pola umpan balik pelanggan berdasarkan ulasan yang tersedia.
-
-Analisis ini bertujuan untuk memahami gambaran kepuasan pelanggan dan mengevaluasi apakah terdapat perbedaan pengalaman pelanggan berdasarkan karakteristik layanan yang diterima.
-
-### E. Overall Business Performance Evaluation
-
-Mengintegrasikan hasil analisis pertumbuhan bisnis, kualitas operasional, dan kepuasan pelanggan untuk mengevaluasi kinerja SwiftBite secara menyeluruh.
-
-Analisis yang dilakukan meliputi:
-
-- Perbandingan perkembangan transaksi dan pendapatan dengan tingkat penyelesaian pesanan.
-- Evaluasi pertumbuhan aktivitas transaksi terhadap ketepatan waktu pengiriman.
-- Perbandingan rating pelanggan antara pesanan tepat waktu dan terlambat.
-- Identifikasi aspek operasional yang berkaitan dengan tingkat kepuasan pelanggan.
-- Identifikasi kesenjangan antara performa bisnis dan kualitas layanan.
-
-Analisis ini bertujuan untuk menjawab pertanyaan utama proyek, yaitu apakah pertumbuhan transaksi SwiftBite telah berjalan seiring dengan kualitas operasional dan kepuasan pelanggan.
 
 ---
 

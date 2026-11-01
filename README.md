@@ -1,264 +1,378 @@
 # SwiftBite Business Analytics Project
-### Improving Operational Performance and Customer Experience
-<font size="2" color="#656d76">Tools: Python (Pandas, Matplotlib/Seaborn) + Power BI</font>
----
-Analisis data pada platform pemesanan dan pengantaran makanan SwiftBite untuk mengevaluasi kinerja bisnis secara menyeluruh, dengan fokus pada pertumbuhan transaksi, kualitas operasional, dan kepuasan pelanggan. Proyek ini mencakup proses data cleaning, data preparation, exploratory data analysis (EDA), analisis kinerja bisnis, serta pengembangan dashboard interaktif untuk mendukung pengambilan keputusan berbasis data.
+### Analisis Kinerja Operasional dan Pengalaman Pelanggan
+
+**Tools:** Python (Pandas, Matplotlib, Seaborn), Power BI
 
 ---
 
-## Table of Contents
+# Daftar Isi
 
-1. [Business Understanding](#business-understanding)
-2. [Data Sources](#data-sources)
-3. [Data Cleaning & Preparation](#data-cleaning--preparation)
-4. [Methodology](#methodology)
-5. [Exploratory Data Analysis & Insights](#exploratory-data-analysis--insights)
-6. [Dashboard Development](#dashboard-development)
-7. [Key Insights & Strategic Recommendations](#key-insights--strategic-recommendations)
-8. [Limitations & Notes](#limitations--notes)
-9. [Technical Resources](#technical-resources)
-
----
-
-## Business Understanding
-
-### Business Background
-
-SwiftBite merupakan platform pemesanan dan pengantaran makanan yang menghubungkan pelanggan dengan berbagai restoran melalui layanan digital.
-
-Dalam menjalankan bisnis food delivery, pertumbuhan transaksi dan pendapatan merupakan salah satu indikator penting untuk mengukur perkembangan bisnis. Namun, peningkatan aktivitas transaksi tidak selalu mencerminkan kinerja bisnis yang baik secara keseluruhan. Pertumbuhan tersebut juga perlu diimbangi dengan kualitas operasional, keandalan proses pembayaran, serta pengalaman pelanggan yang memuaskan.
-
-Kualitas pengantaran, keberhasilan penyelesaian pesanan, dan kepuasan pelanggan merupakan aspek yang dapat memengaruhi keberlanjutan bisnis. Apabila pertumbuhan transaksi tidak diikuti dengan kualitas layanan yang memadai, perusahaan berpotensi menghadapi permasalahan operasional dan penurunan pengalaman pelanggan.
-
-Melalui data transaksi yang terintegrasi dengan informasi pelanggan, restoran, pembayaran, pengantaran, dan ulasan, SwiftBite memiliki sumber informasi yang dapat digunakan untuk mengevaluasi berbagai aspek kinerja bisnis.
-
-Oleh karena itu, proyek ini dilakukan untuk menganalisis kinerja bisnis SwiftBite secara menyeluruh dan memahami apakah pertumbuhan transaksi telah berjalan seiring dengan kualitas operasional dan kepuasan pelanggan.
-
-### Business Problem
-
-Pertumbuhan bisnis pada platform food delivery tidak hanya ditentukan oleh peningkatan jumlah transaksi dan pendapatan, tetapi juga oleh **kemampuan perusahaan dalam mempertahankan kualitas layanan**.
-
-SwiftBite perlu memahami **apakah perkembangan aktivitas bisnis telah diimbangi dengan performa operasional dan pengalaman pelanggan yang baik**.
-
-Beberapa aspek yang perlu dievaluasi meliputi:
-
-- **Business Growth:** Belum diketahui bagaimana perkembangan transaksi dan pendapatan selama periode pengamatan serta faktor-faktor yang berkontribusi terhadap kinerja bisnis.
-- **Customer & Restaurant Contribution:** Belum diketahui bagaimana kontribusi segmen pelanggan, restoran, dan kategori kuliner terhadap aktivitas transaksi dan pendapatan.
-- **Operational Performance:** Performa penyelesaian pesanan, ketepatan waktu pengantaran, dan keberhasilan pembayaran perlu dievaluasi untuk memahami kualitas proses operasional.
-- **Customer Satisfaction:** Rating dan ulasan pelanggan perlu dianalisis untuk mengetahui gambaran pengalaman pelanggan terhadap layanan SwiftBite.
-- **Business Performance Alignment:** Belum diketahui apakah pertumbuhan transaksi telah berjalan seiring dengan kualitas operasional dan kepuasan pelanggan.
-
-Berdasarkan permasalahan tersebut, diperlukan analisis data yang mengintegrasikan aspek pertumbuhan bisnis, operasional, dan kepuasan pelanggan agar perusahaan memperoleh gambaran kinerja yang lebih menyeluruh.
-
-### Project Objectives
-
-Proyek ini bertujuan untuk **mengevaluasi kinerja bisnis SwiftBite** dengan menganalisis pertumbuhan transaksi, kualitas operasional, dan kepuasan pelanggan.
-
-Tujuan khusus proyek meliputi:
-
-1. Menganalisis perkembangan jumlah transaksi dan pendapatan SwiftBite selama periode pengamatan.
-2. Mengidentifikasi kontribusi pelanggan, restoran, dan kategori kuliner terhadap kinerja bisnis.
-3. Mengevaluasi tingkat penyelesaian pesanan dan keberhasilan pembayaran.
-4. Mengukur ketepatan waktu pengantaran serta mengidentifikasi pola keterlambatan.
-5. Menganalisis rating dan ulasan pelanggan untuk memahami tingkat kepuasan terhadap layanan.
-6. Mengevaluasi keterkaitan antara pertumbuhan transaksi, kualitas operasional, dan kepuasan pelanggan.
-7. Mengembangkan dashboard interaktif untuk menyajikan hasil analisis secara informatif.
-8. Menyusun rekomendasi berbasis data untuk mendukung peningkatan kinerja bisnis SwiftBite.
-
-### Key Business Questions
-
-**A. Business Growth & Transaction Performance**
-
-- Bagaimana **perkembangan jumlah transaksi dan pendapatan** selama periode pengamatan?
-- Bagaimana tren nilai rata-rata transaksi (*Average Order Value/AOV*)?
-- Segmen pelanggan mana yang memberikan kontribusi terbesar terhadap transaksi dan pendapatan?
-- Restoran dan kategori kuliner mana yang memiliki kontribusi terbesar terhadap kinerja bisnis?
-- Bagaimana distribusi transaksi berdasarkan zona dan karakteristik restoran?
-
-**B. Operational Performance**
-
-- Berapa proporsi pesanan yang berhasil diselesaikan dibandingkan dengan keseluruhan pesanan?
-- Bagaimana tingkat ketepatan waktu pengantaran SwiftBite?
-- Bagaimana distribusi durasi aktual dan estimasi waktu pengantaran?
-- Apakah jarak pengantaran berkaitan dengan durasi pengiriman?
-- Bagaimana tingkat keberhasilan pembayaran dan distribusi status transaksi pembayaran?
-
-**C. Customer Satisfaction**
-
-- Bagaimana distribusi rating yang diberikan pelanggan?
-- Bagaimana tingkat kepuasan pelanggan berdasarkan rating?
-- **Apakah terdapat perbedaan rating antara pesanan yang dikirim tepat waktu dan terlambat?**
-- Restoran atau kategori kuliner mana yang memperoleh rating relatif tinggi dan rendah?
-- Apa saja pola umpan balik yang dapat diidentifikasi dari ulasan pelanggan?
-
-**D. Overall Business Performance Evaluation**
-
-- Apakah perkembangan jumlah transaksi dan pendapatan diikuti oleh kualitas operasional yang baik?
-- Apakah peningkatan aktivitas transaksi berkaitan dengan perubahan tingkat penyelesaian pesanan?
-- Apakah kualitas pengantaran berkaitan dengan kepuasan pelanggan?
-- Aspek bisnis dan operasional mana yang perlu menjadi prioritas evaluasi?
-- Rekomendasi apa yang dapat diberikan untuk mendukung peningkatan kinerja bisnis secara berkelanjutan?
-
-### Expected Business Value
-
-Hasil analisis diharapkan dapat memberikan gambaran menyeluruh mengenai kondisi dan kinerja bisnis SwiftBite berdasarkan data transaksi dan layanan.
-
-Nilai bisnis yang diharapkan meliputi:
-
-- **Business Performance Evaluation:** Memberikan gambaran mengenai perkembangan transaksi, pendapatan, serta kontribusi pelanggan dan restoran terhadap bisnis.
-- **Operational Improvement:** Membantu mengidentifikasi permasalahan operasional, khususnya terkait penyelesaian pesanan dan ketepatan waktu pengantaran.
-- **Payment Reliability:** Memberikan informasi mengenai keberhasilan pembayaran dan kendala dalam proses transaksi.
-- **Customer Experience Improvement:** Mengidentifikasi pola kepuasan pelanggan serta aspek layanan yang berpotensi membutuhkan perbaikan.
-- **Data-Driven Decision Making:** Menyediakan insight berbasis data sebagai dasar evaluasi dan penentuan prioritas bisnis.
-- **Business Sustainability:** Mendukung upaya peningkatan kinerja bisnis dengan mempertimbangkan keseimbangan antara pertumbuhan transaksi, kualitas operasional, dan kepuasan pelanggan.
-
-Secara keseluruhan, proyek ini diharapkan dapat membantu SwiftBite memahami apakah pertumbuhan bisnis telah berjalan seiring dengan kualitas layanan serta mengidentifikasi area yang perlu ditingkatkan untuk mendukung keberlanjutan bisnis.
+1. [Pemahaman Bisnis](#pemahaman-bisnis)
+2. [Sumber Data](#sumber-data)
+3. [Pembersihan dan Persiapan Data](#pembersihan-dan-persiapan-data)
+4. [Metodologi Analisis](#metodologi-analisis)
+5. [Analisis Data Eksploratif dan Temuan](#analisis-data-eksploratif-dan-temuan)
+   - [A. Kinerja Pesanan](#a-kinerja-pesanan)
+   - [B. Kinerja Pengiriman](#b-kinerja-pengiriman)
+   - [C. Pengalaman Pelanggan](#c-pengalaman-pelanggan)
+   - [D. Kinerja Pembayaran](#d-kinerja-pembayaran)
+   - [E. Analisis Kinerja Terpadu](#e-analisis-kinerja-terpadu)
+6. [Pengembangan Dashboard](#pengembangan-dashboard)
+7. [Temuan Utama dan Rekomendasi Strategis](#temuan-utama-dan-rekomendasi-strategis)
+8. [Keterbatasan dan Catatan](#keterbatasan-dan-catatan)
+9. [Sumber Daya Teknis](#sumber-daya-teknis)
 
 ---
 
-## Data Sources
+# Pemahaman Bisnis
 
-Proyek ini menggunakan beberapa dataset yang merepresentasikan berbagai aspek proses bisnis SwiftBite. Setiap dataset memiliki struktur dan format yang berbeda sehingga memerlukan metode pembacaan dan pengolahan yang sesuai.
+## Latar Belakang Bisnis
 
-| No. | Dataset | Format | Deskripsi |
-|---|---|---|---|
-| 1 | Orders | CSV | Data transaksi dan informasi pesanan pelanggan |
-| 2 | Order Items | CSV | Detail item, kuantitas, dan nilai setiap item dalam pesanan |
-| 3 | Customers | JSON | Informasi pelanggan dan segmentasi pelanggan |
-| 4 | Payments | TXT | Informasi transaksi dan status pembayaran |
-| 5 | Restaurants | XLSX | Informasi restoran, kategori kuliner, dan karakteristik restoran |
-| 6 | Delivery | CSV | Informasi proses pengantaran dan performa pengiriman |
-| 7 | Reviews | CSV | Rating dan ulasan pelanggan terhadap layanan |
+[Jelaskan SwiftBite sebagai platform layanan pesan antar makanan, bagaimana proses bisnisnya berjalan, dan pentingnya kinerja transaksi, pengiriman, pembayaran, serta pengalaman pelanggan.]
 
----
+## Permasalahan Bisnis
 
-## Data Cleaning & Preparation
+[Jelaskan permasalahan utama yang ingin dianalisis berdasarkan konteks bisnis SwiftBite.]
 
-Proses data cleaning dan data preparation dilakukan untuk memastikan kualitas, konsistensi, serta kesiapan data sebelum digunakan dalam analisis.
+## Tujuan Proyek
 
-Tahapan yang dilakukan meliputi:
+Proyek ini bertujuan untuk mengevaluasi kinerja bisnis SwiftBite secara terpadu melalui analisis transaksi, operasional pengiriman, pembayaran, dan pengalaman pelanggan.
 
-- Mengidentifikasi nilai yang hilang (*missing values*) berdasarkan konteks masing-masing kolom.
-- Memeriksa dan menangani data duplikat berdasarkan karakteristik serta aturan bisnis.
-- Menyeragamkan format dan tipe data, termasuk tanggal, waktu, kategori, dan nilai numerik.
-- Memeriksa konsistensi nilai dan mengidentifikasi data yang tidak sesuai dengan aturan bisnis.
-- Memvalidasi hubungan antar tabel menggunakan *primary key* dan *foreign key*.
-- Memeriksa kesesuaian nominal transaksi, detail item pesanan, dan pembayaran.
-- Mempertahankan nilai yang valid meskipun terindikasi sebagai nilai ekstrem (*outlier*), selama tidak terdapat bukti bahwa nilai tersebut merupakan kesalahan data.
-- Melakukan agregasi data item pesanan ke tingkat transaksi.
-- Menggabungkan informasi transaksi dengan data pelanggan, restoran, pembayaran, pengantaran, dan ulasan.
+Secara khusus, proyek ini bertujuan untuk:
+- Mengevaluasi kinerja pesanan dan nilai transaksi.
+- Mengidentifikasi pola keterlambatan dan kinerja pengiriman.
+- Menganalisis hubungan antara kinerja pengiriman dan penilaian pelanggan.
+- Mengevaluasi keberhasilan dan kendala dalam proses pembayaran.
+- Menentukan aspek operasional yang perlu diprioritaskan berdasarkan hasil analisis.
 
-Dataset akhir disusun pada tingkat pesanan (*order-level*), dengan satu baris merepresentasikan satu pesanan. Data item pesanan diagregasi untuk menghasilkan metrik seperti jumlah jenis item, total kuantitas, dan subtotal item.
+## Pertanyaan Bisnis Utama
 
-Beberapa kolom turunan juga disiapkan untuk mendukung analisis, seperti:
+### A. Kinerja Pesanan
+- Bagaimana perkembangan jumlah pesanan dan nilai transaksi selama periode analisis?
+- Seberapa tinggi tingkat penyelesaian dan pembatalan pesanan?
+- Apakah terdapat perbedaan kinerja berdasarkan restoran dan segmen pelanggan?
 
-- `item_count`: jumlah jenis item dalam satu pesanan.
-- `total_quantity`: total kuantitas seluruh item dalam satu pesanan.
-- `items_subtotal`: total nilai seluruh item dalam satu pesanan.
-- `has_review`: indikator ketersediaan rating pelanggan.
-- `rating_label`: kategori rating pelanggan.
-- `review_text_status`: status ketersediaan teks ulasan.
-- `actual_delivery_minutes`: durasi aktual pengantaran berdasarkan waktu pengambilan hingga waktu pesanan diterima.
-- `delay_minutes`: selisih antara durasi aktual pengantaran dan estimasi waktu yang dijanjikan.
-- `Delivery Performance`: klasifikasi performa pengantaran berdasarkan perbandingan durasi aktual dengan estimasi waktu.
+### B. Kinerja Pengiriman
+- Seberapa baik SwiftBite memenuhi estimasi waktu pengiriman?
+- Apakah jarak pengiriman berkaitan dengan durasi dan keterlambatan?
+- Restoran atau zona mana yang menunjukkan tingkat keterlambatan lebih tinggi?
 
-Contoh struktur dataset akhir:
+### C. Pengalaman Pelanggan
+- Bagaimana tingkat kepuasan pelanggan berdasarkan rating dan ulasan?
+- Apakah keterlambatan pengiriman berkaitan dengan penurunan rating?
+- Segmen pelanggan mana yang memberikan penilaian berbeda?
 
-| order_id | customer_id | restaurant_id | order_timestamp | order_status | promo_code | subtotal_amount | total_amount | rating | item_count | total_quantity | items_subtotal | has_review | rating_label | review_text_status |
-|---|---|---|---|---|---|---:|---:|---:|---:|---:|---:|---|---|---|
-| O00001 | C0080 | R0018 | 2026-01-19 03:32:00 | completed | NaN | 54.000 | 62.000 | 2.0 | 2 | 3 | 54.000 | True | 2 - Dissatisfied | Text Available |
-| O00002 | C0087 | R0023 | 2026-01-10 18:34:00 | completed | NEWUSER | 130.000 | 133.000 | 2.0 | 2 | 5 | 130.000 | True | 2 - Dissatisfied | Text Available |
-| O00003 | C0094 | R0003 | 2026-01-12 07:39:00 | completed | HEMAT15 | 238.000 | 233.000 | 1.0 | 4 | 11 | 238.000 | True | 1 - Very Dissatisfied | No Text |
-| O00004 | C0101 | R0008 | 2026-02-03 17:42:00 | completed | NaN | 78.000 | 76.000 | NaN | 2 | 5 | 78.000 | False | No Rating | No Review |
-| O00005 | C0108 | R0013 | 2026-01-17 09:22:00 | completed | NaN | 123.000 | 120.000 | NaN | 3 | 4 | 123.000 | False | No Rating | No Review |
+### D. Kinerja Pembayaran
+- Bagaimana tingkat keberhasilan, kegagalan, dan pengembalian pembayaran?
+- Apakah terdapat perbedaan hasil pembayaran berdasarkan metode pembayaran?
+- Bagaimana pola percobaan pembayaran pada transaksi yang gagal?
+
+### E. Strategi Bisnis
+- Aspek layanan apa yang paling membutuhkan perhatian?
+- Bagaimana perusahaan dapat memprioritaskan perbaikan berdasarkan hasil analisis?
 
 ---
 
-## Methodology
+# Sumber Data
 
+Proyek ini menggunakan dataset SwiftBite yang mencakup informasi transaksi pesanan, pelanggan, restoran, pengiriman, pembayaran, dan ulasan pelanggan.
 
----
+## 1. Dataset SwiftBite
 
-## Exploratory Data Analysis & Insights
-<img width="1179" height="484" alt="download" src="https://github.com/user-attachments/assets/9ad53474-b1d3-46bb-b457-8c7817aacad1" />
+- Jumlah data: 350 pesanan
+- Jumlah variabel: 51 kolom
+- Periode: Januari–Maret 2026
+- Format: CSV
 
-<img width="1180" height="484" alt="image" src="https://github.com/user-attachments/assets/ac95cec3-657b-42e6-93be-a1742e2fe842" />
+## 2. Kelompok Data
 
-<img width="884" height="484" alt="image" src="https://github.com/user-attachments/assets/d85ed66c-7a68-4c4b-8a86-8bf7c1430ec4" />
-
-<img width="984" height="484" alt="image" src="https://github.com/user-attachments/assets/b3ee1cd6-4480-4bcf-9354-0d50c0f3cc24" />
-
-<img width="984" height="484" alt="image" src="https://github.com/user-attachments/assets/4f52fcdf-9b70-4256-91e1-439b79c70c4f" />
-
-<img width="984" height="484" alt="image" src="https://github.com/user-attachments/assets/6140fcc4-0943-4e7b-bc52-1d37d2d1028f" />
-
-
----
-
-## Dashboard Development
-
-
-
----
-
-## Key Insights & Strategic Recommendations
-
-Bagian ini menyajikan temuan utama berdasarkan hasil Exploratory Data Analysis dan dashboard kinerja bisnis SwiftBite.
-
-Insight difokuskan pada tiga aspek utama:
-
-**1. Business Growth**
-
-Mengidentifikasi perkembangan transaksi dan pendapatan, sumber kontribusi utama, serta pola aktivitas pelanggan dan restoran.
-
-**2. Operational Performance**
-
-Mengidentifikasi kondisi penyelesaian pesanan, ketepatan waktu pengiriman, dan keberhasilan pembayaran untuk mengetahui area operasional yang membutuhkan evaluasi.
-
-**3. Customer Satisfaction**
-
-Mengidentifikasi tingkat kepuasan pelanggan, pola rating, serta perbedaan pengalaman pelanggan berdasarkan karakteristik layanan.
-
-Berdasarkan temuan tersebut, rekomendasi strategis disusun untuk membantu SwiftBite menentukan prioritas perbaikan dan meningkatkan kinerja bisnis secara menyeluruh.
-
-*Insight dan rekomendasi akan dilengkapi setelah seluruh hasil analisis dan validasi data selesai dilakukan.*
-
----
-
-## Limitations & Notes
-
-Beberapa keterbatasan dan catatan dalam analisis ini meliputi:
-
-- Dataset merepresentasikan aktivitas bisnis SwiftBite selama periode Januari hingga April 2026 sehingga hasil analisis terbatas pada periode pengamatan tersebut.
-- Data transaksi dan pelanggan hanya menggambarkan aktivitas yang tercatat pada platform SwiftBite, bukan keseluruhan kondisi pasar food delivery.
-- Data rating dan ulasan tidak tersedia untuk seluruh pesanan sehingga analisis kepuasan pelanggan hanya menggunakan data yang memiliki informasi penilaian.
-- Analisis ketepatan waktu pengiriman hanya dilakukan pada pesanan yang memiliki informasi waktu aktual dan estimasi pengiriman yang memadai.
-- Pengukuran durasi aktual pengiriman menggunakan waktu sejak pesanan diambil oleh kurir hingga diterima pelanggan.
-- Perbandingan durasi aktual dan estimasi pengiriman mengasumsikan kedua variabel menggunakan dasar pengukuran waktu yang sebanding.
-- Analisis hubungan antarvariabel digunakan untuk mengidentifikasi pola dan asosiasi, bukan untuk membuktikan hubungan sebab-akibat.
-- Rekomendasi bisnis disusun berdasarkan karakteristik dan temuan dari dataset yang tersedia. Informasi eksternal seperti ukuran pasar, jumlah kompetitor, dan kondisi demografi wilayah tidak termasuk dalam cakupan analisis.
-
----
-
-## Technical Resources
-
-Tools dan teknologi yang digunakan dalam proyek ini meliputi:
-
-| Tools | Purpose |
+| Kelompok | Informasi |
 |---|---|
-| Python | Data cleaning, data preparation, dan exploratory data analysis |
-| Pandas | Manipulasi dan pengolahan data |
-| NumPy | Operasi numerik dan perhitungan statistik |
-| DuckDB / SQL | Query, transformasi, dan validasi data |
-| Matplotlib / Seaborn | Visualisasi data untuk exploratory data analysis |
-| Microsoft Power BI | Pengembangan dashboard interaktif |
-| DAX | Pembuatan measure dan perhitungan metrik bisnis |
-| Jupyter Notebook | Lingkungan pengolahan dan analisis data |
+| Pesanan | Identitas, waktu, status, dan nominal transaksi |
+| Pelanggan | Identitas, zona, tanggal pendaftaran, dan segmen |
+| Restoran | Identitas, jenis kuliner, zona, dan kategori harga |
+| Pengiriman | Kurir, jarak, estimasi, dan durasi pengiriman |
+| Pembayaran | Metode, status, nominal, dan percobaan pembayaran |
+| Ulasan | Rating dan komentar pelanggan |
+
+## Integrasi Data
+
+[Jelaskan hubungan antar kelompok data melalui identitas pesanan, pelanggan, restoran, pengiriman, pembayaran, dan ulasan.]
 
 ---
 
-**Project Focus:** Business Performance Analysis | Data Analytics | Business Intelligence
+# Pembersihan dan Persiapan Data
 
-**Main Business Question:**
+Pembersihan data dilakukan menggunakan Python (Pandas) untuk memastikan kualitas dan konsistensi data sebelum analisis.
 
-*Is SwiftBite's transaction growth aligned with its operational performance and customer satisfaction?*
+Tahapan utama:
+- Memeriksa tipe data dan struktur dataset.
+- Mengidentifikasi nilai kosong dan duplikasi.
+- Memvalidasi konsistensi nominal transaksi.
+- Memeriksa kesesuaian status pesanan, pengiriman, dan pembayaran.
+- Memvalidasi urutan waktu transaksi dan pengiriman.
+- Menangani nilai kosong berdasarkan konteks bisnis.
+- Memeriksa pencilan pada variabel numerik.
+- Membentuk variabel tambahan untuk kebutuhan analisis.
+
+**Catatan asumsi:** [Tuliskan keputusan penanganan data kosong, aturan validasi, dan asumsi yang digunakan.]
+
+---
+
+# Metodologi Analisis
+
+Analisis dilakukan melalui empat kelompok kinerja bisnis yang kemudian diintegrasikan untuk menghasilkan rekomendasi.
+
+## A. Indikator Kinerja Pesanan
+
+| Indikator | Perhitungan |
+|---|---|
+| Total Orders | Jumlah pesanan unik |
+| Completion Rate | Pesanan selesai / Total pesanan |
+| Cancellation Rate | Pesanan batal / Total pesanan |
+| Completed Order Value | Total nilai transaksi pesanan selesai |
+| Average Order Value (AOV) | Nilai transaksi pesanan selesai / Jumlah pesanan selesai |
+
+## B. Indikator Kinerja Pengiriman
+
+| Indikator | Perhitungan |
+|---|---|
+| On-Time Delivery Rate | Pengiriman tepat waktu / Pengiriman dengan data waktu valid |
+| Late Delivery Rate | Pengiriman terlambat / Pengiriman dengan data waktu valid |
+| Average Delivery Duration | Rata-rata durasi aktual pengiriman |
+| Average Delay | Rata-rata durasi keterlambatan pada pesanan terlambat |
+
+## C. Indikator Pengalaman Pelanggan
+
+| Indikator | Perhitungan |
+|---|---|
+| Average Rating | Rata-rata rating yang tersedia |
+| Review Rate | Pesanan dengan ulasan / Total pesanan |
+
+## D. Indikator Kinerja Pembayaran
+
+| Indikator | Perhitungan |
+|---|---|
+| Payment Success Rate | Pembayaran berhasil / Total transaksi pembayaran |
+| Failed Payment Rate | Pembayaran gagal / Total transaksi pembayaran |
+| Refund Rate | Pembayaran refund / Total transaksi pembayaran |
+
+---
+
+# Analisis Data Eksploratif dan Temuan
+
+**Tools:** Python (Pandas, Matplotlib, Seaborn)
+
+## A. Kinerja Pesanan
+
+### 1. Tren Jumlah Pesanan
+[Visualisasi tren pesanan bulanan]
+
+**Temuan:**
+- [Temuan berdasarkan hasil analisis]
+
+> **Insight A1 — [Judul Insight]**
+>
+> [Interpretasi bisnis dari hasil analisis.]
+
+### 2. Penyelesaian dan Pembatalan Pesanan
+[Visualisasi status pesanan]
+
+**Temuan:**
+- [Temuan berdasarkan hasil analisis]
+
+> **Insight A2 — [Judul Insight]**
+>
+> [Interpretasi bisnis dari hasil analisis.]
+
+### 3. Kinerja Berdasarkan Restoran dan Segmen Pelanggan
+[Visualisasi perbandingan nilai transaksi, jumlah pesanan, dan tingkat pembatalan]
+
+**Temuan:**
+- [Temuan berdasarkan hasil analisis]
+
+---
+
+## B. Kinerja Pengiriman
+
+### 1. Distribusi Durasi Pengiriman
+[Visualisasi distribusi durasi pengiriman]
+
+**Temuan:**
+- [Temuan berdasarkan hasil analisis]
+
+> **Insight B1 — [Judul Insight]**
+>
+> [Interpretasi bisnis dari hasil analisis.]
+
+### 2. Analisis Keterlambatan Pengiriman
+[Visualisasi ketepatan waktu dan distribusi keterlambatan]
+
+**Temuan:**
+- [Temuan berdasarkan hasil analisis]
+
+### 3. Kinerja Pengiriman Berdasarkan Jarak, Restoran, dan Zona
+[Visualisasi perbandingan kinerja pengiriman]
+
+**Temuan:**
+- [Temuan berdasarkan hasil analisis]
+
+> **Insight B2 — [Judul Insight]**
+>
+> [Interpretasi bisnis dari hasil analisis.]
+
+---
+
+## C. Pengalaman Pelanggan
+
+### 1. Distribusi Rating Pelanggan
+[Visualisasi distribusi rating]
+
+**Temuan:**
+- [Temuan berdasarkan hasil analisis]
+
+### 2. Hubungan Keterlambatan dan Rating
+[Visualisasi perbandingan rating pengiriman tepat waktu dan terlambat]
+
+**Temuan:**
+- [Temuan berdasarkan hasil analisis]
+
+> **Insight C1 — [Judul Insight]**
+>
+> [Interpretasi bisnis dari hasil analisis.]
+
+### 3. Analisis Ulasan Berdasarkan Segmen Pelanggan
+[Visualisasi rating dan tingkat ulasan berdasarkan segmen]
+
+**Temuan:**
+- [Temuan berdasarkan hasil analisis]
+
+---
+
+## D. Kinerja Pembayaran
+
+### 1. Distribusi Status Pembayaran
+[Visualisasi status pembayaran]
+
+**Temuan:**
+- [Temuan berdasarkan hasil analisis]
+
+### 2. Keberhasilan Pembayaran Berdasarkan Metode
+[Visualisasi perbandingan metode pembayaran]
+
+**Temuan:**
+- [Temuan berdasarkan hasil analisis]
+
+### 3. Analisis Percobaan dan Selisih Pembayaran
+[Visualisasi jumlah percobaan dan selisih nominal pembayaran]
+
+**Temuan:**
+- [Temuan berdasarkan hasil analisis]
+
+> **Insight D1 — [Judul Insight]**
+>
+> [Interpretasi bisnis dari hasil analisis.]
+
+---
+
+## E. Analisis Kinerja Terpadu
+
+Bagian ini menggabungkan temuan dari analisis pesanan, pengiriman, pengalaman pelanggan, dan pembayaran untuk memperoleh gambaran menyeluruh mengenai kinerja SwiftBite.
+
+### 1. Hubungan Kinerja Pengiriman dan Pengalaman Pelanggan
+[Analisis keterkaitan keterlambatan pengiriman dengan rating pelanggan.]
+
+### 2. Hubungan Status Pesanan dan Pembayaran
+[Analisis kesesuaian status pesanan dengan status pembayaran.]
+
+### 3. Identifikasi Area Prioritas
+[Perbandingan aspek bisnis berdasarkan frekuensi permasalahan dan dampaknya terhadap layanan.]
+
+> **Insight E1 — [Kesimpulan Utama Analisis Terpadu]**
+>
+> [Jelaskan pola utama yang ditemukan dan alasan aspek tertentu perlu diprioritaskan.]
+
+---
+
+# Pengembangan Dashboard
+
+**Tools:** Power BI
+
+Dashboard interaktif dikembangkan untuk menyajikan indikator kinerja utama dan temuan analisis kepada pemangku kepentingan bisnis.
+
+## Halaman 1 — Ringkasan Kinerja
+[Masukkan tangkapan layar dashboard]
+
+Menampilkan gambaran umum kinerja SwiftBite melalui indikator jumlah pesanan, tingkat penyelesaian, nilai transaksi, keterlambatan pengiriman, dan rating pelanggan.
+
+## Halaman 2 — Kinerja Pesanan dan Pengiriman
+[Masukkan tangkapan layar dashboard]
+
+Menampilkan tren pesanan, pembatalan, nilai transaksi, serta perbandingan kinerja pengiriman berdasarkan restoran dan zona.
+
+## Halaman 3 — Pengalaman Pelanggan dan Pembayaran
+[Masukkan tangkapan layar dashboard]
+
+Menampilkan distribusi rating, perbandingan pengalaman pelanggan, serta kinerja pembayaran berdasarkan status dan metode pembayaran.
+
+---
+
+# Temuan Utama dan Rekomendasi Strategis
+
+## Temuan Utama
+
+> **[Kesimpulan utama proyek]**
+>
+> [Rangkum kondisi bisnis SwiftBite berdasarkan hasil analisis. Hubungkan temuan dari pesanan, pengiriman, pengalaman pelanggan, dan pembayaran.]
+
+## Rekomendasi Berdasarkan Prioritas
+
+### Prioritas Tinggi
+1. **[Rekomendasi 1]**
+   - Temuan pendukung: [Hasil analisis]
+   - Tindakan yang disarankan: [Usulan tindakan]
+
+### Prioritas Menengah
+2. **[Rekomendasi 2]**
+   - Temuan pendukung: [Hasil analisis]
+   - Tindakan yang disarankan: [Usulan tindakan]
+
+### Jangka Panjang
+3. **[Rekomendasi 3]**
+   - Temuan pendukung: [Hasil analisis]
+   - Tindakan yang disarankan: [Usulan tindakan]
+
+---
+
+# Keterbatasan dan Catatan
+
+| Keterbatasan | Dampak terhadap Analisis |
+|---|---|
+| Periode data hanya tiga bulan | Belum cukup untuk menyimpulkan pola musiman atau tren jangka panjang |
+| Jumlah data terbatas | Hasil analisis perlu dibatasi pada data yang tersedia |
+| Terdapat nilai kosong pada data pengiriman dan ulasan | Beberapa indikator hanya dapat dihitung dari data yang valid |
+| Tidak tersedia data biaya operasional dan komisi | Profitabilitas dan efisiensi biaya tidak dapat dihitung |
+| Hubungan antarvariabel bersifat observasional | Tidak dapat langsung digunakan untuk menyimpulkan hubungan sebab-akibat |
+
+---
+
+# Sumber Daya Teknis
+
+| Perangkat | Kegunaan |
+|---|---|
+| Python | Pengolahan dan analisis data |
+| Pandas | Pembersihan dan manipulasi data |
+| Matplotlib | Visualisasi data |
+| Seaborn | Visualisasi statistik |
+| Power BI | Pembuatan dashboard interaktif |
+| Jupyter Notebook / Google Colab | Lingkungan pengembangan |
+
+**Notebook:** [Tautan Google Colab / GitHub]
+
+**Dashboard:** [Tautan atau tangkapan layar Power BI]
+
+---
+
+**Proyek oleh:** [Nama Kamu]
+
+*Proyek ini disusun untuk tujuan pembelajaran dan portofolio.*

@@ -120,43 +120,78 @@ Dataset akhir disusun pada tingkat pesanan (*order-level*), dengan satu baris me
 ---
 
 # Metodologi Analisis
+# Metodologi Analisis
 
-Analisis dilakukan melalui empat kelompok kinerja bisnis yang kemudian diintegrasikan untuk menghasilkan rekomendasi.
+Analisis kinerja pengiriman dilakukan melalui pemeriksaan karakteristik pengiriman dan pembentukan variabel turunan (*feature engineering*) untuk mengukur ketepatan waktu pengiriman.
 
-## A. Indikator Kinerja Pesanan
+### A. Analisis Karakteristik Pengiriman
 
-| Indikator | Perhitungan |
-|---|---|
-| Total Orders | Jumlah pesanan unik |
-| Completion Rate | Pesanan selesai / Total pesanan |
-| Cancellation Rate | Pesanan batal / Total pesanan |
-| Completed Order Value | Total nilai transaksi pesanan selesai |
-| Average Order Value (AOV) | Nilai transaksi pesanan selesai / Jumlah pesanan selesai |
+Tahap ini dilakukan untuk memahami kondisi dasar operasional pengiriman melalui beberapa aspek:
 
-## B. Indikator Kinerja Pengiriman
+1. **Distribusi Status Pengiriman**  
+   Mengidentifikasi jumlah dan persentase pesanan berdasarkan status pengiriman.
 
-| Indikator | Perhitungan |
-|---|---|
-| On-Time Delivery Rate | Pengiriman tepat waktu / Pengiriman dengan data waktu valid |
-| Late Delivery Rate | Pengiriman terlambat / Pengiriman dengan data waktu valid |
-| Average Delivery Duration | Rata-rata durasi aktual pengiriman |
-| Average Delay | Rata-rata durasi keterlambatan pada pesanan terlambat |
+2. **Distribusi Jarak Pengiriman**  
+   Mengukur karakteristik jarak pengiriman melalui statistik deskriptif, seperti rata-rata, nilai minimum, maksimum, dan kuartil.
 
-## C. Indikator Pengalaman Pelanggan
+3. **Estimasi Waktu Pengiriman**  
+   Mengidentifikasi karakteristik estimasi waktu pengiriman yang ditetapkan untuk setiap pesanan.
 
-| Indikator | Perhitungan |
-|---|---|
-| Average Rating | Rata-rata rating yang tersedia |
-| Review Rate | Pesanan dengan ulasan / Total pesanan |
+4. **Karakteristik Pengiriman Berdasarkan Status**  
+   Membandingkan jumlah pesanan, rata-rata jarak, dan estimasi waktu pengiriman berdasarkan status pengiriman.
 
-## D. Indikator Kinerja Pembayaran
+5. **Kategorisasi Jarak Pengiriman**  
+   Mengelompokkan jarak pengiriman ke dalam empat kategori:
+   - 0–2 km
+   - 2–5 km
+   - 5–10 km
+   - Lebih dari 10 km
 
-| Indikator | Perhitungan |
-|---|---|
-| Payment Success Rate | Pembayaran berhasil / Total transaksi pembayaran |
-| Failed Payment Rate | Pembayaran gagal / Total transaksi pembayaran |
-| Refund Rate | Pembayaran refund / Total transaksi pembayaran |
+   Selanjutnya, dilakukan perbandingan jumlah pesanan dan rata-rata estimasi waktu pengiriman pada setiap kategori jarak.
 
+### B. Pembentukan Variabel Kinerja Pengiriman
+
+Tahap ini dilakukan dengan membentuk variabel baru berdasarkan informasi waktu pengiriman yang tersedia.
+
+**1. Durasi Aktual Pengiriman (`actual_delivery_minutes`)**
+
+Menghitung durasi aktual pengiriman berdasarkan selisih waktu pesanan diterima kurir (*picked up*) hingga pesanan diterima pelanggan (*delivered*).
+
+Rumus:
+
+`Durasi Aktual = Waktu Diterima - Waktu Pengambilan`
+
+**2. Durasi Keterlambatan (`delay_minutes`)**
+
+Menghitung selisih antara durasi aktual pengiriman dan estimasi waktu pengiriman yang telah ditetapkan.
+
+Rumus:
+
+`Durasi Keterlambatan = Durasi Aktual - Estimasi Waktu`
+
+Interpretasi:
+- Nilai positif: pengiriman melebihi estimasi waktu.
+- Nilai nol: pengiriman sesuai estimasi waktu.
+- Nilai negatif: pengiriman lebih cepat dari estimasi waktu.
+
+**3. Indikator Keterlambatan (`is_late`)**
+
+Membentuk variabel Boolean untuk mengidentifikasi ketepatan waktu pengiriman berdasarkan durasi keterlambatan.
+
+Kriteria:
+- `True`: pengiriman terlambat (`delay_minutes > 0`).
+- `False`: pengiriman tidak terlambat (`delay_minutes <= 0`).
+
+Pesanan yang tidak memiliki informasi durasi aktual dikecualikan dari evaluasi ketepatan waktu.
+
+### C. Evaluasi Ketepatan Waktu Pengiriman
+
+Setelah variabel turunan terbentuk, dilakukan analisis lanjutan melalui:
+
+1. **Statistik Durasi Aktual:** Mengidentifikasi karakteristik waktu aktual yang dibutuhkan untuk menyelesaikan pengiriman.
+2. **Statistik Keterlambatan:** Mengukur distribusi selisih antara durasi aktual dan estimasi pengiriman.
+3. **Distribusi Ketepatan Waktu:** Mengidentifikasi jumlah pengiriman tepat waktu dan terlambat.
+4. **Perbandingan Waktu Aktual dan Estimasi:** Membandingkan durasi aktual dengan estimasi waktu pada setiap pesanan.
 ---
 
 # Analisis Data Eksploratif dan Temuan

@@ -178,35 +178,24 @@ Contoh struktur dataset akhir:
 ---
 
 ## Exploratory Data Analysis & Insights
+<img width="1179" height="484" alt="download" src="https://github.com/user-attachments/assets/9ad53474-b1d3-46bb-b457-8c7817aacad1" />
+
+<img width="1180" height="484" alt="image" src="https://github.com/user-attachments/assets/ac95cec3-657b-42e6-93be-a1742e2fe842" />
+
+<img width="884" height="484" alt="image" src="https://github.com/user-attachments/assets/d85ed66c-7a68-4c4b-8a86-8bf7c1430ec4" />
+
+<img width="984" height="484" alt="image" src="https://github.com/user-attachments/assets/b3ee1cd6-4480-4bcf-9354-0d50c0f3cc24" />
+
+<img width="984" height="484" alt="image" src="https://github.com/user-attachments/assets/4f52fcdf-9b70-4256-91e1-439b79c70c4f" />
+
+<img width="984" height="484" alt="image" src="https://github.com/user-attachments/assets/6140fcc4-0943-4e7b-bc52-1d37d2d1028f" />
 
 
 ---
 
 ## Dashboard Development
 
-Hasil analisis disajikan dalam dashboard interaktif menggunakan Microsoft Power BI.
 
-Dashboard dirancang untuk memberikan gambaran kinerja bisnis SwiftBite secara bertahap, mulai dari perkembangan bisnis hingga evaluasi kualitas operasional dan kepuasan pelanggan.
-
-Dashboard terdiri dari beberapa halaman utama:
-
-**1. Business Overview**
-
-Menyajikan ringkasan kinerja bisnis melalui indikator utama seperti total pesanan, total pendapatan, rata-rata nilai pesanan, jumlah pelanggan, dan tingkat penyelesaian pesanan.
-
-**2. Business Growth**
-
-Menyajikan analisis perkembangan transaksi dan pendapatan, kontribusi segmen pelanggan, serta performa restoran dan kategori kuliner.
-
-**3. Operational Performance**
-
-Menyajikan evaluasi kualitas operasional melalui tingkat penyelesaian pesanan, ketepatan waktu pengiriman, durasi pengantaran, dan keberhasilan pembayaran.
-
-**4. Customer Satisfaction**
-
-Menyajikan analisis rating dan ulasan pelanggan serta perbandingan tingkat kepuasan berdasarkan karakteristik layanan, khususnya performa pengiriman.
-
-Dashboard dilengkapi dengan filter interaktif yang relevan untuk membantu pengguna mengeksplorasi kinerja bisnis berdasarkan periode, zona, segmen pelanggan, restoran, dan kategori lainnya sesuai kebutuhan analisis.
 
 ---
 

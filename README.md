@@ -120,7 +120,6 @@ Dataset akhir disusun pada tingkat pesanan (*order-level*), dengan satu baris me
 ---
 
 # Metodologi Analisis
-# Metodologi Analisis
 
 Analisis kinerja pengiriman dilakukan melalui pemeriksaan karakteristik pengiriman dan pembentukan variabel turunan (*feature engineering*) untuk mengukur ketepatan waktu pengiriman.
 

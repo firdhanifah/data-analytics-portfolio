@@ -93,38 +93,64 @@ Proyek ini menggunakan beberapa dataset yang merepresentasikan berbagai aspek pr
 | 6 | Delivery | CSV | Informasi proses pengantaran dan performa pengiriman |
 | 7 | Reviews | CSV | Rating dan ulasan pelanggan terhadap layanan |
 
-## 2. Kelompok Data
-
-| Kelompok | Informasi |
-|---|---|
-| Pesanan | Identitas, waktu, status, dan nominal transaksi |
-| Pelanggan | Identitas, zona, tanggal pendaftaran, dan segmen |
-| Restoran | Identitas, jenis kuliner, zona, dan kategori harga |
-| Pengiriman | Kurir, jarak, estimasi, dan durasi pengiriman |
-| Pembayaran | Metode, status, nominal, dan percobaan pembayaran |
-| Ulasan | Rating dan komentar pelanggan |
-
-## Integrasi Data
-
-[Jelaskan hubungan antar kelompok data melalui identitas pesanan, pelanggan, restoran, pengiriman, pembayaran, dan ulasan.]
-
 ---
 
 # Pembersihan dan Persiapan Data
 
-Pembersihan data dilakukan menggunakan Python (Pandas) untuk memastikan kualitas dan konsistensi data sebelum analisis.
+Proses data cleaning dan data preparation dilakukan untuk memastikan kualitas, konsistensi, serta kesiapan data sebelum digunakan dalam analisis.
 
-Tahapan utama:
-- Memeriksa tipe data dan struktur dataset.
-- Mengidentifikasi nilai kosong dan duplikasi.
-- Memvalidasi konsistensi nominal transaksi.
-- Memeriksa kesesuaian status pesanan, pengiriman, dan pembayaran.
-- Memvalidasi urutan waktu transaksi dan pengiriman.
-- Menangani nilai kosong berdasarkan konteks bisnis.
-- Memeriksa pencilan pada variabel numerik.
-- Membentuk variabel tambahan untuk kebutuhan analisis.
+Tahapan yang dilakukan meliputi:
 
-**Catatan asumsi:** [Tuliskan keputusan penanganan data kosong, aturan validasi, dan asumsi yang digunakan.]
+Mengidentifikasi nilai yang hilang (missing values) berdasarkan konteks masing-masing kolom.
+
+Memeriksa dan menangani data duplikat berdasarkan karakteristik serta aturan bisnis.
+
+Menyeragamkan format dan tipe data, termasuk tanggal, waktu, kategori, dan nilai numerik.
+
+Memeriksa konsistensi nilai dan mengidentifikasi data yang tidak sesuai dengan aturan bisnis.
+
+Memvalidasi hubungan antar tabel menggunakan primary key dan foreign key.
+
+Memeriksa kesesuaian nominal transaksi, detail item pesanan, dan pembayaran.
+
+Mempertahankan nilai yang valid meskipun terindikasi sebagai nilai ekstrem (outlier), selama tidak terdapat bukti bahwa nilai tersebut merupakan kesalahan data.
+
+Melakukan agregasi data item pesanan ke tingkat transaksi.
+
+Menggabungkan informasi transaksi dengan data pelanggan, restoran, pembayaran, pengantaran, dan ulasan.
+
+Dataset akhir disusun pada tingkat pesanan (order-level), dengan satu baris merepresentasikan satu pesanan. Data item pesanan diagregasi untuk menghasilkan metrik seperti jumlah jenis item, total kuantitas, dan subtotal item.
+
+Beberapa kolom turunan juga disiapkan untuk mendukung analisis, seperti:
+
+`item_count`: jumlah jenis item dalam satu pesanan.
+`total_quantity`: total kuantitas seluruh item dalam satu pesanan.
+`items_subtotal`: total nilai seluruh item dalam satu pesanan.
+`has_review`: indikator ketersediaan rating pelanggan.
+`rating_label`: kategori rating pelanggan.
+`review_text_status`: status ketersediaan teks ulasan.
+`actual_delivery_minutes`: durasi aktual pengantaran berdasarkan waktu pengambilan hingga waktu pesanan diterima.
+`delay_minutes`: selisih antara durasi aktual pengantaran dan estimasi waktu yang dijanjikan.
+`Delivery Performance`: klasifikasi performa pengantaran berdasarkan perbandingan durasi aktual dengan estimasi waktu.
+
+Contoh struktur dataset akhir:
+| Kolom | Tipe / Contoh Data | Deskripsi |
+| :--- | :--- | :--- |
+| **order_id** | `O00001` | ID unik untuk setiap transaksi/pesanan |
+| **customer_id** | `C0080` | ID unik pelanggan yang melakukan pemesanan |
+| **restaurant_id** | `R0018` | ID unik restoran tempat pesanan dibuat |
+| **order_timestamp** | `2026-01-19 03:32:00` | Waktu/tanggal persis saat pesanan dilakukan |
+| **order_status** | `completed` | Status akhir pesanan (misal: selesai, dibatalkan, dll) |
+| **promo_code** | `NaN` / `NEWUSER` | Kode promo atau diskon yang digunakan |
+| **subtotal_amount** | `54.000` | Total harga makanan sebelum diskon/ongkir |
+| **total_amount** | `62.000` | Total akhir yang dibayar pelanggan |
+| **rating** | `2.0` / `NaN` | Skor penilaian dari pelanggan (skala 1-5) |
+| **item_count** | `2` | Jumlah jenis menu/item berbeda dalam satu pesanan |
+| **total_quantity** | `3` | Total keseluruhan kuantitas item yang dibeli |
+| **items_subtotal** | `54.000` | Subtotal khusus untuk item-item yang dipesan |
+| **has_review** | `True` / `False` | Status apakah pesanan ini memiliki ulasan |
+| **rating_label** | `2 - Dissatisfied` | Kategori keterangan teks dari nilai rating |
+| **review_text_status**| `Text Available` | Status ketersediaan teks ulasan dari pelanggan |
 
 ---
 

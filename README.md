@@ -369,65 +369,111 @@ Tingkat Partisipasi Ulasan: Baru 58.29% dari keseluruhan pesanan yang memberikan
 
 ### 2. Hubungan Keterlambatan dan Rating
 Apakah keterlambatan pengiriman berkaitan dengan penurunan rating?
-[Visualisasi perbandingan rating pengiriman tepat waktu dan terlambat]
+
+| Delivery Performance | Number of Orders | Average Rating | Median Rating |
+|----------------------|-----------------:|---------------:|--------------:|
+| Late                 | 38               | 2.80           | 3.0           |
+| On Time              | 280              | 3.75           | 4.0           |
 
 **Temuan:**
 Pesanan yang mengalami keterlambatan cenderung memperoleh rating lebih rendah. Hal ini menunjukkan adanya keterkaitan antara ketepatan waktu pengiriman dan kepuasan pelanggan. Namun, hasil ini belum membuktikan bahwa keterlambatan merupakan satu-satunya penyebab penurunan rating.
 
-> **Insight C1 — [Judul Insight]**
->
-> [Interpretasi bisnis dari hasil analisis.]
 
 ### 3. Analisis Ulasan Berdasarkan Segmen Pelanggan
-[Visualisasi rating dan tingkat ulasan berdasarkan segmen]
+Segmen pelanggan mana yang memberikan penilaian berbeda?
+
+| Customer Segment | Number of Ratings | Average Rating | Median Rating |
+|------------------|------------------:|---------------:|--------------:|
+| Loyal            | 69                | 3.83           | 4.0           |
+| New              | 67                | 3.46           | 4.0           |
+| Regular          | 68                | 3.62           | 4.0           |
 
 **Temuan:**
-- [Temuan berdasarkan hasil analisis]
+- Segmen Loyal memberikan penilaian tertinggi dengan rata-rata 3,83.
+- Segmen Regular memiliki rata-rata rating 3,62.
+- Segmen New memberikan penilaian terendah dengan rata-rata 3,46.
+- Meskipun rata-rata rating berbeda, ketiga segmen memiliki median yang sama, yaitu 4.
 
 ---
 
 ## D. Kinerja Pembayaran
 
 ### 1. Distribusi Status Pembayaran
-[Visualisasi status pembayaran]
+Bagaimana tingkat keberhasilan, kegagalan, dan pengembalian pembayaran?
+
+| Payment Status | Number of Transactions | Percentage |
+|----------------|-----------------------:|-----------:|
+| Successful      | 318                    | 90.86%     |
+| Failed          | 21                     | 6.00%      |
+| Refunded        | 11                     | 3.14%      |
+| **Total**       | **350**                | **100%**   |
 
 **Temuan:**
-- [Temuan berdasarkan hasil analisis]
+- Sebanyak 318 transaksi (90,86%) berhasil dibayarkan.
+- Sebanyak 21 transaksi (6%) mengalami kegagalan pembayaran.
+- Sebanyak 11 transaksi (3,14%) mengalami pengembalian dana (refunded).
 
 ### 2. Keberhasilan Pembayaran Berdasarkan Metode
-[Visualisasi perbandingan metode pembayaran]
+Apakah terdapat perbedaan hasil pembayaran berdasarkan metode pembayaran?
+
+| Payment Method | Failed | Refunded | Successful | Total Transactions | Success Rate |
+|----------------|-------:|---------:|----------:|-------------------:|-------------:|
+| Bank Transfer  | 5      | 3        | 80        | 88                 | 90.91%       |
+| Cash           | 5      | 3        | 79        | 87                 | 90.80%       |
+| Credit Card    | 6      | 2        | 79        | 87                 | 90.80%       |
+| E-Wallet       | 5      | 3        | 80        | 88                 | 90.91%       |
 
 **Temuan:**
-- [Temuan berdasarkan hasil analisis]
+- Bank transfer dan e-wallet memiliki tingkat keberhasilan tertinggi, yaitu 90,91%.
+- Cash dan credit card memiliki tingkat keberhasilan sebesar 90,80%.
+- Credit card mencatat kegagalan pembayaran terbanyak, yaitu 6 transaksi.
+- Perbedaan tingkat keberhasilan antarmetode sangat kecil, hanya 0,11 poin persentase.
 
 ### 3. Analisis Percobaan dan Selisih Pembayaran
-[Visualisasi jumlah percobaan dan selisih nominal pembayaran]
+Bagaimana pola percobaan pembayaran pada transaksi yang gagal?
+
+| Statistic | Attempt Number |
+|-----------|---------------:|
+| Count     | 21             |
+| Mean      | 1.00           |
+| Median    | 1.00           |
+| Min       | 1.00           |
+| Max       | 1.00           |
 
 **Temuan:**
-- [Temuan berdasarkan hasil analisis]
-
-> **Insight D1 — [Judul Insight]**
->
-> [Interpretasi bisnis dari hasil analisis.]
+- Terdapat 21 transaksi yang mengalami kegagalan pembayaran.
+- Seluruh transaksi gagal tercatat hanya memiliki satu kali percobaan pembayaran.
+- Tidak ditemukan variasi jumlah percobaan pada transaksi gagal.
 
 ---
 
-## E. Analisis Kinerja Terpadu
+## E. Strategi Bisnis
 
 Bagian ini menggabungkan temuan dari analisis pesanan, pengiriman, pengalaman pelanggan, dan pembayaran untuk memperoleh gambaran menyeluruh mengenai kinerja SwiftBite.
 
-### 1. Hubungan Kinerja Pengiriman dan Pengalaman Pelanggan
-[Analisis keterkaitan keterlambatan pengiriman dengan rating pelanggan.]
+### 1. Aspek layanan apa yang paling membutuhkan perhatian?
+| Aspek Layanan | Temuan | Hal yang Perlu Diperhatikan |
+|---------------|--------|-----------------------------|
+| Pesanan | 90,86% pesanan berhasil diselesaikan, sedangkan 9,14% dibatalkan. | Tingkat pembatalan pesanan |
+| Pengiriman | 11,95% pesanan mengalami keterlambatan. | Ketepatan waktu pengiriman |
+| Restoran | Partner 08 memiliki tingkat keterlambatan 14,29%, diikuti Partner 23 sebesar 14,06%. | Kinerja pengiriman dari masing-masing restoran |
+| Zona Pelanggan | Zona East memiliki tingkat keterlambatan tertinggi sebesar 20%, diikuti North sebesar 15,19%. | Kinerja pengiriman di zona East dan North |
+| Kepuasan Pelanggan | Pesanan yang terlambat memiliki rata-rata rating 2,80, sedangkan pesanan tepat waktu memiliki rata-rata rating 3,75. | Hubungan antara keterlambatan pengiriman dan kepuasan pelanggan |
+| Pembayaran | 6% transaksi gagal dan 3,14% transaksi dikembalikan (*refunded*). | Kegagalan transaksi dan pengembalian pembayaran |
 
-### 2. Hubungan Status Pesanan dan Pembayaran
-[Analisis kesesuaian status pesanan dengan status pembayaran.]
+**Temuan**
+Prioritas utama perbaikan layanan SwiftBite adalah meningkatkan ketepatan waktu pengiriman, terutama pada restoran dan zona dengan tingkat keterlambatan tertinggi.
 
-### 3. Identifikasi Area Prioritas
-[Perbandingan aspek bisnis berdasarkan frekuensi permasalahan dan dampaknya terhadap layanan.]
+### 2. Bagaimana perusahaan dapat memprioritaskan perbaikan berdasarkan hasil analisis?
 
-> **Insight E1 — [Kesimpulan Utama Analisis Terpadu]**
->
-> [Jelaskan pola utama yang ditemukan dan alasan aspek tertentu perlu diprioritaskan.]
+Berdasarkan hasil analisis A–D, SwiftBite dapat memprioritaskan perbaikan sebagai berikut:
+| Prioritas | Aspek yang Diperbaiki | Dasar Hasil Analisis | Tindakan yang Disarankan |
+|----------|------------------------|----------------------|--------------------------|
+| 1 | Ketepatan Waktu Pengiriman | 11,95% pesanan terlambat dan rata-rata rating pesanan terlambat hanya 2,80. | Evaluasi proses pengiriman, terutama di zona East dan North. |
+| 2 | Kinerja Restoran | Partner 08 dan Partner 23 memiliki persentase keterlambatan tertinggi. | Evaluasi koordinasi dan kesiapan pesanan dari kedua restoran. |
+| 3 | Kepuasan Pelanggan | Rata-rata rating keseluruhan 3,64 dan rating pesanan terlambat lebih rendah. | Tingkatkan konsistensi kualitas layanan dan penanganan keluhan pelanggan. |
+| 4 | Pembayaran | 6% transaksi gagal dan 3,14% transaksi dikembalikan (*refunded*). | Evaluasi penyebab kegagalan dan pengembalian pembayaran. |
+| 5 | Pembatalan Pesanan | 9,14% pesanan dibatalkan. | Identifikasi penyebab pembatalan untuk mengurangi transaksi yang tidak selesai. |
 
 ---
 
@@ -435,9 +481,9 @@ Bagian ini menggabungkan temuan dari analisis pesanan, pengiriman, pengalaman pe
 
 **Tools:** Power BI
 
-## SwiftBite Dashboard
+## SwiftBite Dashboard Interaktif
 
-[View Full Dashboard](SwiftBite/Dashboard/Dashboard1.pdf)
+[View Full Dashboard Preview](SwiftBite/Dashboard/Dashboard1.pdf)
 
 
 <img width="100%" src="https://github.com/user-attachments/assets/99e84875-214c-49be-97fa-a40a18bb22ac" />

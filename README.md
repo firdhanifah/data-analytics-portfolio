@@ -473,7 +473,7 @@ Prioritas utama perbaikan layanan SwiftBite adalah meningkatkan ketepatan waktu 
 
 Berdasarkan hasil analisis A–D, SwiftBite dapat memprioritaskan perbaikan sebagai berikut:
 
-
+<div style="overflow-x: auto;">
 | Prioritas | Aspek yang Diperbaiki | Dasar Hasil Analisis | Tindakan yang Disarankan |
 |----------|------------------------|----------------------|--------------------------|
 | 1 | Ketepatan Waktu Pengiriman | 11,95% pesanan terlambat dan rata-rata rating pesanan terlambat hanya 2,80. | Evaluasi proses pengiriman, terutama di zona East dan North. |
@@ -481,6 +481,7 @@ Berdasarkan hasil analisis A–D, SwiftBite dapat memprioritaskan perbaikan seba
 | 3 | Kepuasan Pelanggan | Rata-rata rating keseluruhan 3,64 dan rating pesanan terlambat lebih rendah. | Tingkatkan konsistensi kualitas layanan dan penanganan keluhan pelanggan. |
 | 4 | Pembayaran | 6% transaksi gagal dan 3,14% transaksi dikembalikan (*refunded*). | Evaluasi penyebab kegagalan dan pengembalian pembayaran. |
 | 5 | Pembatalan Pesanan | 9,14% pesanan dibatalkan. | Identifikasi penyebab pembatalan untuk mengurangi transaksi yang tidak selesai. |
+</div>
 
 ---
 

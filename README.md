@@ -341,6 +341,8 @@ Bagian ini menggabungkan temuan dari analisis pesanan, pengiriman, pengalaman pe
 
 [Dashaboard](SwiftBite/Dashboard/Dashboard1.pdf)
 
+<embed src="nama_file.pdf" type="application/pdf" width="100%" height="600px" />
+
 **1. Order Performance**
 
 Tujuan: Mengevaluasi aktivitas pemesanan, pendapatan, dan kontribusi restoran.

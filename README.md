@@ -462,7 +462,7 @@ Bagian ini menggabungkan temuan dari analisis pesanan, pengiriman, pengalaman pe
 | Restoran | Partner 08 memiliki tingkat keterlambatan 14,29%, diikuti Partner 23 sebesar 14,06%. | Kinerja pengiriman dari masing-masing restoran |
 | Zona Pelanggan | Zona East memiliki tingkat keterlambatan tertinggi sebesar 20%, diikuti North sebesar 15,19%. | Kinerja pengiriman di zona East dan North |
 | Kepuasan Pelanggan | Pesanan yang terlambat memiliki rata-rata rating 2,80, sedangkan pesanan tepat waktu memiliki rata-rata rating 3,75. | Hubungan antara keterlambatan pengiriman dan kepuasan pelanggan |
-| Pembayaran | 6% transaksi gagal dan 3,14% transaksi dikembalikan (*refunded*). | Kegagalan transaksi dan pengembalian pembayaran |
+| Pembayaran | 6% transaksi gagal dan 3,14% transaksi dikembalikan (*refunded*). | Kegagalan transaksi dan pengembalian pembayaran |</div>
 
 
 
@@ -474,14 +474,14 @@ Prioritas utama perbaikan layanan SwiftBite adalah meningkatkan ketepatan waktu 
 Berdasarkan hasil analisis A–D, SwiftBite dapat memprioritaskan perbaikan sebagai berikut:
 
 
+<div style="overflow-x: auto;">
 | Prioritas | Aspek yang Diperbaiki | Dasar Hasil Analisis | Tindakan yang Disarankan |
 |----------|------------------------|----------------------|--------------------------|
 | 1 | Ketepatan Waktu Pengiriman | 11,95% pesanan terlambat dan rata-rata rating pesanan terlambat hanya 2,80. | Evaluasi proses pengiriman, terutama di zona East dan North. |
 | 2 | Kinerja Restoran | Partner 08 dan Partner 23 memiliki persentase keterlambatan tertinggi. | Evaluasi koordinasi dan kesiapan pesanan dari kedua restoran. |
 | 3 | Kepuasan Pelanggan | Rata-rata rating keseluruhan 3,64 dan rating pesanan terlambat lebih rendah. | Tingkatkan konsistensi kualitas layanan dan penanganan keluhan pelanggan. |
 | 4 | Pembayaran | 6% transaksi gagal dan 3,14% transaksi dikembalikan (*refunded*). | Evaluasi penyebab kegagalan dan pengembalian pembayaran. |
-| 5 | Pembatalan Pesanan | 9,14% pesanan dibatalkan. | Identifikasi penyebab pembatalan untuk mengurangi transaksi yang tidak selesai. |
-</div>
+| 5 | Pembatalan Pesanan | 9,14% pesanan dibatalkan. | Identifikasi penyebab pembatalan untuk mengurangi transaksi yang tidak selesai. |</div>
 
 ---
 

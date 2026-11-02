@@ -16,7 +16,7 @@
    - [B. Kinerja Pengiriman](#b-kinerja-pengiriman)
    - [C. Pengalaman Pelanggan](#c-pengalaman-pelanggan)
    - [D. Kinerja Pembayaran](#d-kinerja-pembayaran)
-   - [E. Strategi Bisnis](#e-analisis-kinerja-terpadu)
+   - [E. Strategi Bisnis](#e-strategi-bisnis)
 6. [Pengembangan Dashboard](#pengembangan-dashboard)
 7. [Temuan Utama dan Rekomendasi Strategis](#temuan-utama-dan-rekomendasi-strategis)
 8. [Keterbatasan dan Catatan](#keterbatasan-dan-catatan)

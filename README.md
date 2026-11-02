@@ -339,7 +339,7 @@ Bagian ini menggabungkan temuan dari analisis pesanan, pengiriman, pengalaman pe
 
 [View Full Dashboard](SwiftBite/Dashboard/Dashboard1.pdf)
 
-
+[Dashaboard]SwiftBite/Dashboard/Dashboard1.pdf
 
 **1. Order Performance**
 

@@ -200,16 +200,42 @@ Setelah variabel turunan terbentuk, dilakukan analisis lanjutan melalui:
 ## A. Kinerja Pesanan
 
 ### 1. Tren Jumlah Pesanan
-[Visualisasi tren pesanan bulanan]
+
+Bagaimana perkembangan jumlah pesanan dan nilai transaksi selama periode analisis?
+
+| Bulan | Jumlah | Total Transaksi |
+| :--- | :--- | :--- |
+| Januari | 140 | Rp21.766.000 |
+| Februari | 105 | Rp16.268.000 |
+| Maret | 105 | Rp15.757.000 |
+
+<img width="789" height="390" alt="image" src="https://github.com/user-attachments/assets/6ddb92b3-acb4-4f43-bd30-db598261950a" />
+
+<img width="790" height="390" alt="image" src="https://github.com/user-attachments/assets/7c6d59c3-56a8-454c-999e-a8ee3f1edf49" />
 
 **Temuan:**
-- [Temuan berdasarkan hasil analisis]
+- Januari mencatat jumlah pesanan dan total transaksi tertinggi.
+- Jumlah pesanan turun sekitar 25% pada Februari dibandingkan Januari.
+- Pada Maret, jumlah pesanan tetap, tetapi total transaksi kembali menurun.
 
-> **Insight A1 — [Judul Insight]**
->
-> [Interpretasi bisnis dari hasil analisis.]
+<img width="889" height="390" alt="image" src="https://github.com/user-attachments/assets/35a5120d-409f-4a7f-be02-b2fc6e5d880f" />
+
+**Temuan:**
+- Senin menjadi hari dengan jumlah pesanan tertinggi (57).
+- Sabtu berada di posisi kedua (56).
+- Kamis mencatat jumlah pesanan terendah (45).
+
+<img width="989" height="390" alt="image" src="https://github.com/user-attachments/assets/1313e9f7-c277-44c0-b4bd-cd03b8f9b66f" />
+
+**Temuan:**
+- Pukul 20.00 mencatat jumlah pesanan tertinggi, yaitu 24 pesanan.
+- Pukul 09.00 berada di urutan kedua dengan 20 pesanan.
+- Pukul 19.00 mencatat jumlah pesanan terendah, yaitu 7 pesanan.
+
 
 ### 2. Penyelesaian dan Pembatalan Pesanan
+Seberapa tinggi tingkat penyelesaian dan pembatalan pesanan?
+  
 <img width="690" height="390" alt="image" src="https://github.com/user-attachments/assets/f1e6460f-6eac-4dc2-9bd1-ae253b709b64" />
 <img width="690" height="390" alt="image" src="https://github.com/user-attachments/assets/11610778-524f-44c2-a4ec-7b068e05d92f" />
 
@@ -218,11 +244,25 @@ Berdasarkan data
 - 90,86% pesanan berhasil diselesaikan, sedangkan 9,14% dibatalkan.
 - Rata-rata nilai transaksi pesanan completed sebesar Rp155.443, lebih tinggi dibandingkan cancelled sebesar Rp136.250
 
-> **Insight A2 — [Judul Insight]**
->
-> [Interpretasi bisnis dari hasil analisis.]
 
 ### 3. Kinerja Berdasarkan Restoran dan Segmen Pelanggan
+Apakah terdapat perbedaan kinerja berdasarkan restoran dan segmen pelanggan?
+
+|restaurant_id | jumlah_pesanan | total_transaksi | rata_rata_transaksi |
+| :--- | :--- | :--- | :--- |
+| R0003 |64 | 10276000	| 160562.50 |
+| R0018 |64	| 10212000	| 159562.50 |
+| R0013 |63	| 9870000	| 156666.67 |
+| R0008 |63	| 9571000	| 151920.63 |
+| R0023 |64	| 9502000	| 148468.75 |
+
+| customer_segment | jumlah_pesanan |	total_transaksi |	rata_rata_transaksi |
+| :--- | :--- | :--- | :--- |
+| Loyal | 106	| 16960000 |	160000.00 |
+| New |	105 |	16783000 |	159838.10 |
+| Regular |	107 |	15688000 |	146616.82 |
+
+
 [Visualisasi perbandingan nilai transaksi, jumlah pesanan, dan tingkat pembatalan]
 
 **Temuan:**
@@ -442,29 +482,6 @@ Tujuan: Mengevaluasi keberhasilan transaksi dan nominal pembayaran berdasarkan m
 > **Insight**: Metode dengan rata-rata nominal lebih tinggi belum tentu menghasilkan total pendapatan terbesar.
 > 
 > **Rekomendasi**: Bandingkan rata-rata nominal dengan jumlah transaksi dan total payment amount untuk memahami kontribusi setiap metode secara lebih menyeluruh.
-
-## Temuan Utama
-
-> **[Kesimpulan utama proyek]**
->
-> [Rangkum kondisi bisnis SwiftBite berdasarkan hasil analisis. Hubungkan temuan dari pesanan, pengiriman, pengalaman pelanggan, dan pembayaran.]
-
-## Rekomendasi Berdasarkan Prioritas
-
-### Prioritas Tinggi
-1. **[Rekomendasi 1]**
-   - Temuan pendukung: [Hasil analisis]
-   - Tindakan yang disarankan: [Usulan tindakan]
-
-### Prioritas Menengah
-2. **[Rekomendasi 2]**
-   - Temuan pendukung: [Hasil analisis]
-   - Tindakan yang disarankan: [Usulan tindakan]
-
-### Jangka Panjang
-3. **[Rekomendasi 3]**
-   - Temuan pendukung: [Hasil analisis]
-   - Tindakan yang disarankan: [Usulan tindakan]
 
 ---
 

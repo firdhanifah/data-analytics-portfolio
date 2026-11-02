@@ -338,7 +338,8 @@ Bagian ini menggabungkan temuan dari analisis pesanan, pengiriman, pengalaman pe
 ## SwiftBite Dashboard
 
 [View Full Dashboard](SwiftBite/Dashboard/Dashboard1.pdf)
-<img width="2075" height="2184" alt="Dashboard1_page-0001" src="https://github.com/user-attachments/assets/4cd331a0-f175-4888-9dab-adf74bd5ed75" />
+
+
 
 **1. Order Performance**
 

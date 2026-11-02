@@ -335,26 +335,9 @@ Bagian ini menggabungkan temuan dari analisis pesanan, pengiriman, pengalaman pe
 
 **Tools:** Power BI
 
-<img width="533" height="547" alt="image" src="https://github.com/user-attachments/assets/93af83e5-558a-4f0f-8b79-8be6edb2e542" />
+## Dashboard Preview
 
-## Halaman 1 — Ringkasan Kinerja
-[Masukkan tangkapan layar dashboard]
-
-Menampilkan gambaran umum kinerja SwiftBite melalui indikator jumlah pesanan, tingkat penyelesaian, nilai transaksi, keterlambatan pengiriman, dan rating pelanggan.
-
-## Halaman 2 — Kinerja Pesanan dan Pengiriman
-[Masukkan tangkapan layar dashboard]
-
-Menampilkan tren pesanan, pembatalan, nilai transaksi, serta perbandingan kinerja pengiriman berdasarkan restoran dan zona.
-
-## Halaman 3 — Pengalaman Pelanggan dan Pembayaran
-[Masukkan tangkapan layar dashboard]
-
-Menampilkan distribusi rating, perbandingan pengalaman pelanggan, serta kinerja pembayaran berdasarkan status dan metode pembayaran.
-
----
-
-# Temuan Utama dan Rekomendasi Strategis
+[View SwiftBite Dashboard (PDF)](SwiftBite/Dashboard/Dashboard1.pdf)
 
 ## Temuan Utama
 

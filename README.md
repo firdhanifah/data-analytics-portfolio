@@ -337,7 +337,7 @@ Bagian ini menggabungkan temuan dari analisis pesanan, pengiriman, pengalaman pe
 
 ## Dashboard Preview
 
-
+[View SwiftBite Dashboard (PDF)](SwiftBite/Dashboard/Dashboard1.pdf)
 
 ## Temuan Utama
 

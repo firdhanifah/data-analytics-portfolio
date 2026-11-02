@@ -311,14 +311,37 @@ Apakah jarak pengiriman berkaitan dengan durasi dan keterlambatan?
 
 
 **Temuan:**
-- [Temuan berdasarkan hasil analisis]
+Nilai Korelasi (Pearson r):**
+*   **0.70 s/d 1.00** atau **-0.70 s/d -1.00**: Hubungan sangat kuat.
+*   **0.40 s/d 0.69** atau **-0.40 s/d -0.69**: Hubungan moderat/sedang.
+*   **0.10 s/d 0.39** atau **-0.10 s/d -0.39**: Hubungan lemah.
+*   **Mendekati 0.00**: Tidak ada hubungan linear.
+
 
 ### 3. Kinerja Pengiriman Berdasarkan Jarak, Restoran, dan Zona
  Restoran atau zona mana yang menunjukkan tingkat keterlambatan lebih tinggi?
-[Visualisasi perbandingan kinerja pengiriman]
+
+| Restaurant | Total Orders | Late Orders | Late Percentage |
+|------------|-------------:|------------:|----------------:|
+| Partner 08 | 63           | 9           | 14.29%          |
+| Partner 23 | 64           | 9           | 14.06%          |
+| Partner 13 | 63           | 8           | 12.70%          |
+| Partner 18 | 64           | 7           | 10.94%          |
+| Partner 03 | 64           | 5           | 7.81%           |
+
+| Customer Zone | Total Orders | Late Orders | Average Delivery Duration (Minutes) | Late Percentage |
+|---------------|-------------:|------------:|-------------------------------------:|----------------:|
+| East          | 40           | 8           | 29.50                                | 20.00%          |
+| North         | 79           | 12          | 30.47                                | 15.19%          |
+| Central       | 27           | 3           | 28.33                                | 11.11%          |
+| South         | 53           | 5           | 29.19                                | 9.43%           |
+| West          | 119          | 10          | 28.53                                | 8.40%           |
+
 
 **Temuan:**
-- [Temuan berdasarkan hasil analisis]
+- East memiliki tingkat keterlambatan tertinggi sebesar 20%, meskipun jumlah pesanannya bukan yang terbanyak.
+- North mencatat jumlah pesanan terlambat terbanyak, yaitu 12 pesanan, dengan persentase 15,19%.
+- West memiliki jumlah pesanan terbanyak (119), tetapi persentase keterlambatannya paling rendah, yaitu 8,40%.
 
 
 ---
@@ -326,16 +349,30 @@ Apakah jarak pengiriman berkaitan dengan durasi dan keterlambatan?
 ## C. Pengalaman Pelanggan
 
 ### 1. Distribusi Rating Pelanggan
-[Visualisasi distribusi rating]
+Bagaimana tingkat kepuasan pelanggan berdasarkan rating dan ulasan?
+
+<img width="790" height="440" alt="image" src="https://github.com/user-attachments/assets/5f1f7c47-87f8-443e-a9ba-7aeaa570dac1" />
+
+| Rating | Number of Reviews |
+|--------|-------------------:|
+| 1 - Very Dissatisfied | 13 |
+| 2 - Dissatisfied      | 24 |
+| 3 - Neutral           | 41 |
+| 4 - Satisfied         | 72 |
+| 5 - Very Satisfied    | 54 |
+| **Total**             | **204** |
 
 **Temuan:**
-- [Temuan berdasarkan hasil analisis]
+Rata-rata Rating: 3.64 / 5.00 (Menunjukkan tingkat kepuasan umum yang berada di kategori cukup baik/moderat).
+Median Rating: 4 (Sebagian besar pelanggan yang memberikan ulasan merasa Puas).
+Tingkat Partisipasi Ulasan: Baru 58.29% dari keseluruhan pesanan yang memberikan ulasan (204 dari 350 pesanan), sedangkan 41.71% pesanan (146 pesanan) tidak menyertakan rating/ulasan (No Rating).
 
 ### 2. Hubungan Keterlambatan dan Rating
+Apakah keterlambatan pengiriman berkaitan dengan penurunan rating?
 [Visualisasi perbandingan rating pengiriman tepat waktu dan terlambat]
 
 **Temuan:**
-- [Temuan berdasarkan hasil analisis]
+Pesanan yang mengalami keterlambatan cenderung memperoleh rating lebih rendah. Hal ini menunjukkan adanya keterkaitan antara ketepatan waktu pengiriman dan kepuasan pelanggan. Namun, hasil ini belum membuktikan bahwa keterlambatan merupakan satu-satunya penyebab penurunan rating.
 
 > **Insight C1 — [Judul Insight]**
 >

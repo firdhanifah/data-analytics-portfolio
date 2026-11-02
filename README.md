@@ -616,7 +616,7 @@ Tujuan: Mengevaluasi keberhasilan transaksi dan nominal pembayaran berdasarkan m
 | Power BI | Pembuatan dashboard interaktif |
 | Jupyter Notebook / Google Colab | Lingkungan pengembangan |
 
-**Notebook:** [Google Colab Notebook](
+**Notebook:** [Google Colab Notebook](SwiftBite/Notebooks/CAPSTONE_BOOTCAMP.ipynb)
 ---
 
 **Proyek oleh:** Firdha Hanifah Suparlan

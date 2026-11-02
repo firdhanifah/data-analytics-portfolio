@@ -256,47 +256,70 @@ Apakah terdapat perbedaan kinerja berdasarkan restoran dan segmen pelanggan?
 | R0008 |63	| 9571000	| 151920.63 |
 | R0023 |64	| 9502000	| 148468.75 |
 
+**Temuan**
+- R0003 mencatat total transaksi tertinggi sebesar Rp10.276.000, dengan 64 pesanan.
+- R0018 berada di posisi kedua sebesar Rp10.212.000.
+- R0023 memiliki total transaksi terendah sebesar Rp9.502.000.
+- Jumlah pesanan antar restoran relatif merata, yaitu 63–64 pesanan.
+
 | customer_segment | jumlah_pesanan |	total_transaksi |	rata_rata_transaksi |
 | :--- | :--- | :--- | :--- |
 | Loyal | 106	| 16960000 |	160000.00 |
 | New |	105 |	16783000 |	159838.10 |
 | Regular |	107 |	15688000 |	146616.82 |
 
-
-[Visualisasi perbandingan nilai transaksi, jumlah pesanan, dan tingkat pembatalan]
-
-**Temuan:**
-- [Temuan berdasarkan hasil analisis]
+**Temuan**
+- Segmen Loyal menghasilkan total transaksi tertinggi sebesar Rp16.960.000.
+- Segmen Regular memiliki jumlah pesanan terbanyak (107), tetapi rata-rata transaksinya paling rendah, yaitu Rp146.617.
+- Segmen New menghasilkan rata-rata transaksi Rp159.838, hampir sama dengan segmen Loyal sebesar Rp160.000.
 
 ---
 
 ## B. Kinerja Pengiriman
 
 ### 1. Distribusi Durasi Pengiriman
-[Visualisasi distribusi durasi pengiriman]
+Seberapa baik SwiftBite memenuhi estimasi waktu pengiriman?
+
+| Delivery Performance | Jumlah Pesanan | Persentase |
+|----------------------|---------------:|-----------:|
+| On Time              | 280            | 88.05%     |
+| Late                 | 38             | 11.95%     |
+| **Total**            | **318**        | **100%**   |
+
+| Statistic | Actual Delivery (Minutes) | Promised Delivery (Minutes) | Delay (Minutes) |
+|-----------|--------------------------:|----------------------------:|----------------:|
+| Count     | 318.00                    | 318.00                      | 318.00          |
+| Mean      | 29.23                     | 45.51                       | -16.28          |
+| Std       | 15.13                     | 8.71                        | 12.12           |
+| Min       | 5.00                      | 30.00                       | -37.00          |
+| 25%       | 17.25                     | 38.00                       | -25.00          |
+| 50%       | 26.50                     | 45.00                       | -19.00          |
+| 75%       | 39.75                     | 53.00                       | -10.00          |
+| Max       | 81.00                     | 60.00                       | 32.00           |
 
 **Temuan:**
-- [Temuan berdasarkan hasil analisis]
-
-> **Insight B1 — [Judul Insight]**
->
-> [Interpretasi bisnis dari hasil analisis.]
+- Sebanyak 280 pesanan (88,05%) berhasil dikirim sesuai estimasi waktu.
+- Sebanyak 38 pesanan (11,95%) mengalami keterlambatan.
+- Rata-rata durasi aktual pengiriman adalah 29,23 menit, lebih cepat dibandingkan estimasi 45,51 menit.
+- Median keterlambatan sebesar -19 menit, artinya separuh pesanan selesai setidaknya 19 menit lebih cepat dari estimasi.
+- Keterlambatan terlama mencapai 32 menit.
 
 ### 2. Analisis Keterlambatan Pengiriman
-[Visualisasi ketepatan waktu dan distribusi keterlambatan]
+Apakah jarak pengiriman berkaitan dengan durasi dan keterlambatan?
+
+<img width="600" height="440" alt="image" src="https://github.com/user-attachments/assets/f4a5cda1-82a4-479e-82c4-1f4470923204" />
+
 
 **Temuan:**
 - [Temuan berdasarkan hasil analisis]
 
 ### 3. Kinerja Pengiriman Berdasarkan Jarak, Restoran, dan Zona
+ Restoran atau zona mana yang menunjukkan tingkat keterlambatan lebih tinggi?
 [Visualisasi perbandingan kinerja pengiriman]
 
 **Temuan:**
 - [Temuan berdasarkan hasil analisis]
 
-> **Insight B2 — [Judul Insight]**
->
-> [Interpretasi bisnis dari hasil analisis.]
 
 ---
 
@@ -417,6 +440,7 @@ Tujuan: Mengevaluasi aktivitas pemesanan, pendapatan, dan kontribusi restoran.
 
 
 **2. Delivery & Customer Experience**
+
 Tujuan: Mengevaluasi ketepatan pengiriman dan kaitannya dengan pengalaman pelanggan.
 
 - Tingkat keterlambatan berbeda antarwilayah. East memiliki late rate tertinggi sebesar 20%, disusul North sebesar 15,19%. West memiliki late rate terendah sebesar 8,40%.
@@ -454,7 +478,8 @@ Tujuan: Mengevaluasi ketepatan pengiriman dan kaitannya dengan pengalaman pelang
 >
 > **Rekomendasi**: Evaluasi ulasan pelanggan dan identifikasi faktor yang paling sering berkaitan dengan rating rendah.
 
-3. Payment Performance
+**3. Payment Performance**
+
 Tujuan: Mengevaluasi keberhasilan transaksi dan nominal pembayaran berdasarkan metode yang digunakan.
 
 - Mayoritas pembayaran berhasil diproses. Sebanyak 318 transaksi successful (90,86%), 21 failed (6%), dan 11 refunded (3,14%).
@@ -508,7 +533,7 @@ Tujuan: Mengevaluasi keberhasilan transaksi dan nominal pembayaran berdasarkan m
 | Power BI | Pembuatan dashboard interaktif |
 | Jupyter Notebook / Google Colab | Lingkungan pengembangan |
 
-**Notebook:** [Tautan Google Colab / GitHub]
+**Notebook:** [Google Colab Notebook](
 ---
 
 **Proyek oleh:** Firdha Hanifah Suparlan

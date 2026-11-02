@@ -453,6 +453,8 @@ Bagian ini menggabungkan temuan dari analisis pesanan, pengiriman, pengalaman pe
 
 ### 1. Aspek layanan apa yang paling membutuhkan perhatian?
 
+
+
 | Aspek Layanan | Temuan | Hal yang Perlu Diperhatikan |
 |---------------|--------|-----------------------------|
 | Pesanan | 90,86% pesanan berhasil diselesaikan, sedangkan 9,14% dibatalkan. | Tingkat pembatalan pesanan |
@@ -468,6 +470,7 @@ Prioritas utama perbaikan layanan SwiftBite adalah meningkatkan ketepatan waktu 
 ### 2. Bagaimana perusahaan dapat memprioritaskan perbaikan berdasarkan hasil analisis?
 
 Berdasarkan hasil analisis A–D, SwiftBite dapat memprioritaskan perbaikan sebagai berikut:
+
 
 | Prioritas | Aspek yang Diperbaiki | Dasar Hasil Analisis | Tindakan yang Disarankan |
 |----------|------------------------|----------------------|--------------------------|

@@ -335,9 +335,11 @@ Bagian ini menggabungkan temuan dari analisis pesanan, pengiriman, pengalaman pe
 
 **Tools:** Power BI
 
-## Dashboard Preview
+## SwiftBite Dashboard
 
-[View SwiftBite Dashboard (PDF)](SwiftBite/Dashboard/Dashboard1.pdf)
+![SwiftBite Dashboard](dashboard/SwiftBite_Dashboard.png)
+
+[View Full Dashboard (PDF)](dashboard/SwiftBite_Dashboard.pdf)
 
 ## Temuan Utama
 

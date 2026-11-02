@@ -454,7 +454,7 @@ Bagian ini menggabungkan temuan dari analisis pesanan, pengiriman, pengalaman pe
 ### 1. Aspek layanan apa yang paling membutuhkan perhatian?
 
 | Aspek Layanan | Temuan | Hal yang Perlu Diperhatikan |
-|---------------|--------|-----------------------------|
+|---|---|---|
 | Pesanan | 90,86% pesanan berhasil diselesaikan, sedangkan 9,14% dibatalkan. | Tingkat pembatalan pesanan |
 | Pengiriman | 11,95% pesanan mengalami keterlambatan. | Ketepatan waktu pengiriman |
 | Restoran | Partner 08 memiliki tingkat keterlambatan 14,29%, diikuti Partner 23 sebesar 14,06%. | Kinerja pengiriman dari masing-masing restoran |
@@ -469,7 +469,7 @@ Bagian ini menggabungkan temuan dari analisis pesanan, pengiriman, pengalaman pe
 Berdasarkan hasil analisis A–D, SwiftBite dapat memprioritaskan perbaikan sebagai berikut:
 
 | Prioritas | Aspek yang Diperbaiki | Dasar Hasil Analisis | Tindakan yang Disarankan |
-|-----------|------------------------|----------------------|--------------------------|
+|---|---|---|---|
 | 1 | Ketepatan Waktu Pengiriman | 11,95% pesanan terlambat dan rata-rata rating pesanan terlambat hanya 2,80. | Evaluasi proses pengiriman, terutama di zona East dan North. |
 | 2 | Kinerja Restoran | Partner 08 dan Partner 23 memiliki persentase keterlambatan tertinggi. | Evaluasi koordinasi dan kesiapan pesanan dari kedua restoran. |
 | 3 | Kepuasan Pelanggan | Rata-rata rating keseluruhan 3,64 dan rating pesanan terlambat lebih rendah. | Tingkatkan konsistensi kualitas layanan dan penanganan keluhan pelanggan. |

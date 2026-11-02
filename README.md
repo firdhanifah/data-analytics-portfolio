@@ -339,6 +339,105 @@ Bagian ini menggabungkan temuan dari analisis pesanan, pengiriman, pengalaman pe
 
 [View Full Dashboard (PDF)](SwiftBite/Dashboard/Dashboard1.pdf)
 
+**1. Order Performance**
+
+Tujuan: Mengevaluasi aktivitas pemesanan, pendapatan, dan kontribusi restoran.
+
+- Tren pesanan dan revenue menurun. Pada Januari terdapat 140 pesanan dengan revenue Rp21,77 juta. Jumlah pesanan turun menjadi 105 pada Februari dan tetap 105 pada Maret. Revenue juga turun menjadi Rp16,27 juta dan Rp15,76 juta.
+
+> **Masalah**: Terjadi penurunan aktivitas pemesanan setelah Januari.
+> 
+> **Insight**: Penurunan jumlah pesanan diikuti penurunan revenue. Hal ini mengindikasikan adanya penurunan aktivitas bisnis, bukan sekadar perubahan nilai transaksi.
+> 
+> **Rekomendasi**: Evaluasi faktor yang memengaruhi penurunan pesanan, seperti aktivitas promosi, permintaan pelanggan, dan ketersediaan restoran.
+>
+
+- Completion rate mencapai 90,86%. Sebanyak 318 dari 350 pesanan berhasil diselesaikan, sedangkan 32 pesanan dibatalkan.
+
+> **Masalah**: Masih terdapat 9,14% pesanan yang tidak berhasil diselesaikan.
+> 
+> **Insight**: Sebagian besar pesanan berhasil diproses, tetapi pembatalan tetap menyebabkan hilangnya potensi transaksi.
+> 
+> **Rekomendasi**: Identifikasi penyebab pembatalan untuk mengurangi jumlah pesanan yang gagal diselesaikan.
+>
+
+- Kontribusi revenue restoran relatif merata. Partner 03 menghasilkan revenue tertinggi sebesar Rp10,276 juta, sedangkan Partner 08 menghasilkan Rp9,571 juta.
+  
+> **Masalah**: Belum terlihat satu restoran yang mendominasi kontribusi pendapatan.
+> 
+> **Insight**: Pendapatan SwiftBite tersebar relatif merata pada lima restoran.
+> 
+> **Rekomendasi**: Pertahankan kerja sama dengan restoran berkinerja baik dan evaluasi peluang peningkatan penjualan pada restoran dengan kontribusi lebih rendah.
+>
+
+
+**2. Delivery & Customer Experience**
+Tujuan: Mengevaluasi ketepatan pengiriman dan kaitannya dengan pengalaman pelanggan.
+
+- Tingkat keterlambatan berbeda antarwilayah. East memiliki late rate tertinggi sebesar 20%, disusul North sebesar 15,19%. West memiliki late rate terendah sebesar 8,40%.
+  
+> **Masalah**: Tingginya proporsi keterlambatan di East berpotensi mengurangi ketepatan layanan pengiriman.
+> 
+> **Insight**: East dan North perlu mendapat perhatian lebih karena memiliki proporsi keterlambatan yang lebih tinggi.
+>
+> **Rekomendasi**: Evaluasi proses pengantaran di kedua wilayah, termasuk alokasi kurir dan kondisi operasional setempat.
+
+  
+- Estimasi waktu pengiriman cenderung searah dengan waktu aktual. Scatter plot menunjukkan bahwa pesanan dengan estimasi waktu lebih lama cenderung memiliki durasi aktual lebih lama.
+
+
+> **Masalah**: Masih terdapat variasi antara estimasi dan durasi aktual.
+>
+> **Insight**: Estimasi waktu dapat menjadi acuan durasi pengiriman, tetapi belum cukup untuk menyimpulkan tingkat akurasinya.
+>
+> **Rekomendasi**: Pantau selisih waktu aktual dan estimasi untuk mengevaluasi ketepatan prediksi waktu pengiriman.
+>
+
+- Pesanan terlambat memiliki rating lebih rendah. Rata-rata rating pesanan Late adalah 2,80, sedangkan On-Time mencapai 3,75.
+
+> **Masalah**: Pesanan terlambat berkaitan dengan penilaian pelanggan yang lebih rendah.
+>
+> **Insight**: Ketepatan waktu pengiriman merupakan salah satu aspek yang berkaitan dengan pengalaman pelanggan.
+>
+> **Rekomendasi**: Prioritaskan perbaikan proses pengiriman untuk mengurangi keterlambatan dan menjaga kepuasan pelanggan.
+
+- Rating pelanggan rata-rata 3,64 dari 5.
+
+> **Masalah**: Masih terdapat ruang untuk meningkatkan pengalaman pelanggan.
+> 
+> **Insight**: Rating dapat digunakan sebagai indikator evaluasi layanan, terutama jika dikaitkan dengan performa pengiriman.
+>
+> **Rekomendasi**: Evaluasi ulasan pelanggan dan identifikasi faktor yang paling sering berkaitan dengan rating rendah.
+
+3. Payment Performance
+Tujuan: Mengevaluasi keberhasilan transaksi dan nominal pembayaran berdasarkan metode yang digunakan.
+
+- Mayoritas pembayaran berhasil diproses. Sebanyak 318 transaksi successful (90,86%), 21 failed (6%), dan 11 refunded (3,14%).
+
+> **Masalah**: Masih terdapat transaksi gagal dan pengembalian dana.
+> 
+> **Insight**: Proses pembayaran secara umum berjalan baik, tetapi 32 transaksi memerlukan perhatian lebih lanjut.
+> 
+> **Rekomendasi**: Evaluasi penyebab kegagalan transaksi dan refund agar proses pembayaran lebih lancar.
+> 
+
+- Jumlah pembayaran berhasil relatif merata antar-metode. Bank Transfer dan E-Wallet masing-masing mencatat 80 transaksi successful, sedangkan Cash dan Credit Card masing-masing 79 transaksi.
+
+> **Masalah**: Credit Card memiliki transaksi gagal terbanyak, yaitu 6 transaksi.
+> 
+> **Insight**: Perbedaan jumlah transaksi gagal antar-metode relatif kecil, sehingga belum cukup untuk menyimpulkan adanya masalah khusus pada Credit Card.
+> 
+> **Rekomendasi**: Pantau tingkat keberhasilan setiap metode pembayaran dan evaluasi penyebab transaksi gagal.
+>
+
+- Rata-rata nominal pembayaran berbeda antar-metode. Setelah filter successful dan completed diterapkan, visual Average Payment by Payment Method dapat digunakan untuk membandingkan rata-rata nominal transaksi.
+  
+> **Masalah**: Perbedaan rata-rata nominal belum tentu menunjukkan perbedaan kontribusi total revenue.
+> 
+> **Insight**: Metode dengan rata-rata nominal lebih tinggi belum tentu menghasilkan total pendapatan terbesar.
+> 
+> **Rekomendasi**: Bandingkan rata-rata nominal dengan jumlah transaksi dan total payment amount untuk memahami kontribusi setiap metode secara lebih menyeluruh.
+
 ## Temuan Utama
 
 > **[Kesimpulan utama proyek]**
@@ -388,11 +487,8 @@ Bagian ini menggabungkan temuan dari analisis pesanan, pengiriman, pengalaman pe
 | Jupyter Notebook / Google Colab | Lingkungan pengembangan |
 
 **Notebook:** [Tautan Google Colab / GitHub]
-
-**Dashboard:** [Tautan atau tangkapan layar Power BI]
-
 ---
 
-**Proyek oleh:** [Nama Kamu]
+**Proyek oleh:** Firdha Hanifah Suparlan
 
 *Proyek ini disusun untuk tujuan pembelajaran dan portofolio.*

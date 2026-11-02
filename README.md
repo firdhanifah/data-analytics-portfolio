@@ -210,10 +210,13 @@ Setelah variabel turunan terbentuk, dilakukan analisis lanjutan melalui:
 > [Interpretasi bisnis dari hasil analisis.]
 
 ### 2. Penyelesaian dan Pembatalan Pesanan
-[Visualisasi status pesanan]
+<img width="690" height="390" alt="image" src="https://github.com/user-attachments/assets/f1e6460f-6eac-4dc2-9bd1-ae253b709b64" />
+<img width="690" height="390" alt="image" src="https://github.com/user-attachments/assets/11610778-524f-44c2-a4ec-7b068e05d92f" />
 
 **Temuan:**
-- [Temuan berdasarkan hasil analisis]
+Berdasarkan data
+- 90,86% pesanan berhasil diselesaikan, sedangkan 9,14% dibatalkan.
+- Rata-rata nilai transaksi pesanan completed sebesar Rp155.443, lebih tinggi dibandingkan cancelled sebesar Rp136.250
 
 > **Insight A2 — [Judul Insight]**
 >
@@ -332,7 +335,7 @@ Bagian ini menggabungkan temuan dari analisis pesanan, pengiriman, pengalaman pe
 
 **Tools:** Power BI
 
-Dashboard interaktif dikembangkan untuk menyajikan indikator kinerja utama dan temuan analisis kepada pemangku kepentingan bisnis.
+<img width="533" height="547" alt="image" src="https://github.com/user-attachments/assets/93af83e5-558a-4f0f-8b79-8be6edb2e542" />
 
 ## Halaman 1 — Ringkasan Kinerja
 [Masukkan tangkapan layar dashboard]

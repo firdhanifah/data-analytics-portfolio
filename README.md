@@ -1,4 +1,4 @@
-# SwiftBite Business Analytics Project
+# SwiftBite Business Analytics Project - Bootcamp Data Analyst Plan Indonesia
 ### Analisis Kinerja Operasional dan Pengalaman Pelanggan
 
 **Tools:** Python (Pandas, Matplotlib, Seaborn), Power BI
